@@ -10,7 +10,7 @@ define("WP_DOMAINS_INITIALIZED", 1);
 $domains_enabled = array(
     "press.pro",
     "print.hardnig.ga",
-    //"mysite-test.hosting.ru",
+    "printShop",
     //"mysite.ru",
     //"www.mysite.ru"
 );
