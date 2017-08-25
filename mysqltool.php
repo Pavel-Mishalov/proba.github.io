@@ -257,19 +257,11 @@ function checkSsh()
     }
     return $state;
 }
-function parseCmdLine($argv)
-{
-    $command = array(
-        "file" => $argv[0],
-        "action" => "help",
-        "params" => array(),
-        "keywords" => array()
-    );
-    $getParamName = function($argument, &$paramName)
+function getParamName($argument, &$paramName)
     {
         if (preg_match('#^-(?P<paramShort>[a-zA-Z0-9_]{1})$|^--(?P<paramLong>[a-zA-Z0-9_]+)$#', $argument, $matches))
         {
-            $paramName = $matches['paramShort'] ?: $matches['paramLong'];
+            $paramName = $matches['paramShort'] ? '' : $matches['paramLong'];
             $res = true;
         }
         else
@@ -279,6 +271,14 @@ function parseCmdLine($argv)
         }
         return $res;
     };
+function parseCmdLine($argv)
+{
+    $command = array(
+        "file" => $argv[0],
+        "action" => "help",
+        "params" => array(),
+        "keywords" => array()
+    );
     $lastParam = null;
     foreach($argv as $num=>$arg)
     {
@@ -290,7 +290,7 @@ function parseCmdLine($argv)
         {
             if ($lastParam)
             {
-                if ($getParamName($arg, $paramName))
+                if (getParamName($arg, $paramName))
                 {
                     $command["params"][$lastParam] = 1;
                     $lastParam = $paramName;
@@ -303,7 +303,7 @@ function parseCmdLine($argv)
             }
             else
             {
-                if ($getParamName($arg, $paramName))
+                if (getParamName($arg, $paramName))
                 {
                     $lastParam = $paramName;
                 }
@@ -336,17 +336,17 @@ function getConfig()
     if (is_null($conf))
     {
         $_SERVER['HTTP_HOST'] = "null";
-        StreamWrapper::$ignoredFiles = array(__DIR__ . "/public_html/wp-settings.php");
+        StreamWrapper::$ignoredFiles = array("/home/d/dnovikov32/print.hardnig.ga/public_html/wp-settings.php");
         StreamWrapper::wrap();
-        require_once(__DIR__ . "/public_html/wp-config.php");
+        require_once("/home/d/dnovikov32/print.hardnig.ga/public_html/wp-config.php");
         StreamWrapper::unwrap();
         $conf = array(
             "DB_NAME" => DB_NAME,
             "DB_USER" => DB_USER,
             "DB_PASSWORD" => DB_PASSWORD,
-            "DUMP_DIR" => __DIR__ . "/mysqldump"
+            "DUMP_DIR" => "/home/d/dnovikov32/print.hardnig.ga/mysqldump"
         );
-        $conf = array_replace($conf, require(__DIR__ . "/mysqltool.conf.php"));
+        $conf = array_replace($conf, require("/home/d/dnovikov32/print.hardnig.ga/mysqltool.conf.php"));
     }
     return $conf;
 }
