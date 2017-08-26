@@ -125,7 +125,7 @@ function actionDump($command)
     if ($needDumpRemote)
     {
         checkSshOrDie();
-        $remote_cmd = $ssh_folder . "/mysqltool.php dump local --filename";
+        $remote_cmd = "php " . $ssh_folder . "/mysqltool.php dump local --filename";
         $cmd = "ssh $ssh_host '$remote_cmd'";
         if (!$returnFileName) echo "Dumping remote database .... ";
         exec($cmd, $output, $return_var);
@@ -257,11 +257,19 @@ function checkSsh()
     }
     return $state;
 }
-function getParamName($argument, &$paramName)
+function parseCmdLine($argv)
+{
+    $command = array(
+        "file" => $argv[0],
+        "action" => "help",
+        "params" => array(),
+        "keywords" => array()
+    );
+    $getParamName = function($argument, &$paramName)
     {
         if (preg_match('#^-(?P<paramShort>[a-zA-Z0-9_]{1})$|^--(?P<paramLong>[a-zA-Z0-9_]+)$#', $argument, $matches))
         {
-            $paramName = $matches['paramShort'] ? '' : $matches['paramLong'];
+            $paramName = $matches['paramShort'] ?: $matches['paramLong'];
             $res = true;
         }
         else
@@ -271,14 +279,6 @@ function getParamName($argument, &$paramName)
         }
         return $res;
     };
-function parseCmdLine($argv)
-{
-    $command = array(
-        "file" => $argv[0],
-        "action" => "help",
-        "params" => array(),
-        "keywords" => array()
-    );
     $lastParam = null;
     foreach($argv as $num=>$arg)
     {
@@ -290,7 +290,7 @@ function parseCmdLine($argv)
         {
             if ($lastParam)
             {
-                if (getParamName($arg, $paramName))
+                if ($getParamName($arg, $paramName))
                 {
                     $command["params"][$lastParam] = 1;
                     $lastParam = $paramName;
@@ -303,7 +303,7 @@ function parseCmdLine($argv)
             }
             else
             {
-                if (getParamName($arg, $paramName))
+                if ($getParamName($arg, $paramName))
                 {
                     $lastParam = $paramName;
                 }
@@ -336,17 +336,21 @@ function getConfig()
     if (is_null($conf))
     {
         $_SERVER['HTTP_HOST'] = "null";
-        StreamWrapper::$ignoredFiles = array("/home/d/dnovikov32/print.hardnig.ga/public_html/wp-settings.php");
+        StreamWrapper::$ignoredFiles = array(__DIR__ . "/public_html/wp-settings.php");
         StreamWrapper::wrap();
-        require_once("/home/d/dnovikov32/print.hardnig.ga/public_html/wp-config.php");
+        require_once(__DIR__ . "/public_html/wp-config.php");
         StreamWrapper::unwrap();
         $conf = array(
             "DB_NAME" => DB_NAME,
             "DB_USER" => DB_USER,
             "DB_PASSWORD" => DB_PASSWORD,
-            "DUMP_DIR" => "/home/d/dnovikov32/print.hardnig.ga/mysqldump"
+            "DUMP_DIR" => __DIR__ . "/mysqldump",
+            "remote" => array(
+                        "sshhost" => "dnovikov32@77.222.40.193",
+                        "folder" => "/home/d/dnovikov32/print.hardnig.ga"
+                        ),
         );
-        $conf = array_replace($conf, require("/home/d/dnovikov32/print.hardnig.ga/mysqltool.conf.php"));
+        //$conf = array_replace($conf, require(__DIR__ . "/mysqltool.conf.php"));
     }
     return $conf;
 }
@@ -356,7 +360,7 @@ function getConfig()
  */
 class StreamWrapper
 {
-	const PROTOCOL = "file";
+    const PROTOCOL = "file";
     const STREAM_OPEN_FOR_INCLUDE = 128;
     public $context;
     public $resource;
@@ -384,7 +388,7 @@ class StreamWrapper
         {
             $path = 'php://memory';
         }
-		if (isset($this->context)) {
+        if (isset($this->context)) {
             $this->resource = fopen($path, $mode, $options, $this->context);
         } else {
             $this->resource = fopen($path, $mode, $options);
@@ -394,7 +398,7 @@ class StreamWrapper
     }
     function stream_close()
     {
-		$res = fclose($this->resource);
+        $res = fclose($this->resource);
         return $res;
     }
     function stream_eof()

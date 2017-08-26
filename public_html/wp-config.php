@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'dnovikov32_ell');
+define('DB_NAME', 'dnovikov32_print');
 
 /** MySQL database username */
-define('DB_USER', 'dnovikov32_ell');
+define('DB_USER', 'dnovikov32_print');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'waeserreak');
+define('DB_PASSWORD', 'q1w2e3r4');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'LpJpF>;p_!e]coY 1l4?e,4f+V3|:qeC85lsm8De9JWHH9pUF+asm~4Jr?[VBhja');
-define('SECURE_AUTH_KEY',  'bN7S~WN H(]6h!C)k=%f!59YMS,8y.$t`tak&e.Fr %8f[;Emvh-TC7]{s4ZaVy/');
-define('LOGGED_IN_KEY',    '=Wt_:[:8O6qbD4:9vM]%:!P]TON|{8kq:96e`A&5I(`e@skJ,tr{F%Ou?wdC-)X7');
-define('NONCE_KEY',        'AZom91`=Y5%O7FGlX(dY)A,,m@BS^yJq<nZ}r/_c%RY]mRz&,b#(N*?F;]13$7qp');
-define('AUTH_SALT',        '2%K/|c[+ncGv<rMP^>GT(mu#fUg%FmY/V[*k4!^M~ISx<1_9xvS.6z|yyT{~{m}=');
-define('SECURE_AUTH_SALT', 'N%J|FpE)NDQvEO4uc Jdh7Pbey*,w:/=wB/f!]@eh1-1E:muO< xD|PpyU)r,?LY');
-define('LOGGED_IN_SALT',   'An~e! #.axS|,]O4Q3w^a:axD|tyE#3 nX;x~A9K9#SsEq:9-SOD/j2,)m5q0ek&');
-define('NONCE_SALT',       'tGXcs]dPPdPxGhf2.:UN&@rYc<3e<#PZqncgxa&#Q88:1m,Q1|h/.bJiIfdP:V.y');
+define('AUTH_KEY',         'U&~O!qxQ1w:w3kPl ?k A$5OR-WUjBmi[{nv2b)<l*R:NwITpa6RtkAt&_{12JY<');
+define('SECURE_AUTH_KEY',  'G[*BsCQ<Hv@=9+Oy{SPSx6sGOeHW=,hnjzGOybOLyN[v^hejS@nW#o-l!6 mhTmd');
+define('LOGGED_IN_KEY',    '{EGSD?YU2kRcv)rHF[,;/=0My3>VkSu];tJiD4WdRzJJ@PVC26dR?MgwAWvg,4QR');
+define('NONCE_KEY',        ']2Ajt_wF[AapC0ku0uQFAZZgR5?YTW{LtTxg}c]0<6&(.i DJ9BmFvEH %7Ud>#M');
+define('AUTH_SALT',        '0.) oq~WBRBD9t!PIUj1q+b&I}P9vOVK2&N[2|%LLP$AE._iJjunbSiC1Z}$`f`k');
+define('SECURE_AUTH_SALT', 'aV]e]]$B+UTsa2n;4S`SUKTmAvP=t*x=5@3a;G+&+MIrHwoOuZLUW$;hE[&/R6=u');
+define('LOGGED_IN_SALT',   'T3dx+[p?QK8 9<&{%4MB;:bql,[D4?LAYAjDVp&b>TCh}j|_w]<t@$&7mo9&l[0R');
+define('NONCE_SALT',       '?Taz EvWWP+&jiq,JZ[NUh [h(=Y7C=TR5e5?-G):(WD{F_qmuDo),19z{n7gFOY');
 
 /**#@-*/
 
