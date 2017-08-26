@@ -257,15 +257,7 @@ function checkSsh()
     }
     return $state;
 }
-function parseCmdLine($argv)
-{
-    $command = array(
-        "file" => $argv[0],
-        "action" => "help",
-        "params" => array(),
-        "keywords" => array()
-    );
-    $getParamName = function($argument, &$paramName)
+function getParamName($argument, &$paramName)
     {
         if (preg_match('#^-(?P<paramShort>[a-zA-Z0-9_]{1})$|^--(?P<paramLong>[a-zA-Z0-9_]+)$#', $argument, $matches))
         {
@@ -279,6 +271,14 @@ function parseCmdLine($argv)
         }
         return $res;
     };
+function parseCmdLine($argv)
+{
+    $command = array(
+        "file" => $argv[0],
+        "action" => "help",
+        "params" => array(),
+        "keywords" => array()
+    );
     $lastParam = null;
     foreach($argv as $num=>$arg)
     {
@@ -290,7 +290,7 @@ function parseCmdLine($argv)
         {
             if ($lastParam)
             {
-                if ($getParamName($arg, $paramName))
+                if (getParamName($arg, $paramName))
                 {
                     $command["params"][$lastParam] = 1;
                     $lastParam = $paramName;
@@ -303,7 +303,7 @@ function parseCmdLine($argv)
             }
             else
             {
-                if ($getParamName($arg, $paramName))
+                if (getParamName($arg, $paramName))
                 {
                     $lastParam = $paramName;
                 }
