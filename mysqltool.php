@@ -336,17 +336,21 @@ function getConfig()
     if (is_null($conf))
     {
         $_SERVER['HTTP_HOST'] = "null";
-        StreamWrapper::$ignoredFiles = array("/home/d/dnovikov32/print.hardnig.ga/public_html/wp-settings.php");
+        StreamWrapper::$ignoredFiles = array(dirname(__FILE__)."/public_html/wp-settings.php");
         StreamWrapper::wrap();
-        require_once("/home/d/dnovikov32/print.hardnig.ga/public_html/wp-config.php");
+        require_once(dirname(__FILE__)."/public_html/wp-config.php");
         StreamWrapper::unwrap();
         $conf = array(
             "DB_NAME" => DB_NAME,
             "DB_USER" => DB_USER,
             "DB_PASSWORD" => DB_PASSWORD,
-            "DUMP_DIR" => "/home/d/dnovikov32/print.hardnig.ga/mysqldump"
+            "DUMP_DIR" => dirname(__FILE__)."/mysqldump",
+            "remote" => array(
+                "sshhost" => "dnovikov32@77.222.40.193",
+                "folder" => "/home/d/dnovikov32/print.hardnig.ga"
+            )
         );
-        $conf = array_replace($conf, require("/home/d/dnovikov32/print.hardnig.ga/mysqltool.conf.php"));
+        //$conf = array_replace($conf, require(dirname(__FILE__)."/mysqltool.conf.php"));
     }
     return $conf;
 }
