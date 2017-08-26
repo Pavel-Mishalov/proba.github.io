@@ -1,0 +1,184 @@
+$helvetica-font-path: "../../../fonts/Helvetica";
+
+
+/////////
+// 100 //
+/////////
+@font-face { 
+  font-family: 'Helvetica Neue Cyr'; 
+  src: url('#{$helvetica-font-path}/100/normal/helveticaneuecyr-ultralight-0.eot');                                           /* IE9 Compat Modes */ 
+  src: url('#{$helvetica-font-path}/100/normal/helveticaneuecyr-ultralight-0.eot?#iefix') format('embedded-opentype'),        /* IE6-IE8 */ 
+       url('#{$helvetica-font-path}/100/normal/helveticaneuecyr-ultralight-0.woff2') format('woff2'),                         /* Новейшие браузеры */ 
+       url('#{$helvetica-font-path}/100/normal/helveticaneuecyr-ultralight-0.woff') format('woff'),                           /* Новые браузеры и IE9+ */ 
+       url('#{$helvetica-font-path}/100/normal/helveticaneuecyr-ultralight-0.ttf')  format('truetype'),                       /* Старые Safari, Android, iOS */ 
+       url('#{$helvetica-font-path}/100/normal/helveticaneuecyr-ultralight-0.svg#HelveticaNeueCyr-UltraLight') format('svg'); /* Древние Safari, iOS, Android */ 
+  font-weight: 100;
+  font-style: normal; 
+}
+@font-face { 
+  font-family: 'Helvetica Neue Cyr'; 
+  src: url('#{$helvetica-font-path}/100/italic/helveticaneuecyr-ultralightitalic.eot');                                           /* IE9 Compat Modes */ 
+  src: url('#{$helvetica-font-path}/100/italic/helveticaneuecyr-ultralightitalic.eot?#iefix') format('embedded-opentype'),        /* IE6-IE8 */ 
+       url('#{$helvetica-font-path}/100/italic/helveticaneuecyr-ultralightitalic.woff2') format('woff2'),                         /* Новейшие браузеры */ 
+       url('#{$helvetica-font-path}/100/italic/helveticaneuecyr-ultralightitalic.woff') format('woff'),                           /* Новые браузеры и IE9+ */ 
+       url('#{$helvetica-font-path}/100/italic/helveticaneuecyr-ultralightitalic.ttf')  format('truetype'),                       /* Старые Safari, Android, iOS */ 
+       url('#{$helvetica-font-path}/100/italic/helveticaneuecyr-ultralightitalic.svg#HelveticaNeueCyr-UltraLightItalic') format('svg'); /* Древние Safari, iOS, Android */ 
+  font-weight: 100;
+  font-style: italic;
+}
+
+/////////
+// 300 //
+/////////
+@font-face { 
+  font-family: 'Helvetica Neue Cyr'; 
+  src: url('#{$helvetica-font-path}/300/normal/helveticaneuecyr-thin.eot');                                           /* IE9 Compat Modes */ 
+  src: url('#{$helvetica-font-path}/300/normal/helveticaneuecyr-thin.eot?#iefix') format('embedded-opentype'),        /* IE6-IE8 */ 
+       url('#{$helvetica-font-path}/300/normal/helveticaneuecyr-thin.woff2') format('woff2'),                         /* Новейшие браузеры */ 
+       url('#{$helvetica-font-path}/300/normal/helveticaneuecyr-thin.woff') format('woff'),                           /* Новые браузеры и IE9+ */ 
+       url('#{$helvetica-font-path}/300/normal/helveticaneuecyr-thin.ttf')  format('truetype'),                       /* Старые Safari, Android, iOS */ 
+       url('#{$helvetica-font-path}/300/normal/helveticaneuecyr-thin.svg#HelveticaNeueCyr-Thin') format('svg'); /* Древние Safari, iOS, Android */ 
+  font-weight: 300;
+  font-style: normal; 
+}
+@font-face { 
+  font-family: 'Helvetica Neue Cyr'; 
+  src: url('#{$helvetica-font-path}/300/italic/helveticaneuecyr-thinitalic.eot');                                           /* IE9 Compat Modes */ 
+  src: url('#{$helvetica-font-path}/300/italic/helveticaneuecyr-thinitalic.eot?#iefix') format('embedded-opentype'),        /* IE6-IE8 */ 
+       url('#{$helvetica-font-path}/300/italic/helveticaneuecyr-thinitalic.woff2') format('woff2'),                         /* Новейшие браузеры */ 
+       url('#{$helvetica-font-path}/300/italic/helveticaneuecyr-thinitalic.woff') format('woff'),                           /* Новые браузеры и IE9+ */ 
+       url('#{$helvetica-font-path}/300/italic/helveticaneuecyr-thinitalic.ttf')  format('truetype'),                       /* Старые Safari, Android, iOS */ 
+       url('#{$helvetica-font-path}/300/italic/helveticaneuecyr-thinitalic.svg#HelveticaNeueCyr-ThinItalic') format('svg'); /* Древние Safari, iOS, Android */ 
+  font-weight: 300;
+  font-style: italic;
+}
+
+/////////
+// 400 //
+/////////
+@font-face { 
+  font-family: 'Helvetica Neue Cyr'; 
+  src: url('#{$helvetica-font-path}/400/normal/helveticaneuecyr-light.eot');                                           /* IE9 Compat Modes */ 
+  src: url('#{$helvetica-font-path}/400/normal/helveticaneuecyr-light.eot?#iefix') format('embedded-opentype'),        /* IE6-IE8 */ 
+       url('#{$helvetica-font-path}/400/normal/helveticaneuecyr-light.woff2') format('woff2'),                         /* Новейшие браузеры */ 
+       url('#{$helvetica-font-path}/400/normal/helveticaneuecyr-light.woff') format('woff'),                           /* Новые браузеры и IE9+ */ 
+       url('#{$helvetica-font-path}/400/normal/helveticaneuecyr-light.ttf')  format('truetype'),                       /* Старые Safari, Android, iOS */ 
+       url('#{$helvetica-font-path}/400/normal/helveticaneuecyr-light.svg#HelveticaNeueCyr-Light') format('svg'); /* Древние Safari, iOS, Android */ 
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face { 
+  font-family: 'Helvetica Neue Cyr'; 
+  src: url('#{$helvetica-font-path}/400/italic/helveticaneuecyr-lightitalic.eot');                                           /* IE9 Compat Modes */ 
+  src: url('#{$helvetica-font-path}/400/italic/helveticaneuecyr-lightitalic.eot?#iefix') format('embedded-opentype'),        /* IE6-IE8 */ 
+       url('#{$helvetica-font-path}/400/italic/helveticaneuecyr-lightitalic.woff2') format('woff2'),                         /* Новейшие браузеры */ 
+       url('#{$helvetica-font-path}/400/italic/helveticaneuecyr-lightitalic.woff') format('woff'),                           /* Новые браузеры и IE9+ */ 
+       url('#{$helvetica-font-path}/400/italic/helveticaneuecyr-lightitalic.ttf')  format('truetype'),                       /* Старые Safari, Android, iOS */ 
+       url('#{$helvetica-font-path}/400/italic/helveticaneuecyr-lightitalic.svg#HelveticaNeueCyr-LightItalic') format('svg'); /* Древние Safari, iOS, Android */ 
+  font-weight: 400;
+  font-style: italic;
+}
+
+/////////
+// 500 //
+/////////
+@font-face { 
+  font-family: 'Helvetica Neue Cyr'; 
+  src: url('#{$helvetica-font-path}/500/normal/helveticaneuecyr-roman.eot');                                           /* IE9 Compat Modes */ 
+  src: url('#{$helvetica-font-path}/500/normal/helveticaneuecyr-roman.eot?#iefix') format('embedded-opentype'),        /* IE6-IE8 */ 
+       url('#{$helvetica-font-path}/500/normal/helveticaneuecyr-roman.woff2') format('woff2'),                         /* Новейшие браузеры */ 
+       url('#{$helvetica-font-path}/500/normal/helveticaneuecyr-roman.woff') format('woff'),                           /* Новые браузеры и IE9+ */ 
+       url('#{$helvetica-font-path}/500/normal/helveticaneuecyr-roman.ttf')  format('truetype'),                       /* Старые Safari, Android, iOS */ 
+       url('#{$helvetica-font-path}/500/normal/helveticaneuecyr-roman.svg#HelveticaNeueCyr-Roman') format('svg'); /* Древние Safari, iOS, Android */ 
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face { 
+  font-family: 'Helvetica Neue Cyr'; 
+  src: url('#{$helvetica-font-path}/500/italic/helveticaneuecyr-italic.eot');                                           /* IE9 Compat Modes */ 
+  src: url('#{$helvetica-font-path}/500/italic/helveticaneuecyr-italic.eot?#iefix') format('embedded-opentype'),        /* IE6-IE8 */ 
+       url('#{$helvetica-font-path}/500/italic/helveticaneuecyr-italic.woff2') format('woff2'),                         /* Новейшие браузеры */ 
+       url('#{$helvetica-font-path}/500/italic/helveticaneuecyr-italic.woff') format('woff'),                           /* Новые браузеры и IE9+ */ 
+       url('#{$helvetica-font-path}/500/italic/helveticaneuecyr-italic.ttf')  format('truetype'),                       /* Старые Safari, Android, iOS */ 
+       url('#{$helvetica-font-path}/500/italic/helveticaneuecyr-italic.svg#HelveticaNeueCyr-Italic') format('svg'); /* Древние Safari, iOS, Android */ 
+  font-weight: 500;
+  font-style: italic;
+}
+
+/////////
+// 600 //
+/////////
+@font-face { 
+  font-family: 'Helvetica Neue Cyr'; 
+  src: url('#{$helvetica-font-path}/600/normal/helveticaneuecyr-medium.eot');                                           /* IE9 Compat Modes */ 
+  src: url('#{$helvetica-font-path}/600/normal/helveticaneuecyr-medium.eot?#iefix') format('embedded-opentype'),        /* IE6-IE8 */ 
+       url('#{$helvetica-font-path}/600/normal/helveticaneuecyr-medium.woff2') format('woff2'),                         /* Новейшие браузеры */ 
+       url('#{$helvetica-font-path}/600/normal/helveticaneuecyr-medium.woff') format('woff'),                           /* Новые браузеры и IE9+ */ 
+       url('#{$helvetica-font-path}/600/normal/helveticaneuecyr-medium.ttf')  format('truetype'),                       /* Старые Safari, Android, iOS */ 
+       url('#{$helvetica-font-path}/600/normal/helveticaneuecyr-medium.svg#HelveticaNeueCyr-Medium') format('svg'); /* Древние Safari, iOS, Android */ 
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face { 
+  font-family: 'Helvetica Neue Cyr'; 
+  src: url('#{$helvetica-font-path}/500/italic/helveticaneuecyr-italic.eot');                                           /* IE9 Compat Modes */ 
+  src: url('#{$helvetica-font-path}/500/italic/helveticaneuecyr-italic.eot?#iefix') format('embedded-opentype'),        /* IE6-IE8 */ 
+       url('#{$helvetica-font-path}/500/italic/helveticaneuecyr-italic.woff2') format('woff2'),                         /* Новейшие браузеры */ 
+       url('#{$helvetica-font-path}/500/italic/helveticaneuecyr-italic.woff') format('woff'),                           /* Новые браузеры и IE9+ */ 
+       url('#{$helvetica-font-path}/500/italic/helveticaneuecyr-italic.ttf')  format('truetype'),                       /* Старые Safari, Android, iOS */ 
+       url('#{$helvetica-font-path}/500/italic/helveticaneuecyr-italic.svg#HelveticaNeueCyr-Italic') format('svg'); /* Древние Safari, iOS, Android */ 
+  font-weight: 600;
+  font-style: italic;
+}
+
+/////////
+// 700 //
+/////////
+@font-face { 
+  font-family: 'Helvetica Neue Cyr'; 
+  src: url('#{$helvetica-font-path}/700/normal/helveticaneuecyr-bold.eot');                                           /* IE9 Compat Modes */ 
+  src: url('#{$helvetica-font-path}/700/normal/helveticaneuecyr-bold.eot?#iefix') format('embedded-opentype'),        /* IE6-IE8 */ 
+       url('#{$helvetica-font-path}/700/normal/helveticaneuecyr-bold.woff2') format('woff2'),                         /* Новейшие браузеры */ 
+       url('#{$helvetica-font-path}/700/normal/helveticaneuecyr-bold.woff') format('woff'),                           /* Новые браузеры и IE9+ */ 
+       url('#{$helvetica-font-path}/700/normal/helveticaneuecyr-bold.ttf')  format('truetype'),                       /* Старые Safari, Android, iOS */ 
+       url('#{$helvetica-font-path}/700/normal/helveticaneuecyr-bold.svg#HelveticaNeueCyr-Bold') format('svg'); /* Древние Safari, iOS, Android */ 
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face { 
+  font-family: 'Helvetica Neue Cyr'; 
+  src: url('#{$helvetica-font-path}/700/italic/helveticaneuecyr-bolditalic.eot');                                           /* IE9 Compat Modes */ 
+  src: url('#{$helvetica-font-path}/700/italic/helveticaneuecyr-bolditalic.eot?#iefix') format('embedded-opentype'),        /* IE6-IE8 */ 
+       url('#{$helvetica-font-path}/700/italic/helveticaneuecyr-bolditalic.woff2') format('woff2'),                         /* Новейшие браузеры */ 
+       url('#{$helvetica-font-path}/700/italic/helveticaneuecyr-bolditalic.woff') format('woff'),                           /* Новые браузеры и IE9+ */ 
+       url('#{$helvetica-font-path}/700/italic/helveticaneuecyr-bolditalic.ttf')  format('truetype'),                       /* Старые Safari, Android, iOS */ 
+       url('#{$helvetica-font-path}/700/italic/helveticaneuecyr-bolditalic.svg#HelveticaNeueCyr-BoldItalic') format('svg'); /* Древние Safari, iOS, Android */ 
+  font-weight: 700;
+  font-style: italic;
+}
+
+/////////
+// 800 //
+/////////
+@font-face { 
+  font-family: 'Helvetica Neue Cyr'; 
+  src: url('#{$helvetica-font-path}/800/normal/helveticaneuecyr-black.eot');                                           /* IE9 Compat Modes */ 
+  src: url('#{$helvetica-font-path}/800/normal/helveticaneuecyr-black.eot?#iefix') format('embedded-opentype'),        /* IE6-IE8 */ 
+       url('#{$helvetica-font-path}/800/normal/helveticaneuecyr-black.woff2') format('woff2'),                         /* Новейшие браузеры */ 
+       url('#{$helvetica-font-path}/800/normal/helveticaneuecyr-black.woff') format('woff'),                           /* Новые браузеры и IE9+ */ 
+       url('#{$helvetica-font-path}/800/normal/helveticaneuecyr-black.ttf')  format('truetype'),                       /* Старые Safari, Android, iOS */ 
+       url('#{$helvetica-font-path}/800/normal/helveticaneuecyr-black.svg#HelveticaNeueCyr-Black') format('svg'); /* Древние Safari, iOS, Android */ 
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face { 
+  font-family: 'Helvetica Neue Cyr'; 
+  src: url('#{$helvetica-font-path}/800/italic/helveticaneuecyr-blackitalic.eot');                                           /* IE9 Compat Modes */ 
+  src: url('#{$helvetica-font-path}/800/italic/helveticaneuecyr-blackitalic.eot?#iefix') format('embedded-opentype'),        /* IE6-IE8 */ 
+       url('#{$helvetica-font-path}/800/italic/helveticaneuecyr-blackitalic.woff2') format('woff2'),                         /* Новейшие браузеры */ 
+       url('#{$helvetica-font-path}/800/italic/helveticaneuecyr-blackitalic.woff') format('woff'),                           /* Новые браузеры и IE9+ */ 
+       url('#{$helvetica-font-path}/800/italic/helveticaneuecyr-blackitalic.ttf')  format('truetype'),                       /* Старые Safari, Android, iOS */ 
+       url('#{$helvetica-font-path}/800/italic/helveticaneuecyr-blackitalic.svg#HelveticaNeueCyr-BlackItalic') format('svg'); /* Древние Safari, iOS, Android */ 
+  font-weight: 800;
+  font-style: italic;
+}

@@ -1,0 +1,15 @@
+.after-navigation .after-navigation{
+	&__text-logo{
+		float: left;
+	}
+	&__requer{
+		float: left;
+	}
+	&__contacts-header{
+		float: right;
+	}
+	&__button{
+		float: right;
+		margin-left: 2rem;
+	}
+}

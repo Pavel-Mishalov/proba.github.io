@@ -2,40 +2,40 @@
 		<!--[if lt IE 7]>
 			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 		<![endif]-->
-		<?php get_template_part('lib/parts/top-bar'); ?>
-<div class="owl-carousel owl-theme">
-    <div class="item"><h4>1</h4></div>
-    <div class="item"><h4>2</h4></div>
-    <div class="item"><h4>3</h4></div>
-    <div class="item"><h4>4</h4></div>
-    <div class="item"><h4>5</h4></div>
-    <div class="item"><h4>6</h4></div>
-    <div class="item"><h4>7</h4></div>
-    <div class="item"><h4>8</h4></div>
-    <div class="item"><h4>9</h4></div>
-    <div class="item"><h4>10</h4></div>
-    <div class="item"><h4>11</h4></div>
-    <div class="item"><h4>12</h4></div>
-</div>
 
+<header>
+	<div class="sticky-container" data-sticky-container>
+		<div class="navigation sticky" data-sticky data-margin-top="0" data-sticky-on="small">
+			<ul class="navigation__menu menu">
+				<li class="menu__item"><a href="#" class="menu__link">Продукция и цены</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Оплата и доставка</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Оплата и доставка</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+				<li class="menu__item menu__item_last"><a href="mailto:Info@plakatof.ru" class="menu__email">Info@plakatof.ru</a></li>
+			</ul>
+		</div>
+	</div>
 
-<p>
-  <a href="https://c1.staticflickr.com/9/8148/29324593462_abebaddc38_k.jpg" data-fancybox="images">
-      <img src="https://c1.staticflickr.com/9/8148/29324593462_f890687b7a_m.jpg" />
-  </a>
+	<div class="after-navigation">
+		<div class="after-navigation__text-logo text-logo">
+			<h1 class="text-logo__header">Плакатоф</h1>
+			<p class="text-logo__subheader">Типография полного цикла</p>
+		</div>
 
-  <a href="https://c2.staticflickr.com/6/5499/30972532232_051e1dc57e_h.jpg" data-fancybox="images">
-      <img src="https://c2.staticflickr.com/6/5499/30972532232_e9a298a0c5_m.jpg" />
-  </a>
+		<button class="after-navigation__button button">Перезвоните мне</button>
 
-  <a href="https://c1.staticflickr.com/9/8021/29345513551_0c565462d8_k.jpg" data-fancybox="images">
-      <img src="https://c1.staticflickr.com/9/8021/29345513551_16024a89e3_m.jpg" />
-  </a>
-  
-</p>
+		<div class="after-navigation__contacts-header contacts-header">
+			<h3 class="contacts-header__phone">+7 (495) 454-44-43</h3>
+			<p class="contacts-header__schedule">Пн-Пт с 10:00 до 19:00</p>
+		</div>
 
-<p>
-  <a href="https://c1.staticflickr.com/1/357/31876784275_12286240d4_h.jpg" data-fancybox="watermrk">
-      <img src="https://c1.staticflickr.com/1/357/31876784275_fbc9696913_m.jpg" />
-    </a>
-</p>
+		<div class="after-navigation__requer requer">
+			<i class="requer__icon miracle-icon-symbol"></i>
+			<a href="#" class="requer__link">
+				<span class="requer__header">Технические</span><br>
+				<span class="requer__subheader">Требования к макетам</span>
+			</a>
+		</div>	
+	</div>
+</header>

@@ -10,3 +10,5 @@ import Foundation from 'foundation-sites';
 
 
 $(document).foundation();
+
+import './BEM/after-navigation/mixin';

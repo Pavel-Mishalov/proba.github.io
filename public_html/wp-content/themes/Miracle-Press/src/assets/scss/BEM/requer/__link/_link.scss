@@ -1,0 +1,12 @@
+.requer .requer{
+	&__link{
+		margin: 0.4rem 0 0 0.75rem;
+		float: left;
+		text-decoration: underline;
+		text-decoration-color: $dark-gray;
+		&:hover{
+			color: initial;
+			text-decoration: none;
+		}
+	}
+}
