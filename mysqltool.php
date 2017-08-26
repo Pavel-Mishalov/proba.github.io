@@ -261,7 +261,7 @@ function getParamName($argument, &$paramName)
     {
         if (preg_match('#^-(?P<paramShort>[a-zA-Z0-9_]{1})$|^--(?P<paramLong>[a-zA-Z0-9_]+)$#', $argument, $matches))
         {
-            $paramName = $matches['paramShort'] ?: $matches['paramLong'];
+            $paramName = $matches['paramShort'] ? $matches['paramLong'] : '';
             $res = true;
         }
         else
