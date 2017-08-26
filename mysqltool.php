@@ -125,7 +125,7 @@ function actionDump($command)
     if ($needDumpRemote)
     {
         checkSshOrDie();
-        $remote_cmd = "php " . $ssh_folder . "/mysqltool.php dump local --filename";
+        $remote_cmd = $ssh_folder . "/mysqltool.php dump local --filename";
         $cmd = "ssh $ssh_host '$remote_cmd'";
         if (!$returnFileName) echo "Dumping remote database .... ";
         exec($cmd, $output, $return_var);
@@ -258,19 +258,19 @@ function checkSsh()
     return $state;
 }
 function getParamName($argument, &$paramName)
+{
+    if (preg_match('#^-(?P<paramShort>[a-zA-Z0-9_]{1})$|^--(?P<paramLong>[a-zA-Z0-9_]+)$#', $argument, $matches))
     {
-        if (preg_match('#^-(?P<paramShort>[a-zA-Z0-9_]{1})$|^--(?P<paramLong>[a-zA-Z0-9_]+)$#', $argument, $matches))
-        {
-            $paramName = $matches['paramShort'] ? $matches['paramLong'] : '';
-            $res = true;
-        }
-        else
-        {
-            $paramName = null;
-            $res = false;
-        }
-        return $res;
-    };
+        $paramName = $matches['paramShort'] ? '' : $matches['paramLong'];
+        $res = true;
+    }
+    else
+    {
+        $paramName = null;
+        $res = false;
+    }
+    return $res;
+}
 function parseCmdLine($argv)
 {
     $command = array(
@@ -344,13 +344,9 @@ function getConfig()
             "DB_NAME" => DB_NAME,
             "DB_USER" => DB_USER,
             "DB_PASSWORD" => DB_PASSWORD,
-            "DUMP_DIR" => "/home/d/dnovikov32/print.hardnig.ga/mysqldump",
-            "remote" => array(
-                        "sshhost" => "dnovikov32@77.222.40.193",
-                        "folder" => "/home/d/dnovikov32/print.hardnig.ga"
-                        ),
+            "DUMP_DIR" => "/home/d/dnovikov32/print.hardnig.ga/mysqldump"
         );
-        //$conf = array_replace($conf, require(__DIR__ . "/mysqltool.conf.php"));
+        $conf = array_replace($conf, require("/home/d/dnovikov32/print.hardnig.ga/mysqltool.conf.php"));
     }
     return $conf;
 }
