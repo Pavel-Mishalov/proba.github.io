@@ -1,0 +1,11 @@
+.info-card .info-card{
+	&__content{
+		font-size: 1.4rem;
+		font-weight: 500;
+		line-height: 1.2;
+		&_text-yellow{
+			color: map-get($foundation-palette, yellow);
+			font-weight: 700;
+		}
+	}
+}

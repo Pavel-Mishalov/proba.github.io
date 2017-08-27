@@ -80,3 +80,19 @@
 
 @import 'BEM/after-navigation/after-navigation';
 @import 'BEM/after-navigation/mixin/text-logo';
+
+@import 'BEM/header-title/header_title';
+@import 'BEM/header-title/__title/title';
+@import 'BEM/header-title/__subtitle/subtitle';
+
+@import 'BEM/info-card/info-card';
+@import 'BEM/info-card/__icon/icon';
+@import 'BEM/info-card/__title/title';
+@import 'BEM/info-card/__content/content';
+
+@import 'BEM/first-screen/first-screen';
+@import 'BEM/first-screen/mixin/header-title';
+@import 'BEM/first-screen/mixin/company-info';
+
+@import 'BEM/company-info/company-info';
+@import 'BEM/company-info/mixin/info-card';

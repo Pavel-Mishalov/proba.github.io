@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 40);
+/******/ 	return __webpack_require__(__webpack_require__.s = 41);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -2776,7 +2776,7 @@ if(!module.children)module.children=[];Object.defineProperty(module,"loaded",{en
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);var _whatInput=__webpack_require__(38);var _whatInput2=_interopRequireDefault(_whatInput);var _foundationSites=__webpack_require__(21);var _foundationSites2=_interopRequireDefault(_foundationSites);__webpack_require__(39);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}window.$=_jquery2.default;// If you want to pick and choose which modules to include, comment out the above and uncomment
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);var _whatInput=__webpack_require__(38);var _whatInput2=_interopRequireDefault(_whatInput);var _foundationSites=__webpack_require__(21);var _foundationSites2=_interopRequireDefault(_foundationSites);__webpack_require__(39);__webpack_require__(40);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}window.$=_jquery2.default;// If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
 (0,_jquery2.default)(document).foundation();
@@ -4858,10 +4858,17 @@ registerOnChange:function registerOnChange(fn,eventType){functionList.push({fn:f
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var on_center=function on_center(){var m=parseFloat((0,_jquery2.default)('.after-navigation__button').css('margin-left'));var w_after_nav=(0,_jquery2.default)('.after-navigation').width();var w_text_logo=(0,_jquery2.default)('.after-navigation__text-logo').outerWidth();var w_requer=(0,_jquery2.default)('.after-navigation__requer').outerWidth();var w_cont_head=(0,_jquery2.default)('.after-navigation__contacts-header').outerWidth();var w_button=(0,_jquery2.default)('.after-navigation__button').outerWidth()+m;if(w_cont_head+w_button+72<(w_after_nav-w_requer-50)/2){var width=(w_after_nav-w_requer)/2-w_text_logo+36;(0,_jquery2.default)('.after-navigation__requer').css('margin-left',width);}else if(w_text_logo+w_requer+w_cont_head+w_button<w_after_nav){var width=(w_after_nav-w_text_logo-w_requer-w_cont_head-w_button)/2;(0,_jquery2.default)('.after-navigation__requer').css('margin-left',width);}setTimeout(function(){},10);};(0,_jquery2.default)(document).ready(on_center);(0,_jquery2.default)(window).on('resize',on_center);
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var on_center=function on_center(){var m=parseFloat((0,_jquery2.default)('.after-navigation__button').css('margin-left'));var w_after_nav=(0,_jquery2.default)('.after-navigation').width();var w_text_logo=(0,_jquery2.default)('.after-navigation__text-logo').outerWidth();var w_requer=(0,_jquery2.default)('.after-navigation__requer').outerWidth();var w_cont_head=(0,_jquery2.default)('.after-navigation__contacts-header').outerWidth();var w_button=(0,_jquery2.default)('.after-navigation__button').outerWidth()+m;if(w_cont_head+w_button+62<(w_after_nav-w_requer-50)/2){var width=(w_after_nav-w_requer)/2-w_text_logo+31;(0,_jquery2.default)('.after-navigation__requer').css('margin-left',width);}else if(w_text_logo+w_requer+w_cont_head+w_button<w_after_nav){var width=(w_after_nav-w_text_logo-w_requer-w_cont_head-w_button)/2;(0,_jquery2.default)('.after-navigation__requer').css('margin-left',width);}setTimeout(function(){},10);};(0,_jquery2.default)(document).ready(on_center);(0,_jquery2.default)(window).on('resize',on_center);
 
 /***/ }),
 /* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_block=function resize_block(){var w_comp_info=(0,_jquery2.default)('.company-info').width();var count_card=(0,_jquery2.default)('.company-info .company-info__info-card').length;if((0,_jquery2.default)('body').width()>1024){var width=w_comp_info/count_card-3;}else{var width=w_comp_info/3-3;}(0,_jquery2.default)('.company-info .company-info__info-card').width(width);setTimeout(function(){},10);};(0,_jquery2.default)(document).ready(resize_block);(0,_jquery2.default)(window).on('resize',resize_block);
+
+/***/ }),
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(20);

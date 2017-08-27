@@ -7,8 +7,8 @@ var on_center = function(){
 	var w_requer    = $('.after-navigation__requer').outerWidth();
 	var w_cont_head = $('.after-navigation__contacts-header').outerWidth();
 	var w_button    = $('.after-navigation__button').outerWidth() + m;
-	if( ( w_cont_head + w_button + 72 ) < ( ( w_after_nav - w_requer - 50 ) / 2 ) ){
-		var width = ( w_after_nav - w_requer ) / 2 - w_text_logo + 36;
+	if( ( w_cont_head + w_button + 62 ) < ( ( w_after_nav - w_requer - 50 ) / 2 ) ){
+		var width = ( w_after_nav - w_requer ) / 2 - w_text_logo + 31;
 		$('.after-navigation__requer').css('margin-left', width);
 	}else if( ( w_text_logo + w_requer + w_cont_head + w_button ) < w_after_nav ){
 		var width = ( w_after_nav - w_text_logo - w_requer - w_cont_head - w_button  ) / 2;

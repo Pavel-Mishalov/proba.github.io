@@ -9,7 +9,7 @@
 			<ul class="navigation__menu menu">
 				<li class="menu__item"><a href="#" class="menu__link">Продукция и цены</a></li>
 				<li class="menu__item"><a href="#" class="menu__link">Оплата и доставка</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">Оплата и доставка</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Примеры работ</a></li>
 				<li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
 				<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
 				<li class="menu__item menu__item_last"><a href="mailto:Info@plakatof.ru" class="menu__email">Info@plakatof.ru</a></li>
