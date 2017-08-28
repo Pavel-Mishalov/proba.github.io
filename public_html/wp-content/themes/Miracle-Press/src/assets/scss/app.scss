@@ -93,7 +93,7 @@
 @import 'BEM/first-screen/first-screen';
 @import 'BEM/first-screen/mixin/header-title';
 @import 'BEM/first-screen/mixin/company-info';
-@import 'BEM/first-screen/mixin/header-form';
+@import 'BEM/first-screen/mixin/wrap-form';
 
 @import 'BEM/company-info/company-info';
 @import 'BEM/company-info/mixin/info-card';
@@ -109,8 +109,8 @@
 
 @import 'BEM/form/form';
 
-@import 'BEM/header-form/header-form';
-@import 'BEM/header-form/mixin/form-title';
+@import 'BEM/wrap-form/wrap-form';
+@import 'BEM/wrap-form/mixin/form-title';
 
 @import 'BEM/section-title/__title/title';
 @import 'BEM/section-title/__subtitle/subtitle';

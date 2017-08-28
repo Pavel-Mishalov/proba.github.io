@@ -38,12 +38,12 @@
 
 	</div>
 
-	<div class="first-screen__header-form header-form">
-		<div class="header-form__form-title form-title">
+	<div class="first-screen__wrap-form wrap-form">
+		<div class="wrap-form__form-title form-title">
 			<h3 class="form-title__title">Получите расчет стоимости - Это бесплатно!</h3>
 			<p class="form-title__subtitle">Все поля со знаком <span class="form-title__subtitle_color">*</span> обязательны для заполнения</p>
 		</div>
-		<div class="header-form__form form">
+		<div class="wrap-form__form form">
 			<form action="javascript:void(0)">
 
 				<div class="input input_width-medium input_padding-right">
