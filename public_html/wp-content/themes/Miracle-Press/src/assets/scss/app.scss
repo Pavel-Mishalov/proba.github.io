@@ -93,6 +93,21 @@
 @import 'BEM/first-screen/first-screen';
 @import 'BEM/first-screen/mixin/header-title';
 @import 'BEM/first-screen/mixin/company-info';
+@import 'BEM/first-screen/mixin/header-form';
 
 @import 'BEM/company-info/company-info';
 @import 'BEM/company-info/mixin/info-card';
+
+@import 'BEM/input/input';
+@import 'BEM/input/__label/label';
+@import 'BEM/input/__text-input/text-input';
+@import 'BEM/input/__submit/submit';
+@import 'BEM/input/__text-help/text-help';
+
+@import 'BEM/block-title/__title/title';
+@import 'BEM/block-title/__subtitle/subtitle';
+
+@import 'BEM/form/form';
+
+@import 'BEM/header-form/header-form';
+@import 'BEM/header-form/mixin/block-title';

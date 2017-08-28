@@ -1,0 +1,13 @@
+.input{
+	width: calc( 100% / 3 - 2px );
+	display: inline-grid;
+	&_padding-right{
+		padding-right: 2.8rem;
+	}
+	&_width-medium{
+		width: calc( 100% / 3 - 1.2rem );
+	}
+	&_width-big{
+		width: calc( 100% / 3 + 1.5rem );
+	}
+}

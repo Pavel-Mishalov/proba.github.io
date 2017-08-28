@@ -5,7 +5,7 @@
 
 <header>
 	<div class="sticky-container" data-sticky-container>
-		<div class="navigation sticky" data-sticky data-margin-top="0" data-sticky-on="small">
+		<div class="navigation navigation_scroll sticky" data-sticky data-margin-top="0" data-sticky-on="small">
 			<ul class="navigation__menu menu">
 				<li class="menu__item"><a href="#" class="menu__link">Продукция и цены</a></li>
 				<li class="menu__item"><a href="#" class="menu__link">Оплата и доставка</a></li>

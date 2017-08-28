@@ -1,3 +1,10 @@
 .navigation{
 	border-bottom: 0.1rem solid map-get($foundation-palette, 'secondary');
+	&_scroll{
+		background-color: rgba( $white, 0.75 );
+		transition: background-color 0.3s ease 0s;
+		&:hover{
+			background-color: $white;
+		}
+	}
 }

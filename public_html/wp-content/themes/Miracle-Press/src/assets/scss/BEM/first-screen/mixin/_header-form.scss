@@ -1,0 +1,6 @@
+.first-screen .first-screen{
+	&__header-form{
+		margin: 3.7rem auto 0;
+		max-width: calc( #{$global-width} - 4.5rem );
+	}
+}

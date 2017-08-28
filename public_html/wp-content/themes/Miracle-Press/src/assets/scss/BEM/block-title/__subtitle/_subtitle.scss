@@ -1,0 +1,13 @@
+.block-title .block-title{
+	&__subtitle{
+		font-weight: 500;
+		font-size: 1.2rem;
+		color: $dark-gray;
+		text-align: center;
+		&_color{
+			font-size: 1.8rem;
+			color: $orange;
+			margin: 0 0.2rem;
+		}
+	}
+}

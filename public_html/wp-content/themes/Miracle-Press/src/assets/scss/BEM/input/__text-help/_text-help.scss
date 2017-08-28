@@ -1,0 +1,21 @@
+.input .input{
+	&__text-help{
+		text-align: center;
+		font-weight: 500;
+		font-size: 1.1rem;
+		color: $dark-gray;
+		margin-top: 1.2rem;
+		&_color{
+			font-weight: 700;
+			color:  map-get($foundation-palette, primary);
+		}
+		&_link{
+			font-weight: 700;
+			color:  map-get($foundation-palette, primary);
+			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}

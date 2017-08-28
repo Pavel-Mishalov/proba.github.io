@@ -1,0 +1,19 @@
+.input .input{
+	&__submit{
+		font-weight: 600;
+		font-size: 1.2rem;
+		padding: 1.5rem 3.2rem;
+		border-radius: 3.2rem;
+		text-transform: uppercase;
+		line-height: 1.25;
+		color: $white;
+		background-color: map-get($foundation-palette, primary);
+		border: none;
+		outline: none;
+		transition: background-color 0.25s ease-out, color 0.25s ease-out;
+		&:hover{
+			cursor: pointer;
+			background-color: $orange;
+		}
+	}
+}
