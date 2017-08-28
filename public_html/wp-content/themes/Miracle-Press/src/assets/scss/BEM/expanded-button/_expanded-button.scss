@@ -1,0 +1,13 @@
+.expanded-button{
+	position: relative;
+	text-align: center;
+	&::before{
+		content: "";
+		background-color: #dadada;
+		height: 0.1rem;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: calc( 50% - 0.05rem );
+	}
+}

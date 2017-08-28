@@ -104,10 +104,15 @@
 @import 'BEM/input/__submit/submit';
 @import 'BEM/input/__text-help/text-help';
 
+@import 'BEM/textarea/textarea';
+@import 'BEM/textarea/__label/label';
+@import 'BEM/textarea/__text-input/text-input';
+
 @import 'BEM/form-title/__title/title';
 @import 'BEM/form-title/__subtitle/subtitle';
 
 @import 'BEM/form/form';
+@import 'BEM/form/mixin/edition';
 
 @import 'BEM/wrap-form/wrap-form';
 @import 'BEM/wrap-form/mixin/form-title';
@@ -122,3 +127,12 @@
 
 @import 'BEM/price-list/mixin/section-title';
 @import 'BEM/price-list/mixin/product-card';
+
+@import 'BEM/cost-calculation/cost-calculation';
+@import 'BEM/cost-calculation/mixin/wrap-form';
+
+@import 'BEM/expanded-button/expanded-button';
+@import 'BEM/expanded-button/__button/button';
+
+@import 'BEM/edition/mixin/form-title';
+@import 'BEM/edition/mixin/textarea';

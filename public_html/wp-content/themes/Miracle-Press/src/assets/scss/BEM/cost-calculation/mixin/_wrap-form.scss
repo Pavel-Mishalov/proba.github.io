@@ -1,0 +1,6 @@
+.cost-calculation .cost-calculation{
+	&__wrap-form{
+		margin: 0 auto;
+		max-width: calc( #{$global-width} - 4.5rem );
+	}
+}
