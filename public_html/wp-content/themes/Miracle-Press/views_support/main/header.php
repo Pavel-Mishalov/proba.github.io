@@ -1,4 +1,4 @@
-<div class="first-screen" style="background-image: url('<?= get_template_directory_uri() ?>/dist/assets/images/header-bg.jpg')">
+<div id="header" class="first-screen" style="background-image: url('<?= get_template_directory_uri() ?>/dist/assets/images/header-bg.jpg')">
 	<div class="first-screen__header-title header-title">
 		<h1 class="header-title__title">Типография полного цикла</h1>
 		<h3 class="header-title__subtitle">Доставка по Москве и Московской области.</h3>
@@ -39,9 +39,9 @@
 	</div>
 
 	<div class="first-screen__header-form header-form">
-		<div class="header-form__block-title block-title">
-			<h3 class="block-title__title">Получите расчет стоимости - Это бесплатно!</h3>
-			<p class="block-title__subtitle">Все поля со знаком <span class="block-title__subtitle_color">*</span> обязательны для заполнения</p>
+		<div class="header-form__form-title form-title">
+			<h3 class="form-title__title">Получите расчет стоимости - Это бесплатно!</h3>
+			<p class="form-title__subtitle">Все поля со знаком <span class="form-title__subtitle_color">*</span> обязательны для заполнения</p>
 		</div>
 		<div class="header-form__form form">
 			<form action="javascript:void(0)">

@@ -1,0 +1,11 @@
+.price-list .price-list{
+	&__product-card{
+		display: inline-grid;
+		margin: 0 1.5rem 3rem;
+		width: calc( 100% / 4 - 3.5rem );
+	}
+	&__products{
+		max-width: rem-calc(1180);
+		margin: 0 auto 1.6rem;
+	}
+}

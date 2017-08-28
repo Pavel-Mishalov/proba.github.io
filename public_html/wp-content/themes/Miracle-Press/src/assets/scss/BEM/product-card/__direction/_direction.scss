@@ -1,0 +1,24 @@
+.product-card .product-card{
+	&__direction{
+		font-weight: 600;
+		font-size: 1.2rem;
+		color: $dark-gray;
+		border: 1px solid #eae8e8;
+		border-top: none;
+		display: block;
+		transition: all 0.2s ease-in 0s;
+		width: 100%;
+		padding: 1.2rem 1.8rem 0.6rem;
+		line-height: 1.4;
+		&:hover{
+			cursor: pointer;
+			background-color: $blue;
+			border-left: none;
+			border-right: none;
+			color: $white;
+		}
+		&_bg-gray{
+			background-color: #f9f9f9;
+		}
+	}
+}

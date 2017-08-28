@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 41);
+/******/ 	return __webpack_require__(__webpack_require__.s = 42);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -2776,7 +2776,7 @@ if(!module.children)module.children=[];Object.defineProperty(module,"loaded",{en
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);var _whatInput=__webpack_require__(38);var _whatInput2=_interopRequireDefault(_whatInput);var _foundationSites=__webpack_require__(21);var _foundationSites2=_interopRequireDefault(_foundationSites);__webpack_require__(39);__webpack_require__(40);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}window.$=_jquery2.default;// If you want to pick and choose which modules to include, comment out the above and uncomment
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);var _whatInput=__webpack_require__(38);var _whatInput2=_interopRequireDefault(_whatInput);var _foundationSites=__webpack_require__(21);var _foundationSites2=_interopRequireDefault(_foundationSites);__webpack_require__(39);__webpack_require__(40);__webpack_require__(41);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}window.$=_jquery2.default;// If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
 (0,_jquery2.default)(document).foundation();
@@ -4869,6 +4869,13 @@ var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);
 
 /***/ }),
 /* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_image=function resize_image(){(0,_jquery2.default)('.product-card__image').each(function(index,element){var width=(0,_jquery2.default)(element).width();var height=width/1.45;(0,_jquery2.default)(element).height(height);});};(0,_jquery2.default)(document).ready(resize_image);(0,_jquery2.default)(window).on('resize',resize_image);
+
+/***/ }),
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(20);

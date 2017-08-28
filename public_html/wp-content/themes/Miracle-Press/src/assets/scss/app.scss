@@ -104,10 +104,21 @@
 @import 'BEM/input/__submit/submit';
 @import 'BEM/input/__text-help/text-help';
 
-@import 'BEM/block-title/__title/title';
-@import 'BEM/block-title/__subtitle/subtitle';
+@import 'BEM/form-title/__title/title';
+@import 'BEM/form-title/__subtitle/subtitle';
 
 @import 'BEM/form/form';
 
 @import 'BEM/header-form/header-form';
-@import 'BEM/header-form/mixin/block-title';
+@import 'BEM/header-form/mixin/form-title';
+
+@import 'BEM/section-title/__title/title';
+@import 'BEM/section-title/__subtitle/subtitle';
+
+@import 'BEM/product-card/product-card';
+@import 'BEM/product-card/__image/image';
+@import 'BEM/product-card/__title/title';
+@import 'BEM/product-card/__direction/direction';
+
+@import 'BEM/price-list/mixin/section-title';
+@import 'BEM/price-list/mixin/product-card';

@@ -1,0 +1,11 @@
+.product-card .product-card{
+	&__title{
+		font-weight: 700;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		border: 1px solid #eae8e8;
+		border-top: none;
+		padding: 1.8rem;
+		line-height: 1;
+	}
+}

@@ -9,4 +9,6 @@ Template Name: Страница "Главная страница"
 	
 	include( THEME . '/views_support/main/header.php' );
 	
+	include( THEME . '/views_support/main/price-list.php' );
+	
 	get_footer();
