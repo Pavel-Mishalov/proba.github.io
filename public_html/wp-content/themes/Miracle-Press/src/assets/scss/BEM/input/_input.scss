@@ -10,4 +10,10 @@
 	&_width-big{
 		width: calc( 100% / 3 + 1.5rem );
 	}
+
+	&_submit-center{
+		margin: 0.9rem auto 0;
+		display: grid;
+		width: calc( 100% / 3 + 2rem );
+	}
 }

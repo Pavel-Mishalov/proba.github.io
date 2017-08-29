@@ -1,5 +1,9 @@
 .edition .edition{
 	&__textarea{
 		margin-top: 2.2rem;
+		margin-bottom: 1.2rem;
+		&_small-margin{
+			margin-top: 1.2rem;
+		}
 	}
 }

@@ -41,6 +41,57 @@
 						<label for="ccc4" class="textarea__label">Описание задачи:</label>
 						<textarea id="ccc4" class="textarea__text-input" placeholder="Нужно напечатать рекламную продукцию к открытию магазина (визитки, буклеты), а так же сделать световую вывеску"></textarea>
 					</div>
+
+					<div class="edition__input edition__input_padding-right input">
+						<label for="bbb5" class="input__label">Вид услуги:</label>
+						<input id="bbb5" class="input__text-input" type="text" placeholder="Визитки банер">
+					</div>
+
+					<div class="edition__input edition__input_padding-right input">
+						<label for="bbb6" class="input__label">Материал:</label>
+						<input id="bbb6" class="input__text-input" type="text" placeholder="Пленка соакал / бумага 300 гр">
+					</div>
+
+					<div class="edition__input edition__input_padding-right input">
+						<label for="bbb7" class="input__label">Количество (тираж, метраж):</label>
+						<input id="bbb7" class="input__text-input" type="text" placeholder="10 000шт/ 100м2">
+					</div>
+
+					<div class="edition__input input">
+						<label for="bbb8" class="input__label">Размер (формат):</label>
+						<input id="bbb8" class="input__text-input" type="text" placeholder="1000 мм х 7000 мм / 10см х 15см">
+					</div>
+
+					<div class="edition__input edition__input_padding-right input">
+						<label for="bbb9" class="input__label">Сроки:</label>
+						<input id="bbb9" class="input__text-input" type="text" placeholder="к 10.07 / 3 дня">
+					</div>
+
+					<div class="edition__input edition__input_padding-right input">
+						<label for="bbb10" class="input__label">Доставка/самовывоз/монтаж:</label>
+						<input id="bbb10" class="input__text-input" type="text" placeholder="Напишите, что вампотребуется">
+					</div>
+
+					<div class="edition__input edition__input_padding-right input">
+						<label for="bbb11" class="input__label">Способ оплаты:</label>
+						<input id="bbb11" class="input__text-input" type="text" placeholder="Наличными / безналичный расчет">
+					</div>
+
+					<div class="edition__input input">
+						<label for="bbb12" class="input__label">Прикрепите файлы: фото или проект:</label>
+						<input id="bbb12" class="input__text-input" type="text" placeholder="Файл">
+					</div>
+
+					<div class="edition__textarea edition__textarea_small-margin textarea">
+						<label for="ccc13" class="textarea__label">Дополнительная информация:</label>
+						<textarea id="ccc13" class="textarea__text-input" placeholder="Нужен выезд специалиста для замера вывески"></textarea>
+					</div>
+
+					<div class="input input_submit-center">
+						<label for="bbb14" class="input__label"></label>
+						<input id="bbb14" class="input__submit" type="submit" value="Хочу получить расчет стоимости">
+						<p class="input__text-help">Когда вы заполняете телефон и другие данные, Вы автоматически соглашаетесь с <a href="#" class="input__text-help_link">правилами обработки персональных данных</a></p>
+					</div>
 				
 				</div>
 
