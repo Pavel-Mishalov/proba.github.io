@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 43);
+/******/ 	return __webpack_require__(__webpack_require__.s = 46);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -2776,7 +2776,7 @@ if(!module.children)module.children=[];Object.defineProperty(module,"loaded",{en
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);var _whatInput=__webpack_require__(38);var _whatInput2=_interopRequireDefault(_whatInput);var _foundationSites=__webpack_require__(21);var _foundationSites2=_interopRequireDefault(_foundationSites);__webpack_require__(39);__webpack_require__(40);__webpack_require__(41);__webpack_require__(42);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}window.$=_jquery2.default;// If you want to pick and choose which modules to include, comment out the above and uncomment
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);var _whatInput=__webpack_require__(38);var _whatInput2=_interopRequireDefault(_whatInput);var _foundationSites=__webpack_require__(21);var _foundationSites2=_interopRequireDefault(_foundationSites);__webpack_require__(39);__webpack_require__(41);__webpack_require__(44);__webpack_require__(43);__webpack_require__(45);__webpack_require__(40);__webpack_require__(42);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}window.$=_jquery2.default;// If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
 (0,_jquery2.default)(document).foundation();
@@ -4865,24 +4865,45 @@ var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_block=function resize_block(){var w_comp_info=(0,_jquery2.default)('.company-info').width();var count_card=(0,_jquery2.default)('.company-info .company-info__info-card').length;if((0,_jquery2.default)('body').width()>1024){var width=w_comp_info/count_card-3;}else{var width=w_comp_info/3-3;}(0,_jquery2.default)('.company-info .company-info__info-card').width(width);setTimeout(function(){},10);};(0,_jquery2.default)(document).ready(resize_block);(0,_jquery2.default)(window).on('resize',resize_block);
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var toggle_mobile_menu=function toggle_mobile_menu(event){event.preventDefault();var href=(0,_jquery2.default)(this).attr('href');(0,_jquery2.default)('.canvas-menu').toggleClass('canvas-menu_animation-show canvas-menu_animation-hide');if(href!=undefined){(0,_jquery2.default)('html, body').animate({scrollTop:(0,_jquery2.default)(href).offset().top-50},1500);}};(0,_jquery2.default)('.nav-mobile__icon').on('click',toggle_mobile_menu);(0,_jquery2.default)('.canvas-menu__close-button').on('click',toggle_mobile_menu);(0,_jquery2.default)('.canvas-menu__link').on('click',toggle_mobile_menu);
 
 /***/ }),
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_image=function resize_image(){(0,_jquery2.default)('.product-card__image').each(function(index,element){var width=(0,_jquery2.default)(element).width();var height=width/1.45;(0,_jquery2.default)(element).height(height);});};(0,_jquery2.default)(document).ready(resize_image);(0,_jquery2.default)(window).on('resize',resize_image);
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_block=function resize_block(){var w_comp_info=(0,_jquery2.default)('.company-info').width();var count_card=(0,_jquery2.default)('.company-info .company-info__info-card').length;if((0,_jquery2.default)('body').width()>1024){var width=w_comp_info/count_card-3;}else{var width=w_comp_info/3-3;}(0,_jquery2.default)('.company-info .company-info__info-card').width(width);setTimeout(function(){},10);};(0,_jquery2.default)(document).ready(resize_block);(0,_jquery2.default)(window).on('resize',resize_block);
 
 /***/ }),
 /* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_block=function resize_block(){var w_comp_info=(0,_jquery2.default)('.working-steps').width();var count_step=(0,_jquery2.default)('.working-steps .working-steps__step-work').length;if((0,_jquery2.default)('body').width()>1024){var width=w_comp_info/count_step-count_step;}else{var width=w_comp_info/3-3;}(0,_jquery2.default)('.working-steps .working-steps__step-work').width(width);setTimeout(function(){},10);};(0,_jquery2.default)(document).ready(resize_block);(0,_jquery2.default)(window).on('resize',resize_block);
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var toggle_mobile_menu=function toggle_mobile_menu(event){event.preventDefault();var href=(0,_jquery2.default)(this).attr('href');if(href!=undefined&&href!='#'){(0,_jquery2.default)('html, body').animate({scrollTop:(0,_jquery2.default)(href).offset().top-50},1500);}};(0,_jquery2.default)('.menu__link_anchor').on('click',toggle_mobile_menu);
 
 /***/ }),
 /* 43 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}(0,_jquery2.default)('.navigation[data-sticky]').on('sticky.zf.stuckto:top',function(){(0,_jquery2.default)(this).addClass('navigation_scroll');}).on('sticky.zf.unstuckfrom:top',function(){(0,_jquery2.default)(this).removeClass('navigation_scroll');});
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_image=function resize_image(){(0,_jquery2.default)('.product-card__image').each(function(index,element){var width=(0,_jquery2.default)(element).width();var height=width/1.45;(0,_jquery2.default)(element).height(height);});};(0,_jquery2.default)(document).ready(resize_image);(0,_jquery2.default)(window).on('resize',resize_image);
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_block=function resize_block(){var w_comp_info=(0,_jquery2.default)('.working-steps').width();var count_step=(0,_jquery2.default)('.working-steps .working-steps__step-work').length;if((0,_jquery2.default)('body').width()>950){if(count_step<7){var width=w_comp_info/count_step-count_step;(0,_jquery2.default)('.working-steps .working-steps__step-work').width(width);}else{var width=w_comp_info/6-count_step;(0,_jquery2.default)('.working-steps .working-steps__step-work').width(width);}}setTimeout(function(){},10);};(0,_jquery2.default)(document).ready(resize_block);(0,_jquery2.default)(window).on('resize',resize_block);var rem_calc=function rem_calc(){var body=(0,_jquery2.default)('body').width();if(body<1200){var rem=body*3/950+6.25;(0,_jquery2.default)('html').css('font-size',rem+'px');}};(0,_jquery2.default)(document).ready(rem_calc);(0,_jquery2.default)(window).on('resize',rem_calc);
+
+/***/ }),
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(20);

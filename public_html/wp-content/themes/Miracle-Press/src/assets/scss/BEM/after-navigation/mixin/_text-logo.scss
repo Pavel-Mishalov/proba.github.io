@@ -14,3 +14,35 @@
 		margin-left: 3.1rem;
 	}
 }
+
+
+
+@media only screen and (max-width: 900px){
+	.after-navigation .after-navigation{
+		&__text-logo{
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 600px){
+
+	.after-navigation{
+		text-align: center;
+		&__requer{
+			margin: 0 !important;
+			float: none !important;
+			display: inline-block;
+		}
+		&__contacts-header{
+			float: none !important;
+			text-align: center;
+		}
+		&__button{
+			float: none !important;
+			margin: 0 auto !important;
+			display: block;
+		}
+	}
+
+}

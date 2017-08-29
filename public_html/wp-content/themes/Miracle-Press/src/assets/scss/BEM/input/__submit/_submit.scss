@@ -12,6 +12,7 @@
 		border: none;
 		outline: none;
 		transition: background-color 0.25s ease-out, color 0.25s ease-out;
+		white-space: pre-line;
 		&:hover{
 			cursor: pointer;
 			background-color: $orange;

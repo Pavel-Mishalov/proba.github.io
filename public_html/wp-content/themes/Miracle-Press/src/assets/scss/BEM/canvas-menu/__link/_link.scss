@@ -1,0 +1,10 @@
+.canvas-menu .canvas-menu{
+	&__link{
+		padding: 1rem;
+		font-size: 2rem;
+		color: white;
+		&:hover{
+			color: #d6870b;
+		}
+	}
+}

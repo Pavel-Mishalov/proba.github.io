@@ -33,3 +33,18 @@
 		}
 	}
 }
+
+
+@media only screen and (max-width: 751px){
+
+	.cash .cash{
+		&__order-list{
+			width: 100%;
+			float: none;
+			tbody tr{
+				border: 2px solid $light-gray;
+			}
+		}
+	}
+	
+}

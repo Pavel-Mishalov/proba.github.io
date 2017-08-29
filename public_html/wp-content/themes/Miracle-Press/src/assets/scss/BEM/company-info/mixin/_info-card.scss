@@ -3,3 +3,24 @@
 		display: inline-grid;
 	}
 }
+
+@media only screen and (max-width: 1024px) and (min-width: 700px){
+
+	.company-info .company-info{
+		&__info-card{
+			margin: 1rem 0;
+		}
+	}
+
+}
+
+@media only screen and (max-width: 700px){
+
+	.company-info .company-info{
+		&__info-card{
+			width: auto !important;
+			margin: 1rem 2rem;
+		}
+	}
+
+}

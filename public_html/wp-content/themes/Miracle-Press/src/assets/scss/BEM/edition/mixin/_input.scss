@@ -8,3 +8,27 @@
 		}
 	}
 }
+
+
+@media only screen and (max-width: 901px){
+	.edition .edition{
+		&__input{
+			width: calc( 100% / 2 - 2.5rem );
+			&_padding-right{
+				margin-right: 1.5rem;
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 900px){
+	.edition .edition{
+		&__input{
+			width: 100%;
+			&_padding-right{
+				margin-right: 0;
+			}
+		}
+	}
+}

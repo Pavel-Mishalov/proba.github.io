@@ -4,14 +4,38 @@
 		<![endif]-->
 
 <header>
-	<div class="sticky-container" data-sticky-container>
-		<div class="navigation navigation_scroll sticky" data-sticky data-margin-top="0" data-sticky-on="small">
+
+
+	<div class="canvas-menu canvas-menu_animation-hide">
+		<ul>
+			<li class="canvas-menu__item"><a href="#" class="canvas-menu__link">Продукция и цены</a></li>
+			<li class="canvas-menu__item"><a href="#" class="canvas-menu__link">Оплата и доставка</a></li>
+			<li class="canvas-menu__item"><a href="#how-work" class="canvas-menu__link">Примеры работ</a></li>
+			<li class="canvas-menu__item"><a href="#" class="canvas-menu__link">Отзывы</a></li>
+			<li class="canvas-menu__item"><a href="#" class="canvas-menu__link">Контакты</a></li>
+		</ul>
+		<i class="canvas-menu__close-button miracle-icon-cancel"></i>
+	</div>
+
+	
+	<div class="nav-mobile__sticky-container sticky-container" data-sticky-container>
+		<div class="nav-mobile nav-mobile_scroll sticky" data-sticky data-margin-top="0" data-sticky-on="small">
+			<i class="nav-mobile__icon"></i>
+			<div class="nav-mobile__text-logo text-logo">
+				<h1 class="text-logo__header">Плакатоф</h1>
+				<p class="text-logo__subheader">Типография полного цикла</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="navigation__sticky-container sticky-container" data-sticky-container>
+		<div class="navigation sticky" data-sticky data-margin-top="0" data-sticky-on="small">
 			<ul class="navigation__menu menu">
-				<li class="menu__item"><a href="#" class="menu__link">Продукция и цены</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">Оплата и доставка</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">Примеры работ</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
-				<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+				<li class="menu__item"><a href="#" class="menu__link menu__link_anchor">Продукция и цены</a></li>
+				<li class="menu__item"><a href="#" class="menu__link menu__link_anchor">Оплата и доставка</a></li>
+				<li class="menu__item"><a href="#how-work" class="menu__link menu__link_anchor">Примеры работ</a></li>
+				<li class="menu__item"><a href="#" class="menu__link menu__link_anchor">Отзывы</a></li>
+				<li class="menu__item"><a href="#" class="menu__link menu__link_anchor">Контакты</a></li>
 				<li class="menu__item menu__item_last"><a href="mailto:Info@plakatof.ru" class="menu__email">Info@plakatof.ru</a></li>
 			</ul>
 		</div>

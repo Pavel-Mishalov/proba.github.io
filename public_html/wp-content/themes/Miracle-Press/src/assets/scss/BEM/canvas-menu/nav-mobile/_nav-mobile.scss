@@ -1,0 +1,22 @@
+.nav-mobile{
+	padding: 0.5rem;
+	border-bottom: 1px solid $light-gray;
+	overflow: hidden;
+	text-align: center;
+	&_scroll{
+		background-color: rgba( $white, 0.7 );
+		&:hover{
+			background-color: $white;
+		}
+	}
+	&__sticky-container{
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 900px){
+	.nav-mobile__sticky-container{
+		display: block;
+	}
+}
