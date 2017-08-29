@@ -1,9 +1,15 @@
 .section-title .section-title{
 	&__subtitle{
 		font-weight: 500;
-		font-size: 1.3rem;
-		color: $black;
+		font-size: 1.2rem;
+		color: $dark-gray;
 		text-align: center;
-		margin-top: 0.2rem;
+		margin-top: 0.5rem;
+		&_width-color{
+			span{
+				color: $blue;
+				font-weight: 700;
+			}
+		}
 	}
 }

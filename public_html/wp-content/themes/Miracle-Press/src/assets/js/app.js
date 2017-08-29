@@ -14,3 +14,4 @@ $(document).foundation();
 import './BEM/after-navigation/mixin';
 import './BEM/company-info/mixin';
 import './BEM/product-card/__images/images';
+import './BEM/working-steps/mixin';

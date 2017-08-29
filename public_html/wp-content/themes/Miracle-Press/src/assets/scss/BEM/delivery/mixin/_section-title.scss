@@ -1,0 +1,9 @@
+.delivery .delivery{
+	&__section-title{
+		max-width: calc( #{$global-width} - 2rem );
+		margin: 0 auto;
+		border-top: 1px solid $light-gray;
+		padding-top: 4.4rem;
+		padding-bottom: 4.3rem;
+	}
+}

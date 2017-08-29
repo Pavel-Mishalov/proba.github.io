@@ -1,5 +1,7 @@
 .price-list .price-list{
 	&__section-title{
+		max-width: rem-calc(1180);
+		margin: 0 auto;
 		padding: 4.5rem 2rem 4.5rem 1rem;
 	}
 }

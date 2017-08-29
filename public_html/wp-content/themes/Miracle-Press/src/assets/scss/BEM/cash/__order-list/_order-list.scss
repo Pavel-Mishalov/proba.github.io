@@ -1,0 +1,35 @@
+.cash .cash{
+	&__order-list{
+		width: calc( 100% / 2 - 2rem );
+		float: right;
+		margin-right: 1rem;
+		thead{
+			background-color: $blue;
+			color: $white;
+			font-size: 1.2rem;
+			text-transform: uppercase;
+			font-weight: 700;
+			line-height: 1;
+			tr th{
+				padding: 2rem 1.9rem 1.7rem;
+			}
+		}
+		tbody tr{
+			border: 1px solid $light-gray;
+			border-top: none;
+			background-color: $white;
+			td:nth-of-type(1){
+				color: $dark-gray;
+				font-weight: 600;
+				font-size: 1.2rem;
+				padding: 0.9rem 2rem 0.8rem;
+				transition: all 0.25s ease 0s;
+				&:hover{
+					font-size: 1.5rem;
+					background-color: $light-gray;
+					cursor: default;
+				}
+			}
+		}
+	}
+}

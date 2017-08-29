@@ -148,3 +148,11 @@
 
 @import 'BEM/working-steps/working-steps';
 @import 'BEM/working-steps/mixin/step-work';
+
+@import 'BEM/delivery/delivery';
+@import 'BEM/delivery/mixin/section-title';
+@import 'BEM/delivery/mixin/cash';
+
+@import 'BEM/cash/cash';
+@import 'BEM/cash/__delivery-price/delivery-price';
+@import 'BEM/cash/__order-list/order-list';

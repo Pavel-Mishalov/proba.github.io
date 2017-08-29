@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 42);
+/******/ 	return __webpack_require__(__webpack_require__.s = 43);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -2776,7 +2776,7 @@ if(!module.children)module.children=[];Object.defineProperty(module,"loaded",{en
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);var _whatInput=__webpack_require__(38);var _whatInput2=_interopRequireDefault(_whatInput);var _foundationSites=__webpack_require__(21);var _foundationSites2=_interopRequireDefault(_foundationSites);__webpack_require__(39);__webpack_require__(40);__webpack_require__(41);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}window.$=_jquery2.default;// If you want to pick and choose which modules to include, comment out the above and uncomment
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);var _whatInput=__webpack_require__(38);var _whatInput2=_interopRequireDefault(_whatInput);var _foundationSites=__webpack_require__(21);var _foundationSites2=_interopRequireDefault(_foundationSites);__webpack_require__(39);__webpack_require__(40);__webpack_require__(41);__webpack_require__(42);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}window.$=_jquery2.default;// If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
 (0,_jquery2.default)(document).foundation();
@@ -4876,6 +4876,13 @@ var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);
 
 /***/ }),
 /* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_block=function resize_block(){var w_comp_info=(0,_jquery2.default)('.working-steps').width();var count_step=(0,_jquery2.default)('.working-steps .working-steps__step-work').length;if((0,_jquery2.default)('body').width()>1024){var width=w_comp_info/count_step-count_step;}else{var width=w_comp_info/3-3;}(0,_jquery2.default)('.working-steps .working-steps__step-work').width(width);setTimeout(function(){},10);};(0,_jquery2.default)(document).ready(resize_block);(0,_jquery2.default)(window).on('resize',resize_block);
+
+/***/ }),
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(20);

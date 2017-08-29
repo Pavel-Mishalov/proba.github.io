@@ -15,4 +15,6 @@ Template Name: Страница "Главная страница"
 	
 	include( THEME . '/views_support/main/how-work.php' );
 	
+	include( THEME . '/views_support/main/delivery.php' );
+	
 	get_footer();
