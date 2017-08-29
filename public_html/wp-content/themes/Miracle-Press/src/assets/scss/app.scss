@@ -137,3 +137,14 @@
 @import 'BEM/edition/mixin/form-title';
 @import 'BEM/edition/mixin/textarea';
 @import 'BEM/edition/mixin/input';
+
+@import 'BEM/step-work/step-work';
+@import 'BEM/step-work/__icon/icon';
+@import 'BEM/step-work/__title/title';
+@import 'BEM/step-work/__content/content';
+
+@import 'BEM/how-work/how-work';
+@import 'BEM/how-work/mixin/working-steps';
+
+@import 'BEM/working-steps/working-steps';
+@import 'BEM/working-steps/mixin/step-work';

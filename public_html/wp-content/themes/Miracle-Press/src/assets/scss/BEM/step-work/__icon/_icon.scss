@@ -1,0 +1,39 @@
+.step-work .step-work{
+	&__icon{
+		font-size: 4.4rem;
+		background: $blue;
+		padding: 1.8rem;
+		position: relative;
+		box-shadow: -0.5rem 0.5rem 0 $light-gray;
+		display: block;
+		margin: 0 auto;
+		color: $white;
+		&:after{
+			content: "\e906";
+			font-family: 'icomoon' !important;
+			speak: none;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			position: absolute;
+			right: 0;
+			transform: translateX(100%) translateY(-50%);
+			top: 50%;
+			font-size: 2.2rem;
+			color: $light-gray;
+		}
+		&_last-block{
+			&:after{
+				display: none;
+			}
+		}
+	}
+}
+
+.step-work{
+	display: inline-grid;
+}

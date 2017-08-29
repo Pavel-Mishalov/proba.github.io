@@ -1,0 +1,15 @@
+.step-work .step-work{
+	&__content{
+		font-weight: 500;
+		font-size: 1.2rem;
+		color: $dark-gray;
+		text-align: center;
+		margin-top: 0.8rem;
+		a{
+			font-weight: 700;
+			&[href^="callto"]{
+				color: $dark-gray;
+			}
+		}
+	}
+}

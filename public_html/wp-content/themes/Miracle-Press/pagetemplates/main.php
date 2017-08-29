@@ -13,4 +13,6 @@ Template Name: Страница "Главная страница"
 	
 	include( THEME . '/views_support/main/cost-calculation.php' );
 	
+	include( THEME . '/views_support/main/how-work.php' );
+	
 	get_footer();
