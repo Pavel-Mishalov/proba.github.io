@@ -1,5 +1,13 @@
 .info-card .info-card{
 	&__icon{
 		font-size: 4rem;
+		transition: all 0.4s ease-in-out 0s;
+	}
+}
+
+.info-card:hover .info-card{
+	&__icon{
+		transform: rotateY( 360deg );
+		color: $orange;
 	}
 }

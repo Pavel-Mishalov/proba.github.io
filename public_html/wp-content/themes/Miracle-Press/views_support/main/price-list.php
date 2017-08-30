@@ -1,8 +1,8 @@
 <div class="price-list" id="price-list">
 
 	<div class="price-list__section-title section-title">
-		<h3 class="section-title__title">Продукция и цены</h3>
-		<p class="section-title__subtitle">Вы можете просмотреть прайс-лист той или иной услуги - просто кликнув по ней</p>
+		<h3 class="section-title__title"><?= $title ?></h3>
+		<p class="section-title__subtitle"><?= $subtitle ?></p>
 	</div>
 	
 	<div class="price-list__products">
