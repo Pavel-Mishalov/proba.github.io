@@ -1,0 +1,17 @@
+.work-card .work-card{
+	&__title{
+		font-weight: 700;
+		color: $white;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+		line-height: 1;
+		padding: 2rem;
+		transition: all 0.3s ease-in 0s;
+	}
+}
+
+.work-card:hover .work-card{
+	&__title{
+		padding: 1.9rem 1.9rem 1.2rem;
+	}
+}

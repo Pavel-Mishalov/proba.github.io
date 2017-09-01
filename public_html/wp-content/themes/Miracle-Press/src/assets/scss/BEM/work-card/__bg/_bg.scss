@@ -1,0 +1,16 @@
+.work-card .work-card{
+	&__bg{
+		width: 100%;
+		height: 100%;
+		background-color: rgba( $blue, 0.6 );
+		position: relative;
+		top: calc( 100% - 5rem );
+		transition: all 0.3s ease-in 0s;
+	}
+}
+
+.work-card:hover .work-card{
+	&__bg{
+		top: 0;
+	}
+}

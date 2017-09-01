@@ -1,0 +1,37 @@
+.work-categories{
+	&__item{
+		padding: 1.9rem 1.4rem;
+		font-weight: 700;
+		font-size: 1rem;
+		text-transform: uppercase;
+		color: $dark-gray;
+		position: relative;
+		&:after{
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 3px;
+			background-color: $orange2;
+			bottom: 0;
+			left: 50%;
+			transform: translateY(100%);
+			transition: all 0.3s ease-out 0s;
+		}
+		&:hover{
+			color: $black;
+			cursor: pointer;
+			&:after{
+				width: calc( 100% - 2.8rem );
+				left: 1.4rem;
+			}
+		}
+		&_active{
+			color: $black !important;
+			cursor: default !important;
+			&:after{
+				width: calc( 100% - 2.8rem );
+				left: 1.4rem;
+			}
+		}
+	}
+}

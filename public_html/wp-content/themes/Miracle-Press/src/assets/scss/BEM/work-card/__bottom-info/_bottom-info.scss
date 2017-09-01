@@ -1,0 +1,35 @@
+.work-card .work-card{
+	&__bottom-info{
+		overflow: hidden;
+		position: relative;
+		line-height: 1;
+		color: $white;
+		font-weight: 700;
+		font-size: 1.2rem;
+		padding: 1.9rem 1.9rem 1.2rem;
+		transition: all 0.3s ease-in 0s;
+		&_left{
+			text-align: left;
+			float: left;
+		}
+		&_right{
+			text-align: right;
+			float: right;
+		}
+		&:before{
+			content: "";
+			width: calc( 100% - 4rem );
+			height: 1px;
+			background-color: $white;
+			position: absolute;
+			top: 0;
+			left: 2rem;
+		}
+	}
+}
+
+.work-card:hover .work-card{
+	&__bottom-info{
+		padding: 2rem;
+	}
+}

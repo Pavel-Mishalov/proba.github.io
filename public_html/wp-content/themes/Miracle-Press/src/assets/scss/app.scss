@@ -164,3 +164,23 @@
 @import 'BEM/canvas-menu/nav-mobile/nav-mobile';
 @import 'BEM/canvas-menu/nav-mobile/__icon/icon';
 @import 'BEM/canvas-menu/nav-mobile/mixin/text-logo';
+
+@import 'BEM/map-address/mixin/section-title';
+@import 'BEM/map-address/mixin/yandex-map';
+
+@import 'BEM/work/mixin/section-title';
+@import 'BEM/work/mixin/works';
+@import 'BEM/work/mixin/work-categories';
+@import 'BEM/work/mixin/button';
+
+@import 'BEM/work-categories/work-categories';
+@import 'BEM/work-categories/__item/item';
+
+@import 'BEM/work-card/work-card';
+@import 'BEM/work-card/__bg/bg';
+@import 'BEM/work-card/__title/title';
+@import 'BEM/work-card/__content/content';
+@import 'BEM/work-card/__bottom-info/bottom-info';
+
+@import 'BEM/form-query/form-query';
+@import 'BEM/form-query/mixin/wrap-form';

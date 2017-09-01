@@ -1,0 +1,17 @@
+.form-query{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 5.2rem 1rem 6.6rem;
+	margin-top: 2.8rem;
+}
+
+
+@media only screen and (max-width: 900px){
+
+	.form-query{
+		padding: 5.2rem 1rem 6.6rem 2rem;
+	}
+
+}

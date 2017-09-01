@@ -34,5 +34,15 @@ Template Name: Страница "Главная страница"
 	$subtitle       = str_replace( '</color>', '</span>', $subtitle );
 
 	include( THEME . '/views_support/main/delivery.php' );
+
+	$title = 'Наш адрес';
+
+	include( THEME . '/views_support/main/map-address.php' );
+
+	$title = 'Примеры наших работ';
+
+	include( THEME . '/views_support/main/work.php' );
+
+	include( THEME . '/views_support/main/form-query.php' );
 	
 	get_footer();

@@ -1,0 +1,10 @@
+.work .work{
+	&__button{
+		margin: 0 auto;
+		display: block;
+		background-color: $white;
+		border: 1px solid $dark-gray;
+		color: $black;
+		padding: 1.5rem 7rem;
+	}
+}
