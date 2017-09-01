@@ -19,4 +19,6 @@ import './BEM/working-steps/mixin';
 import './BEM/canvas-menu/mobile-menu';
 import './BEM/menu/anchor';
 import './BEM/work-categories/add-category';
+import './BEM/contacts-header/__phone/phone';
+import './BEM/contacts-header/__email/email';
 import './BEM/work/resize';

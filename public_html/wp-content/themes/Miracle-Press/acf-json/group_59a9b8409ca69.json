@@ -1,0 +1,43 @@
+{
+    "key": "group_59a9b8409ca69",
+    "title": "\u0413\u0440\u0430\u0444\u0438\u043a \u0440\u0430\u0431\u043e\u0442\u044b",
+    "fields": [
+        {
+            "key": "field_59a9b85b2dbe6",
+            "label": "\u0413\u0440\u0430\u0444\u0438\u043a",
+            "name": "miracle-global-settings-graphic",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "\u041f\u043d-\u041f\u0442 \u0441 10:00 \u0434\u043e 19:00",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "miracle-option-work"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1504303190
+}

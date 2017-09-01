@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 48);
+/******/ 	return __webpack_require__(__webpack_require__.s = 50);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -2776,7 +2776,7 @@ if(!module.children)module.children=[];Object.defineProperty(module,"loaded",{en
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);var _whatInput=__webpack_require__(38);var _whatInput2=_interopRequireDefault(_whatInput);var _foundationSites=__webpack_require__(21);var _foundationSites2=_interopRequireDefault(_foundationSites);__webpack_require__(39);__webpack_require__(41);__webpack_require__(44);__webpack_require__(43);__webpack_require__(47);__webpack_require__(40);__webpack_require__(42);__webpack_require__(45);__webpack_require__(46);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}window.$=_jquery2.default;// If you want to pick and choose which modules to include, comment out the above and uncomment
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);var _whatInput=__webpack_require__(38);var _whatInput2=_interopRequireDefault(_whatInput);var _foundationSites=__webpack_require__(21);var _foundationSites2=_interopRequireDefault(_foundationSites);__webpack_require__(39);__webpack_require__(41);__webpack_require__(46);__webpack_require__(45);__webpack_require__(49);__webpack_require__(40);__webpack_require__(44);__webpack_require__(47);__webpack_require__(43);__webpack_require__(42);__webpack_require__(48);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}window.$=_jquery2.default;// If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
 (0,_jquery2.default)(document).foundation();
@@ -4879,45 +4879,59 @@ var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var toggle_mobile_menu=function toggle_mobile_menu(event){event.preventDefault();var href=(0,_jquery2.default)(this).attr('href');if(href!=undefined&&href!='#'){(0,_jquery2.default)('html, body').animate({scrollTop:(0,_jquery2.default)(href).offset().top-50},1500);}};(0,_jquery2.default)('.menu__link_anchor').on('click',toggle_mobile_menu);
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var e='mailto:'+(0,_jquery2.default)('.menu .menu__email').text();(0,_jquery2.default)('.menu .menu__email').attr('href',e);
 
 /***/ }),
 /* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}(0,_jquery2.default)('.navigation[data-sticky]').on('sticky.zf.stuckto:top',function(){(0,_jquery2.default)(this).addClass('navigation_scroll');}).on('sticky.zf.unstuckfrom:top',function(){(0,_jquery2.default)(this).removeClass('navigation_scroll');});
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var isMobile={Android:function Android(){return navigator.userAgent.match(/Android/i);},BlackBerry:function BlackBerry(){return navigator.userAgent.match(/BlackBerry/i);},iOS:function iOS(){return navigator.userAgent.match(/iPhone|iPad|iPod/i);},Opera:function Opera(){return navigator.userAgent.match(/Opera Mini/i);},Windows:function Windows(){return navigator.userAgent.match(/IEMobile/i);},any:function any(){return isMobile.Android()||isMobile.BlackBerry()||isMobile.iOS()||isMobile.Opera()||isMobile.Windows();}};var phone_click=function phone_click(event){event.preventDefault();};if(!isMobile.any()){(0,_jquery2.default)('.contacts-header .contacts-header__phone').bind('click',phone_click);}
 
 /***/ }),
 /* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_image=function resize_image(){(0,_jquery2.default)('.product-card__image').each(function(index,element){var width=(0,_jquery2.default)(element).width();var height=width/1.45;(0,_jquery2.default)(element).height(height);});};(0,_jquery2.default)(document).ready(resize_image);(0,_jquery2.default)(window).on('resize',resize_image);
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var toggle_mobile_menu=function toggle_mobile_menu(event){event.preventDefault();var href=(0,_jquery2.default)(this).attr('href');if(href!=undefined&&href!='#'){(0,_jquery2.default)('html, body').animate({scrollTop:(0,_jquery2.default)(href).offset().top-50},1500);}};(0,_jquery2.default)('.menu__link_anchor').on('click',toggle_mobile_menu);
 
 /***/ }),
 /* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var cat_click=function cat_click(){if(!(0,_jquery2.default)(this).hasClass('work-categories__item_active')){(0,_jquery2.default)(this).parent().find('.work-categories__item_active').removeClass('work-categories__item_active');(0,_jquery2.default)(this).addClass('work-categories__item_active');}};(0,_jquery2.default)('.work-categories .work-categories__item').on('click',cat_click);
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}(0,_jquery2.default)('.navigation[data-sticky]').on('sticky.zf.stuckto:top',function(){(0,_jquery2.default)(this).addClass('navigation_scroll');}).on('sticky.zf.unstuckfrom:top',function(){(0,_jquery2.default)(this).removeClass('navigation_scroll');});
 
 /***/ }),
 /* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};};(function(window,document,undefined){_jquery2.default.fn.workResize=function(){var card=(0,_jquery2.default)('.work-card');var width=card.first().width();var max_height=width/1.2857;card.each(function(index,element){var height=(0,_jquery2.default)(element).find('.work-card__bg').css('height','auto').height();max_height=height>max_height?height:max_height;(0,_jquery2.default)(element).find('.work-card__bg').css('height','100%');});card.height(max_height);card.each(function(index,element){var height=(0,_jquery2.default)(element).find('.work-card__title').outerHeight()+(0,_jquery2.default)(element).find('.work-card__content').outerHeight()+(0,_jquery2.default)(element).find('.work-card__bottom-info').outerHeight();var m=(max_height-height)/2;(0,_jquery2.default)(element).find('.work-card__bg .work-card__content').css('margin-bottom',m).css('margin-top',m);(0,_jquery2.default)(element).find('.work-card__bg').css('height','100%');});return this;};})(window,document);(0,_jquery2.default)(document).ready(function(){(0,_jquery2.default)('.works').workResize();});(0,_jquery2.default)(window).on('resize',function(){(0,_jquery2.default)('.works').workResize();});
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_image=function resize_image(){(0,_jquery2.default)('.product-card__image').each(function(index,element){var width=(0,_jquery2.default)(element).width();var height=width/1.45;(0,_jquery2.default)(element).height(height);});};(0,_jquery2.default)(document).ready(resize_image);(0,_jquery2.default)(window).on('resize',resize_image);
 
 /***/ }),
 /* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_block=function resize_block(){var w_comp_info=(0,_jquery2.default)('.working-steps').width();var count_step=(0,_jquery2.default)('.working-steps .working-steps__step-work').length;if((0,_jquery2.default)('body').width()>950){if(count_step<7){var width=w_comp_info/count_step-count_step;(0,_jquery2.default)('.working-steps .working-steps__step-work').width(width);}else{var width=w_comp_info/6-count_step;(0,_jquery2.default)('.working-steps .working-steps__step-work').width(width);}}setTimeout(function(){},10);};(0,_jquery2.default)(document).ready(resize_block);(0,_jquery2.default)(window).on('resize',resize_block);var rem_calc=function rem_calc(){var body=(0,_jquery2.default)('body').width();if(body<1200){var rem=body*3/950+6.25;(0,_jquery2.default)('html').css('font-size',rem+'px');}};(0,_jquery2.default)(document).ready(rem_calc);(0,_jquery2.default)(window).on('resize',rem_calc);
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var cat_click=function cat_click(){if(!(0,_jquery2.default)(this).hasClass('work-categories__item_active')){(0,_jquery2.default)(this).parent().find('.work-categories__item_active').removeClass('work-categories__item_active');(0,_jquery2.default)(this).addClass('work-categories__item_active');}};(0,_jquery2.default)('.work-categories .work-categories__item').on('click',cat_click);
 
 /***/ }),
 /* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};};(function(window,document,undefined){_jquery2.default.fn.workResize=function(){var card=(0,_jquery2.default)('.work-card');var width=card.first().width();var max_height=width/1.2857;card.each(function(index,element){var height=(0,_jquery2.default)(element).find('.work-card__bg').css('height','auto').height();max_height=height>max_height?height:max_height;(0,_jquery2.default)(element).find('.work-card__bg').css('height','100%');});card.height(max_height);card.each(function(index,element){var height=(0,_jquery2.default)(element).find('.work-card__title').outerHeight()+(0,_jquery2.default)(element).find('.work-card__content').outerHeight()+(0,_jquery2.default)(element).find('.work-card__bottom-info').outerHeight();var m=(max_height-height)/2;(0,_jquery2.default)(element).find('.work-card__bg .work-card__content').css('margin-bottom',m).css('margin-top',m);(0,_jquery2.default)(element).find('.work-card__bg').css('height','100%');});return this;};})(window,document);(0,_jquery2.default)(document).ready(function(){(0,_jquery2.default)('.works').workResize();});(0,_jquery2.default)(window).on('resize',function(){(0,_jquery2.default)('.works').workResize();});
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_block=function resize_block(){var w_comp_info=(0,_jquery2.default)('.working-steps').width();var count_step=(0,_jquery2.default)('.working-steps .working-steps__step-work').length;if((0,_jquery2.default)('body').width()>950){if(count_step<7){var width=w_comp_info/count_step-count_step;(0,_jquery2.default)('.working-steps .working-steps__step-work').width(width);}else{var width=w_comp_info/6-count_step;(0,_jquery2.default)('.working-steps .working-steps__step-work').width(width);}}setTimeout(function(){},10);};(0,_jquery2.default)(document).ready(resize_block);(0,_jquery2.default)(window).on('resize',resize_block);var rem_calc=function rem_calc(){var body=(0,_jquery2.default)('body').width();if(body<1200){var rem=body*3/950+6.25;(0,_jquery2.default)('html').css('font-size',rem+'px');}};(0,_jquery2.default)(document).ready(rem_calc);(0,_jquery2.default)(window).on('resize',rem_calc);
+
+/***/ }),
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(20);

@@ -48,7 +48,7 @@ function miracle_get_company_info(){
 	if( is_page_template( 'pagetemplates/main.php' ) ):
 		$items = get_field( 'miracle-main-page-header-company-info' );
 		foreach ( $items as $item ):
-			$icon    = $item['icon'];
+			$icon    = ( $item['icommon'] ) ? $item['icon_icommon'] : 'fa ' . $item['icon_fa'];
 			$title   = $item['title'];
 			$content = $item['content'];
 			$content = str_replace( '<color>', '<span class="info-card__content_text-yellow">', $content );
