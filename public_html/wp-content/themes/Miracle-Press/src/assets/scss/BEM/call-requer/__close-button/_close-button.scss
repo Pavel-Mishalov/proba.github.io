@@ -1,0 +1,12 @@
+.call-requer{
+	&__close-button{
+		font-size: 2rem;
+		color: $black;
+		font-weight: bold;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 1rem;
+		cursor: pointer;
+	}
+}

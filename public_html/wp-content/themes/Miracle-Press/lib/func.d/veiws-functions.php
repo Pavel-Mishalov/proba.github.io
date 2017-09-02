@@ -77,6 +77,12 @@ function miracle_get_cost_calculation_form(){
 	return $html;
 }
 
+function miracle_get_modal_form(){
+	$html = '';
+	$html .= file_get_contents( get_template_directory() . '/views_support/block/contact-form-7/modal-form.php' );
+	return $html;
+}
+
 function miracle_get_company_working_steps(){
 	$html = '';
 	if( is_page_template( 'pagetemplates/main.php' ) ):
@@ -207,6 +213,13 @@ function miracle_get_modal( $views = '' ){
 				$html   .= $block;
 				break;
 			
+			case 'call-requer':
+				$block   = file_get_contents( $file );
+				$form    = miracle_get_modal_form();
+				$block   = str_replace( '<% form %>', $form, $block );
+				$html   .= $block;
+				break;
+
 			default:
 				break;
 		}

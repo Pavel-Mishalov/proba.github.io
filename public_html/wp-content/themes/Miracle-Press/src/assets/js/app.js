@@ -12,6 +12,7 @@ import Foundation from 'foundation-sites';
 $(document).foundation();
 
 import './BEM/after-navigation/mixin';
+import './BEM/after-navigation/button';
 import './BEM/company-info/mixin';
 import './BEM/product-card/__images/images';
 import './BEM/navigation/navigation-scroll';
