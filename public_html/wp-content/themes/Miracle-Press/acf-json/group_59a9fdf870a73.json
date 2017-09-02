@@ -1,0 +1,64 @@
+{
+    "key": "group_59a9fdf870a73",
+    "title": "\u0411\u043b\u043e\u043a \"\u0424\u043e\u0440\u043c\u0430 \u0437\u0430\u043a\u0430\u0437\u0430 \u0437\u0432\u043e\u043d\u043a\u0430\"",
+    "fields": [
+        {
+            "key": "field_59a9fe3509c00",
+            "label": "\u0424\u043e\u043d \u0431\u043b\u043e\u043a\u0430",
+            "name": "miracle-main-page-form-query-image",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_59a9fe7c09c01",
+            "label": "\u0417\u0430\u0444\u0438\u043a\u0441\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435",
+            "name": "miracle-main-page-form-query-attachment",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "pagetemplates\/main.php"
+            }
+        ]
+    ],
+    "menu_order": 8,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1504313027
+}

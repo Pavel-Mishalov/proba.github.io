@@ -82,7 +82,7 @@ function miracle_get_company_working_steps(){
 	if( is_page_template( 'pagetemplates/main.php' ) ):
 		$items = get_field( 'miracle-main-page-how-work-steps' );
 		foreach ( $items as $item ):
-			$icon    = $item['icon'];
+			$icon    = ( $item['icommon'] ) ? $item['icon_icommon'] : 'fa ' . $item['icon_fa'];
 			$title   = $item['title'];
 			$class   = ( next($items) ) ? '' : 'step-work_last-item';
 			$content = $item['content'];
@@ -154,6 +154,39 @@ function miracle_get_order_rate(){
 			$block  = str_replace( '<% rate %>', $rate, $block );
 			$html  .= $block;
 		endforeach;
+	endif;
+	return $html;
+}
+
+function miracle_get_work_cards(){
+	$html = '';
+	if( is_page_template( 'pagetemplates/main.php' ) ):
+		$projects = get_field( 'miracle-main-page-work-posts' );
+		$count = count( $projects );
+		$count = ( $count > 7 ) ? 6 : $count;
+
+		$iterator = 0;
+		foreach ( $projects as $project ) {
+			if( $iterator < $count ):
+				$title   = $project->post_title;
+				$content = get_field( 'miracle-project-post-content', $project->ID );
+				$image   = get_the_post_thumbnail_url( $project->ID, 'full' );
+				$data    = get_field( 'miracle-project-post-time', $project->ID );
+				$cost    = get_field( 'miracle-project-post-cost', $project->ID );
+				$block   = file_get_contents( get_template_directory() . '/views_support/block/work-card/work-card.php' );
+				$block   = str_replace( '<% title %>', $title, $block );
+				$block   = str_replace( '<% content %>', $content, $block );
+				$block   = str_replace( '<% image %>', $image, $block );
+				$block   = str_replace( '<% data %>', $data, $block );
+				$block   = str_replace( '<% cost %>', $cost, $block );
+
+				$html   .= $block;
+			else:
+				break;
+			endif;
+			$iterator++;
+		}
+
 	endif;
 	return $html;
 }

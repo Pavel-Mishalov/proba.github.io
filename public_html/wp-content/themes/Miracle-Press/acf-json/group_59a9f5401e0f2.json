@@ -1,0 +1,71 @@
+{
+    "key": "group_59a9f5401e0f2",
+    "title": "\u0411\u043b\u043e\u043a \"\u0412\u044b\u043f\u043e\u043b\u043d\u0435\u043d\u043d\u044b\u0435 \u0440\u0430\u0431\u043e\u0442\u044b\"",
+    "fields": [
+        {
+            "key": "field_59a9f566fe213",
+            "label": "\u0417\u0430\u0433\u043e\u043b\u043e\u0432\u043e\u043a \u0431\u043b\u043e\u043a\u0430",
+            "name": "miracle-main-page-work-title",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "\u041f\u0440\u0438\u043c\u0435\u0440\u044b \u043d\u0430\u0448\u0438\u0445 \u0440\u0430\u0431\u043e\u0442",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59a9f5a6fe214",
+            "label": "\u0412\u044b\u043f\u043e\u043b\u043d\u0435\u043d\u044b\u0435 \u043f\u0440\u043e\u0435\u043a\u0442\u044b",
+            "name": "miracle-main-page-work-posts",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "project"
+            ],
+            "taxonomy": [],
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "elements": [
+                "featured_image"
+            ],
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "pagetemplates\/main.php"
+            }
+        ]
+    ],
+    "menu_order": 7,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1504310817
+}

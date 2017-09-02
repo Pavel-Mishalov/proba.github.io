@@ -1,4 +1,9 @@
-<div id="form-query" class="form-query" style="background-image: url('<?= $image ?>');">
+<div
+	id="form-query"
+	class="form-query"
+	style="
+		background-image: url('<?= $image ?>');
+		background-attachment: <?= $attachment ?>">
 
 	<div class="form-query__wrap-form wrap-form">
 		<div class="wrap-form__form-title form-title">

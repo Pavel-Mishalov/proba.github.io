@@ -39,9 +39,12 @@ Template Name: Страница "Главная страница"
 
 	include( THEME . '/views_support/main/map-address.php' );
 
-	$title = 'Примеры наших работ';
+	$title = get_field( 'miracle-main-page-work-title' );
 
 	include( THEME . '/views_support/main/work.php' );
+
+	$image = get_field( 'miracle-main-page-form-query-image' );
+	$attachment = get_field( 'miracle-main-page-form-query-attachment' );
 
 	include( THEME . '/views_support/main/form-query.php' );
 	
