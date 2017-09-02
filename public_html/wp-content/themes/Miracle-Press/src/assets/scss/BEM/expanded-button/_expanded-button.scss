@@ -9,5 +9,12 @@
 		position: absolute;
 		left: 0;
 		top: calc( 50% - 0.05rem );
+		transition: all 0.4s ease-in 0.5s;
+	}
+	&_active{
+		&::before{
+			left: 50%;
+			width: 0;
+		}
 	}
 }

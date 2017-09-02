@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 52);
+/******/ 	return __webpack_require__(__webpack_require__.s = 53);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -2776,7 +2776,7 @@ if(!module.children)module.children=[];Object.defineProperty(module,"loaded",{en
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);var _whatInput=__webpack_require__(38);var _whatInput2=_interopRequireDefault(_whatInput);var _foundationSites=__webpack_require__(21);var _foundationSites2=_interopRequireDefault(_foundationSites);__webpack_require__(40);__webpack_require__(39);__webpack_require__(42);__webpack_require__(47);__webpack_require__(46);__webpack_require__(51);__webpack_require__(41);__webpack_require__(45);__webpack_require__(49);__webpack_require__(44);__webpack_require__(43);__webpack_require__(50);__webpack_require__(48);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}window.$=_jquery2.default;// If you want to pick and choose which modules to include, comment out the above and uncomment
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);var _whatInput=__webpack_require__(38);var _whatInput2=_interopRequireDefault(_whatInput);var _foundationSites=__webpack_require__(21);var _foundationSites2=_interopRequireDefault(_foundationSites);__webpack_require__(40);__webpack_require__(39);__webpack_require__(42);__webpack_require__(48);__webpack_require__(47);__webpack_require__(52);__webpack_require__(41);__webpack_require__(46);__webpack_require__(50);__webpack_require__(44);__webpack_require__(43);__webpack_require__(51);__webpack_require__(49);__webpack_require__(45);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}window.$=_jquery2.default;// If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
 (0,_jquery2.default)(document).foundation();
@@ -4900,52 +4900,59 @@ var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var toggle_mobile_menu=function toggle_mobile_menu(event){event.preventDefault();var href=(0,_jquery2.default)(this).attr('href');if(href!=undefined&&href!='#'){(0,_jquery2.default)('html, body').animate({scrollTop:(0,_jquery2.default)(href).offset().top-50},1500);}};(0,_jquery2.default)('.menu__link_anchor').on('click',toggle_mobile_menu);
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var toggle_form=function toggle_form(){(0,_jquery2.default)('.form__edition.edition *').not('.expanded-button *').not('.expanded-button').slideToggle(500);var text=(0,_jquery2.default)('.expanded-button__button').text()=='Свернуть'?'Показать подробнее':'Свернуть';(0,_jquery2.default)('.expanded-button__button').text(text);(0,_jquery2.default)('.expanded-button').toggleClass('expanded-button_active');};(0,_jquery2.default)('.expanded-button__button').on('click',toggle_form);(0,_jquery2.default)(document).ready(toggle_form);
 
 /***/ }),
 /* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}(0,_jquery2.default)('.navigation[data-sticky]').on('sticky.zf.stuckto:top',function(){(0,_jquery2.default)(this).addClass('navigation_scroll');}).on('sticky.zf.unstuckfrom:top',function(){(0,_jquery2.default)(this).removeClass('navigation_scroll');});
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var toggle_mobile_menu=function toggle_mobile_menu(event){event.preventDefault();var href=(0,_jquery2.default)(this).attr('href');if(href!=undefined&&href!='#'){(0,_jquery2.default)('html, body').animate({scrollTop:(0,_jquery2.default)(href).offset().top-50},1500);}};(0,_jquery2.default)('.menu__link_anchor').on('click',toggle_mobile_menu);
 
 /***/ }),
 /* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_image=function resize_image(){(0,_jquery2.default)('.product-card__image').each(function(index,element){var width=(0,_jquery2.default)(element).width();var height=width/1.45;(0,_jquery2.default)(element).height(height);});};(0,_jquery2.default)(document).ready(resize_image);(0,_jquery2.default)(window).on('resize',resize_image);
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}(0,_jquery2.default)('.navigation[data-sticky]').on('sticky.zf.stuckto:top',function(){(0,_jquery2.default)(this).addClass('navigation_scroll');}).on('sticky.zf.unstuckfrom:top',function(){(0,_jquery2.default)(this).removeClass('navigation_scroll');});
 
 /***/ }),
 /* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var open_tech_requerement_modal=function open_tech_requerement_modal(event){event.preventDefault();(0,_jquery2.default)('.modal').addClass('modal_show');(0,_jquery2.default)('.modal').data('open','tech-requerement');(0,_jquery2.default)('.modal__tech-requerement').addClass('modal__tech-requerement_show').focus();};var close_tech_requerement_modal=function close_tech_requerement_modal(event){event.preventDefault();(0,_jquery2.default)('.modal').removeClass('modal_show');var modal=(0,_jquery2.default)('.modal').data('open');(0,_jquery2.default)('.modal__'+modal).removeClass('modal__'+modal+'_show');};var onfocus_tech_requerement_modal=function onfocus_tech_requerement_modal(event){if((0,_jquery2.default)(event.target).hasClass('modal_show')){var modal=(0,_jquery2.default)('.modal').data('open');var container=(0,_jquery2.default)('.modal__'+modal);(0,_jquery2.default)('.modal').removeClass('modal_show');(0,_jquery2.default)('.modal__'+modal).removeClass('modal__'+modal+'_show');}};(0,_jquery2.default)('.requer__link').on('click',open_tech_requerement_modal);(0,_jquery2.default)('.tech-requerement__close-button').on('click',close_tech_requerement_modal);(0,_jquery2.default)('.modal').bind('click',onfocus_tech_requerement_modal);
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_image=function resize_image(){(0,_jquery2.default)('.product-card__image').each(function(index,element){var width=(0,_jquery2.default)(element).width();var height=width/1.45;(0,_jquery2.default)(element).height(height);});};(0,_jquery2.default)(document).ready(resize_image);(0,_jquery2.default)(window).on('resize',resize_image);
 
 /***/ }),
 /* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var cat_click=function cat_click(){if(!(0,_jquery2.default)(this).hasClass('work-categories__item_active')){(0,_jquery2.default)(this).parent().find('.work-categories__item_active').removeClass('work-categories__item_active');(0,_jquery2.default)(this).addClass('work-categories__item_active');}};(0,_jquery2.default)('.work-categories .work-categories__item').on('click',cat_click);
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var open_tech_requerement_modal=function open_tech_requerement_modal(event){event.preventDefault();(0,_jquery2.default)('.modal').addClass('modal_show');(0,_jquery2.default)('.modal').data('open','tech-requerement');(0,_jquery2.default)('.modal__tech-requerement').addClass('modal__tech-requerement_show').focus();};var close_tech_requerement_modal=function close_tech_requerement_modal(event){event.preventDefault();(0,_jquery2.default)('.modal').removeClass('modal_show');var modal=(0,_jquery2.default)('.modal').data('open');(0,_jquery2.default)('.modal__'+modal).removeClass('modal__'+modal+'_show');};var onfocus_tech_requerement_modal=function onfocus_tech_requerement_modal(event){if((0,_jquery2.default)(event.target).hasClass('modal_show')){var modal=(0,_jquery2.default)('.modal').data('open');var container=(0,_jquery2.default)('.modal__'+modal);(0,_jquery2.default)('.modal').removeClass('modal_show');(0,_jquery2.default)('.modal__'+modal).removeClass('modal__'+modal+'_show');}};(0,_jquery2.default)('.requer__link').on('click',open_tech_requerement_modal);(0,_jquery2.default)('.tech-requerement__close-button').on('click',close_tech_requerement_modal);(0,_jquery2.default)('.modal').bind('click',onfocus_tech_requerement_modal);
 
 /***/ }),
 /* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};};(function(window,document,undefined){_jquery2.default.fn.workResize=function(){var card=(0,_jquery2.default)('.work-card');var width=card.first().width();var max_height=width/1.2857;card.each(function(index,element){var height=(0,_jquery2.default)(element).find('.work-card__bg').css('height','auto').height();max_height=height>max_height?height:max_height;(0,_jquery2.default)(element).find('.work-card__bg').css('height','100%');});card.height(max_height);card.each(function(index,element){var height=(0,_jquery2.default)(element).find('.work-card__title').outerHeight()+(0,_jquery2.default)(element).find('.work-card__content').outerHeight()+(0,_jquery2.default)(element).find('.work-card__bottom-info').outerHeight();var m=(max_height-height)/2;(0,_jquery2.default)(element).find('.work-card__bg .work-card__content').css('margin-bottom',m).css('margin-top',m);(0,_jquery2.default)(element).find('.work-card__bg').css('height','100%');});return this;};})(window,document);(0,_jquery2.default)(document).ready(function(){(0,_jquery2.default)('.works').workResize();});(0,_jquery2.default)(window).on('resize',function(){(0,_jquery2.default)('.works').workResize();});
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var cat_click=function cat_click(){if(!(0,_jquery2.default)(this).hasClass('work-categories__item_active')){(0,_jquery2.default)(this).parent().find('.work-categories__item_active').removeClass('work-categories__item_active');(0,_jquery2.default)(this).addClass('work-categories__item_active');var category=(0,_jquery2.default)(this).text()=='Все'?'all':(0,_jquery2.default)(this).text();_jquery2.default.ajax({method:"POST",url:ajax.url,data:{"cat":category,"action":'miracle_add_work_cat',"page":ajax.i,"nonce":ajax.nonce},success:work_cat_success,beforeSend:work_cat_before,error:work_cat_error});}};(0,_jquery2.default)('.work-categories .work-categories__item').on('click',cat_click);var work_cat_success=function work_cat_success(data){(0,_jquery2.default)('.works').fadeOut(300,function(){(0,_jquery2.default)('.works').html(data);(0,_jquery2.default)('.works').fadeIn(300,function(){(0,_jquery2.default)('.works').workResize();(0,_jquery2.default)('.works').removeClass('work__works_before-work-ajax');});});};var work_cat_before=function work_cat_before(){(0,_jquery2.default)('.works').addClass('work__works_before-work-ajax');};var work_cat_error=function work_cat_error(){console.log('Sorry. The request has not passed, maybe you violated the rules of using the site');};
 
 /***/ }),
 /* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_block=function resize_block(){var w_comp_info=(0,_jquery2.default)('.working-steps').width();var count_step=(0,_jquery2.default)('.working-steps .working-steps__step-work').length;if((0,_jquery2.default)('body').width()>950){if(count_step<7){var width=w_comp_info/count_step-count_step;(0,_jquery2.default)('.working-steps .working-steps__step-work').width(width);}else{var width=w_comp_info/6-count_step;(0,_jquery2.default)('.working-steps .working-steps__step-work').width(width);}}setTimeout(function(){},10);};(0,_jquery2.default)(document).ready(resize_block);(0,_jquery2.default)(window).on('resize',resize_block);var rem_calc=function rem_calc(){var body=(0,_jquery2.default)('body').width();if(body<1200){var rem=body*3/950+6.25;(0,_jquery2.default)('html').css('font-size',rem+'px');}};(0,_jquery2.default)(document).ready(rem_calc);(0,_jquery2.default)(window).on('resize',rem_calc);
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};};(function(window,document,undefined){_jquery2.default.fn.workResize=function(){var card=(0,_jquery2.default)('.work-card');var width=card.first().width();var max_height=width/1.2857;card.each(function(index,element){var height=(0,_jquery2.default)(element).find('.work-card__bg').css('height','auto').height();max_height=height>max_height?height:max_height;(0,_jquery2.default)(element).find('.work-card__bg').css('height','100%');});card.height(max_height);card.each(function(index,element){var height=(0,_jquery2.default)(element).find('.work-card__title').outerHeight()+(0,_jquery2.default)(element).find('.work-card__content').outerHeight()+(0,_jquery2.default)(element).find('.work-card__bottom-info').outerHeight();var m=(max_height-height)/2;(0,_jquery2.default)(element).find('.work-card__bg .work-card__content').css('margin-bottom',m).css('margin-top',m);(0,_jquery2.default)(element).find('.work-card__bg').css('height','100%');});return this;};})(window,document);(0,_jquery2.default)(document).ready(function(){(0,_jquery2.default)('.works').workResize();});(0,_jquery2.default)(window).on('resize',function(){(0,_jquery2.default)('.works').workResize();});
 
 /***/ }),
 /* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_block=function resize_block(){var w_comp_info=(0,_jquery2.default)('.working-steps').width();var count_step=(0,_jquery2.default)('.working-steps .working-steps__step-work').length;if((0,_jquery2.default)('body').width()>950){if(count_step<7){var width=w_comp_info/count_step-count_step;(0,_jquery2.default)('.working-steps .working-steps__step-work').width(width);}else{var width=w_comp_info/6-count_step;(0,_jquery2.default)('.working-steps .working-steps__step-work').width(width);}}setTimeout(function(){},10);};(0,_jquery2.default)(document).ready(resize_block);(0,_jquery2.default)(window).on('resize',resize_block);var rem_calc=function rem_calc(){var body=(0,_jquery2.default)('body').width();if(body<1200){var rem=body*3/950+6.25;(0,_jquery2.default)('html').css('font-size',rem+'px');}};(0,_jquery2.default)(document).ready(rem_calc);(0,_jquery2.default)(window).on('resize',rem_calc);
+
+/***/ }),
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(20);

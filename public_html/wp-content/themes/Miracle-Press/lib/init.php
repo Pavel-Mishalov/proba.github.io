@@ -11,9 +11,14 @@ function miracle_init_js() {
   wp_deregister_script( 'jquery' );
   wp_register_script( 'app-js', get_template_directory_uri().'/dist/assets/js/app.js', false, null, true);
   wp_enqueue_script( 'app-js' );
-  wp_localize_script('jquery', 'ajax',
+  
+  wp_reset_postdata();
+  global $post;
+  wp_localize_script('app-js', 'ajax',
     array(
-      'url' => admin_url('admin-ajax.php')
+      'url' => admin_url('admin-ajax.php'),
+      'nonce' => wp_create_nonce('Miracle-Press'),
+      'i'     => $post->ID
     )
   );
 

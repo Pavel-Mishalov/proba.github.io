@@ -164,12 +164,32 @@ function miracle_get_order_rate(){
 	return $html;
 }
 
-function miracle_get_work_cards(){
+function miracle_get_work_category(){
 	$html = '';
+	$active_project = array();
 	if( is_page_template( 'pagetemplates/main.php' ) ):
 		$projects = get_field( 'miracle-main-page-work-posts' );
+		foreach ( $projects as $project ):
+			$category = get_field( 'project-cat', $project->ID )->term_id;
+			if( !in_array( $category, $category) ):
+				array_push( $category, $category );
+				$name  = get_field( 'project-cat', $project->ID )->name;
+				$block = file_get_contents( get_template_directory() . '/views_support/block/work-card/category.php' );
+				$block = str_replace( '<% term_id %>', $category, $block);
+				$block = str_replace( '<% name %>', $name, $block);
+				$html  .= $block;
+			endif;
+		endforeach;
+	endif;
+	return $html;
+}
+
+function miracle_get_work_cards( $count_card = 6, $cat = 'all', $page_id = 0 ){
+	$html = '';
+	if( $cat == 'all' ):
+		$projects = ( $page_id > 0 ) ? get_field( 'miracle-main-page-work-posts', $page_id ) : get_field( 'miracle-main-page-work-posts' );
 		$count = count( $projects );
-		$count = ( $count > 7 ) ? 6 : $count;
+		$count = ( $count >= $count_card ) ? $count_card : $count;
 
 		$iterator = 0;
 		foreach ( $projects as $project ) {
@@ -180,7 +200,7 @@ function miracle_get_work_cards(){
 				$data    = get_field( 'miracle-project-post-time', $project->ID );
 				$cost    = get_field( 'miracle-project-post-cost', $project->ID );
 				$block   = file_get_contents( get_template_directory() . '/views_support/block/work-card/work-card.php' );
-				$block   = str_replace( '<% title %>', $title, $block );
+				$block   = str_replace( '<% title %>', $title . $category, $block );
 				$block   = str_replace( '<% content %>', $content, $block );
 				$block   = str_replace( '<% image %>', $image, $block );
 				$block   = str_replace( '<% data %>', $data, $block );
@@ -192,7 +212,33 @@ function miracle_get_work_cards(){
 			endif;
 			$iterator++;
 		}
+	else:
+		$projects = ( $page_id > 0 ) ? get_field( 'miracle-main-page-work-posts', $page_id ) : get_field( 'miracle-main-page-work-posts' );
+		$count = count( $projects );
+		$count = ( $count >= $count_card ) ? $count_card : $count;
 
+		$iterator = 0;
+		foreach ( $projects as $project ) {
+			if( $iterator < $count ):
+				$category = get_field( 'project-cat', $project->ID )->name;
+				if( $category == $cat ):
+					$title   = $project->post_title;
+					$content = get_field( 'miracle-project-post-content', $project->ID );
+					$image   = get_the_post_thumbnail_url( $project->ID, 'full' );
+					$data    = get_field( 'miracle-project-post-time', $project->ID );
+					$cost    = get_field( 'miracle-project-post-cost', $project->ID );
+					$block   = file_get_contents( get_template_directory() . '/views_support/block/work-card/work-card.php' );
+					$block   = str_replace( '<% title %>', $title, $block );
+					$block   = str_replace( '<% content %>', $content, $block );
+					$block   = str_replace( '<% image %>', $image, $block );
+					$block   = str_replace( '<% data %>', $data, $block );
+					$block   = str_replace( '<% cost %>', $cost, $block );
+
+					$html   .= $block;
+					$iterator++;
+				endif;
+			endif;
+		}
 	endif;
 	return $html;
 }

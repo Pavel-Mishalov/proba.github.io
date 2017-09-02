@@ -5,19 +5,12 @@
 	</div>
 
 	<div class="work__work-categories work-categories">
-		<button class="work-categories__item">Все</button>
-		<button class="work-categories__item">Широкоформатная печать</button>
-		<button class="work-categories__item work-categories__item_active">Интерьерная печать</button>
-		<button class="work-categories__item">Офсетная печать</button>
-		<button class="work-categories__item">Плоттерная резка</button>
-		<button class="work-categories__item">Шелкография</button>
-		<button class="work-categories__item">Фрезировка</button>
-		<button class="work-categories__item">Фото и видеосъемка</button>
-		<button class="work-categories__item">Услуги по монтажу</button>
+		<button class="work-categories__item work-categories__item_active">Все</button>
+		<?= miracle_get_work_category() ?>
 	</div>
 
 	<div class="work__works works">
-		<?= miracle_get_work_cards() ?>
+		<?= miracle_get_work_cards(6) ?>
 	</div>
 
 	<button class="work__button button">Показать еще</button>

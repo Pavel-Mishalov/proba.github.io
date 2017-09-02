@@ -21,12 +21,8 @@
 	<div class="form__edition edition">
 
 		<div class="expanded-button">
-			<button class="expanded-button__button">Показать подробнее</button>
+			<button class="expanded-button__button">Свернуть</button>
 		</div>
-		<!--
-			js Для кнопки свернуть
-			$('.expanded-button__button').on('click', function(){$('.form__edition.edition *').not('.expanded-button *').not('.expanded-button').slideToggle(500); })
-		-->
 	
 		<div class="edition__form-title form-title">
 			<h3 class="form-title__title">Дополнительная информация</h3>
