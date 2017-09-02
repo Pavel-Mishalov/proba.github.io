@@ -15,11 +15,10 @@ var close_tech_requerement_modal = function(event){
 }
 
 var onfocus_tech_requerement_modal = function(event){
-	var modal = $('.modal').data('open');
-	var container = $('.modal__' + modal);
+	if ( $(event.target).hasClass('modal_show') ){
 
-	if (container.has(event.target).length === 0){
-
+		var modal = $('.modal').data('open');
+		var container = $('.modal__' + modal);
 		$('.modal').removeClass('modal_show');
 		$('.modal__' + modal).removeClass('modal__' + modal + '_show');
 

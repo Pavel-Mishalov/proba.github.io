@@ -190,3 +190,70 @@ function miracle_get_work_cards(){
 	endif;
 	return $html;
 }
+
+function miracle_get_modal( $views = '' ){
+	$html = '';
+	$file = get_template_directory() . '/views_support/block/modal/' . $views . '/' . $views . '.php';
+
+	if( file_exists( $file ) ):
+
+		switch ( $views ) {
+			case 'tech-requerement':
+				$block   = file_get_contents( $file );
+				$title   = get_field( 'miracle-modal-tech-requerment-title', 'option' );
+				$section = miracle_get_tech_requerment_sections();
+				$block   = str_replace( '<% title %>', $title, $block );
+				$block   = str_replace( '<% sections %>', $section, $block );
+				$html   .= $block;
+				break;
+			
+			default:
+				break;
+		}
+
+	endif;
+
+	return $html;
+}
+
+function miracle_get_tech_requerment_sections(){
+	$html = '';
+	$file = get_template_directory().'/views_support/block/modal/tech-requerement/all-sections.php';
+	$sections = get_field( 'miracle-modal-tech-requerment-section', 'option' );
+	foreach( $sections as $section ):
+		$block = file_get_contents( $file );
+		$title = $section['title'];
+		$requerements = miracle_get_tech_section_requerements( $section['requerement'] );
+		$block = str_replace( '<% title %>', $title, $block );
+		$block = str_replace( '<% requerements %>', $requerements, $block );
+		$html .= $block;
+	endforeach;
+
+	return $html;
+}
+
+function miracle_get_tech_section_requerements( $section = array() ){
+	$html = '';
+	$file = get_template_directory().'/views_support/block/modal/tech-requerement/requer.php';
+	if( count( $section ) > 1 ){
+		$html .= '<ul class="tech-requerement__section-requerement section-requerement">';
+		foreach( $section as $requerement ){
+			$html .= '<li>';
+			$block = file_get_contents( $file );
+			$name = $requerement['name'];
+			$content = $requerement['content'];
+			$block = str_replace( '<% name %>', $name, $block );
+			$block = str_replace( '<% content %>', $content, $block );
+			$html .= $block . '</li>';
+		}
+		$html .= '</ul>';
+	}else{
+		$block = file_get_contents( $file );
+		$name = $section[0]['name'];
+		$content = $section[0]['content'];
+		$block = str_replace( '<% name %>', $name, $block );
+		$block = str_replace( '<% content %>', $content, $block );
+		$html .= $block;
+	}
+	return $html;
+}
