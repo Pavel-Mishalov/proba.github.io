@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 50);
+/******/ 	return __webpack_require__(__webpack_require__.s = 51);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -2776,7 +2776,7 @@ if(!module.children)module.children=[];Object.defineProperty(module,"loaded",{en
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);var _whatInput=__webpack_require__(38);var _whatInput2=_interopRequireDefault(_whatInput);var _foundationSites=__webpack_require__(21);var _foundationSites2=_interopRequireDefault(_foundationSites);__webpack_require__(39);__webpack_require__(41);__webpack_require__(46);__webpack_require__(45);__webpack_require__(49);__webpack_require__(40);__webpack_require__(44);__webpack_require__(47);__webpack_require__(43);__webpack_require__(42);__webpack_require__(48);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}window.$=_jquery2.default;// If you want to pick and choose which modules to include, comment out the above and uncomment
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);var _whatInput=__webpack_require__(38);var _whatInput2=_interopRequireDefault(_whatInput);var _foundationSites=__webpack_require__(21);var _foundationSites2=_interopRequireDefault(_foundationSites);__webpack_require__(39);__webpack_require__(41);__webpack_require__(46);__webpack_require__(45);__webpack_require__(50);__webpack_require__(40);__webpack_require__(44);__webpack_require__(48);__webpack_require__(43);__webpack_require__(42);__webpack_require__(49);__webpack_require__(47);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}window.$=_jquery2.default;// If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
 (0,_jquery2.default)(document).foundation();
@@ -4914,24 +4914,31 @@ var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var cat_click=function cat_click(){if(!(0,_jquery2.default)(this).hasClass('work-categories__item_active')){(0,_jquery2.default)(this).parent().find('.work-categories__item_active').removeClass('work-categories__item_active');(0,_jquery2.default)(this).addClass('work-categories__item_active');}};(0,_jquery2.default)('.work-categories .work-categories__item').on('click',cat_click);
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var open_tech_requerement_modal=function open_tech_requerement_modal(event){event.preventDefault();(0,_jquery2.default)('.modal').addClass('modal_show');(0,_jquery2.default)('.modal').data('open','tech-requerement');(0,_jquery2.default)('.modal__tech-requerement').addClass('modal__tech-requerement_show');};var close_tech_requerement_modal=function close_tech_requerement_modal(event){event.preventDefault();(0,_jquery2.default)('.modal').removeClass('modal_show');var modal=(0,_jquery2.default)('.modal').data('open');(0,_jquery2.default)('.modal__'+modal).removeClass('modal__'+modal+'_show');};(0,_jquery2.default)('.requer__link').on('click',open_tech_requerement_modal);(0,_jquery2.default)('.tech-requerement__close-button').on('click',close_tech_requerement_modal);
 
 /***/ }),
 /* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};};(function(window,document,undefined){_jquery2.default.fn.workResize=function(){var card=(0,_jquery2.default)('.work-card');var width=card.first().width();var max_height=width/1.2857;card.each(function(index,element){var height=(0,_jquery2.default)(element).find('.work-card__bg').css('height','auto').height();max_height=height>max_height?height:max_height;(0,_jquery2.default)(element).find('.work-card__bg').css('height','100%');});card.height(max_height);card.each(function(index,element){var height=(0,_jquery2.default)(element).find('.work-card__title').outerHeight()+(0,_jquery2.default)(element).find('.work-card__content').outerHeight()+(0,_jquery2.default)(element).find('.work-card__bottom-info').outerHeight();var m=(max_height-height)/2;(0,_jquery2.default)(element).find('.work-card__bg .work-card__content').css('margin-bottom',m).css('margin-top',m);(0,_jquery2.default)(element).find('.work-card__bg').css('height','100%');});return this;};})(window,document);(0,_jquery2.default)(document).ready(function(){(0,_jquery2.default)('.works').workResize();});(0,_jquery2.default)(window).on('resize',function(){(0,_jquery2.default)('.works').workResize();});
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var cat_click=function cat_click(){if(!(0,_jquery2.default)(this).hasClass('work-categories__item_active')){(0,_jquery2.default)(this).parent().find('.work-categories__item_active').removeClass('work-categories__item_active');(0,_jquery2.default)(this).addClass('work-categories__item_active');}};(0,_jquery2.default)('.work-categories .work-categories__item').on('click',cat_click);
 
 /***/ }),
 /* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_block=function resize_block(){var w_comp_info=(0,_jquery2.default)('.working-steps').width();var count_step=(0,_jquery2.default)('.working-steps .working-steps__step-work').length;if((0,_jquery2.default)('body').width()>950){if(count_step<7){var width=w_comp_info/count_step-count_step;(0,_jquery2.default)('.working-steps .working-steps__step-work').width(width);}else{var width=w_comp_info/6-count_step;(0,_jquery2.default)('.working-steps .working-steps__step-work').width(width);}}setTimeout(function(){},10);};(0,_jquery2.default)(document).ready(resize_block);(0,_jquery2.default)(window).on('resize',resize_block);var rem_calc=function rem_calc(){var body=(0,_jquery2.default)('body').width();if(body<1200){var rem=body*3/950+6.25;(0,_jquery2.default)('html').css('font-size',rem+'px');}};(0,_jquery2.default)(document).ready(rem_calc);(0,_jquery2.default)(window).on('resize',rem_calc);
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};};(function(window,document,undefined){_jquery2.default.fn.workResize=function(){var card=(0,_jquery2.default)('.work-card');var width=card.first().width();var max_height=width/1.2857;card.each(function(index,element){var height=(0,_jquery2.default)(element).find('.work-card__bg').css('height','auto').height();max_height=height>max_height?height:max_height;(0,_jquery2.default)(element).find('.work-card__bg').css('height','100%');});card.height(max_height);card.each(function(index,element){var height=(0,_jquery2.default)(element).find('.work-card__title').outerHeight()+(0,_jquery2.default)(element).find('.work-card__content').outerHeight()+(0,_jquery2.default)(element).find('.work-card__bottom-info').outerHeight();var m=(max_height-height)/2;(0,_jquery2.default)(element).find('.work-card__bg .work-card__content').css('margin-bottom',m).css('margin-top',m);(0,_jquery2.default)(element).find('.work-card__bg').css('height','100%');});return this;};})(window,document);(0,_jquery2.default)(document).ready(function(){(0,_jquery2.default)('.works').workResize();});(0,_jquery2.default)(window).on('resize',function(){(0,_jquery2.default)('.works').workResize();});
 
 /***/ }),
 /* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var resize_block=function resize_block(){var w_comp_info=(0,_jquery2.default)('.working-steps').width();var count_step=(0,_jquery2.default)('.working-steps .working-steps__step-work').length;if((0,_jquery2.default)('body').width()>950){if(count_step<7){var width=w_comp_info/count_step-count_step;(0,_jquery2.default)('.working-steps .working-steps__step-work').width(width);}else{var width=w_comp_info/6-count_step;(0,_jquery2.default)('.working-steps .working-steps__step-work').width(width);}}setTimeout(function(){},10);};(0,_jquery2.default)(document).ready(resize_block);(0,_jquery2.default)(window).on('resize',resize_block);var rem_calc=function rem_calc(){var body=(0,_jquery2.default)('body').width();if(body<1200){var rem=body*3/950+6.25;(0,_jquery2.default)('html').css('font-size',rem+'px');}};(0,_jquery2.default)(document).ready(rem_calc);(0,_jquery2.default)(window).on('resize',rem_calc);
+
+/***/ }),
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(20);

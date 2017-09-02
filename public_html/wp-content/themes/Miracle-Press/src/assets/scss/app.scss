@@ -184,3 +184,12 @@
 
 @import 'BEM/form-query/form-query';
 @import 'BEM/form-query/mixin/wrap-form';
+
+@import 'BEM/modal/modal';
+@import 'BEM/modal/mixin/tech-requerement';
+
+@import 'BEM/tech-requerement/__close-button/close-button';
+@import 'BEM/tech-requerement/__section/section';
+@import 'BEM/tech-requerement/__section-requerement/section-requerement';
+@import 'BEM/tech-requerement/__section-requerement/__content/content';
+@import 'BEM/tech-requerement/__section-requerement/__title/title';

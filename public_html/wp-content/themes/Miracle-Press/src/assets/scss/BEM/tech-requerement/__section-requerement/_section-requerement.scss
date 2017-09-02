@@ -1,0 +1,11 @@
+.tech-requerement .tech-requerement{
+	&__section-requerement{
+		margin-left: 2rem;
+		list-style-type: square;
+		font-size: 2rem;
+		li{
+			color: $orange2;
+			margin-bottom: 1.25rem;
+		}
+	}
+}
