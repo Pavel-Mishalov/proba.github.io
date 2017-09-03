@@ -184,7 +184,7 @@ function miracle_get_work_category(){
 	return $html;
 }
 
-function miracle_get_work_cards( $count_card = 6, $cat = 'all', $page_id = 0 ){
+function miracle_get_work_cards( $count_card = 6, $cat = 'all', $page_id = 0, $offset = 0 ){
 	$html = '';
 	if( $cat == 'all' ):
 		$projects = ( $page_id > 0 ) ? get_field( 'miracle-main-page-work-posts', $page_id ) : get_field( 'miracle-main-page-work-posts' );
@@ -192,25 +192,29 @@ function miracle_get_work_cards( $count_card = 6, $cat = 'all', $page_id = 0 ){
 		$count = ( $count >= $count_card ) ? $count_card : $count;
 
 		$iterator = 0;
+		$post_pos = 1;
 		foreach ( $projects as $project ) {
-			if( $iterator < $count ):
-				$title   = $project->post_title;
-				$content = get_field( 'miracle-project-post-content', $project->ID );
-				$image   = get_the_post_thumbnail_url( $project->ID, 'full' );
-				$data    = get_field( 'miracle-project-post-time', $project->ID );
-				$cost    = get_field( 'miracle-project-post-cost', $project->ID );
-				$block   = file_get_contents( get_template_directory() . '/views_support/block/work-card/work-card.php' );
-				$block   = str_replace( '<% title %>', $title . $category, $block );
-				$block   = str_replace( '<% content %>', $content, $block );
-				$block   = str_replace( '<% image %>', $image, $block );
-				$block   = str_replace( '<% data %>', $data, $block );
-				$block   = str_replace( '<% cost %>', $cost, $block );
+			if( $post_pos > $offset ){
+				if( $iterator < $count ):
+					$title   = $project->post_title;
+					$content = get_field( 'miracle-project-post-content', $project->ID );
+					$image   = get_the_post_thumbnail_url( $project->ID, 'full' );
+					$data    = get_field( 'miracle-project-post-time', $project->ID );
+					$cost    = get_field( 'miracle-project-post-cost', $project->ID );
+					$block   = file_get_contents( get_template_directory() . '/views_support/block/work-card/work-card.php' );
+					$block   = str_replace( '<% title %>', $title . $category, $block );
+					$block   = str_replace( '<% content %>', $content, $block );
+					$block   = str_replace( '<% image %>', $image, $block );
+					$block   = str_replace( '<% data %>', $data, $block );
+					$block   = str_replace( '<% cost %>', $cost, $block );
 
-				$html   .= $block;
-			else:
-				break;
-			endif;
-			$iterator++;
+					$html   .= $block;
+				else:
+					break;
+				endif;
+				$iterator++;
+			}
+			$post_pos++;
 		}
 	else:
 		$projects = ( $page_id > 0 ) ? get_field( 'miracle-main-page-work-posts', $page_id ) : get_field( 'miracle-main-page-work-posts' );
@@ -218,24 +222,28 @@ function miracle_get_work_cards( $count_card = 6, $cat = 'all', $page_id = 0 ){
 		$count = ( $count >= $count_card ) ? $count_card : $count;
 
 		$iterator = 0;
+		$post_pos = 1;
 		foreach ( $projects as $project ) {
 			if( $iterator < $count ):
 				$category = get_field( 'project-cat', $project->ID )->name;
 				if( $category == $cat ):
-					$title   = $project->post_title;
-					$content = get_field( 'miracle-project-post-content', $project->ID );
-					$image   = get_the_post_thumbnail_url( $project->ID, 'full' );
-					$data    = get_field( 'miracle-project-post-time', $project->ID );
-					$cost    = get_field( 'miracle-project-post-cost', $project->ID );
-					$block   = file_get_contents( get_template_directory() . '/views_support/block/work-card/work-card.php' );
-					$block   = str_replace( '<% title %>', $title, $block );
-					$block   = str_replace( '<% content %>', $content, $block );
-					$block   = str_replace( '<% image %>', $image, $block );
-					$block   = str_replace( '<% data %>', $data, $block );
-					$block   = str_replace( '<% cost %>', $cost, $block );
+					if( $post_pos > $offset ){
+						$title   = $project->post_title;
+						$content = get_field( 'miracle-project-post-content', $project->ID );
+						$image   = get_the_post_thumbnail_url( $project->ID, 'full' );
+						$data    = get_field( 'miracle-project-post-time', $project->ID );
+						$cost    = get_field( 'miracle-project-post-cost', $project->ID );
+						$block   = file_get_contents( get_template_directory() . '/views_support/block/work-card/work-card.php' );
+						$block   = str_replace( '<% title %>', $title, $block );
+						$block   = str_replace( '<% content %>', $content, $block );
+						$block   = str_replace( '<% image %>', $image, $block );
+						$block   = str_replace( '<% data %>', $data, $block );
+						$block   = str_replace( '<% cost %>', $cost, $block );
 
-					$html   .= $block;
-					$iterator++;
+						$html   .= $block;
+						$iterator++;
+					}
+					$post_pos++;
 				endif;
 			endif;
 		}

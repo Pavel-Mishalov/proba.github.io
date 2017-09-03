@@ -33,6 +33,11 @@ var work_cat_success = function(data){
 			$('.works').removeClass('work__works_before-work-ajax');
 		});
 	});
+	if( $(data).length != 6 ){
+		$('.work__button').fadeOut();
+	}else{
+		$('.work__button').fadeIn();
+	}
 }
 
 var work_cat_before = function(){

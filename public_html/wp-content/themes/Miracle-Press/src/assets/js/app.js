@@ -25,3 +25,4 @@ import './BEM/contacts-header/__email/email';
 import './BEM/work/resize';
 import './BEM/requer/link';
 import './BEM/cost-calculation/button';
+import './BEM/work/add-work-posts';
