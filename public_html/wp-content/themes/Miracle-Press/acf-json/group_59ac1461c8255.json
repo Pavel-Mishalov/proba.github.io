@@ -1,0 +1,48 @@
+{
+    "key": "group_59ac1461c8255",
+    "title": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f \u043f\u0440\u043e\u0434\u0443\u043a\u0446\u0438\u0438",
+    "fields": [
+        {
+            "key": "field_59ac14738b12e",
+            "label": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f",
+            "name": "miracle-product-post-category",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "product_cat",
+            "field_type": "select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "object",
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "slug"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1504449783
+}

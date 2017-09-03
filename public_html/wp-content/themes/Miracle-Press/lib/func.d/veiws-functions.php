@@ -171,8 +171,8 @@ function miracle_get_work_category(){
 		$projects = get_field( 'miracle-main-page-work-posts' );
 		foreach ( $projects as $project ):
 			$category = get_field( 'project-cat', $project->ID )->term_id;
-			if( !in_array( $category, $category) ):
-				array_push( $category, $category );
+			if( !in_array( $category, $active_project) ):
+				array_push( $active_project, $category );
 				$name  = get_field( 'project-cat', $project->ID )->name;
 				$block = file_get_contents( get_template_directory() . '/views_support/block/work-card/category.php' );
 				$block = str_replace( '<% term_id %>', $category, $block);
@@ -322,5 +322,46 @@ function miracle_get_tech_section_requerements( $section = array() ){
 		$block = str_replace( '<% content %>', $content, $block );
 		$html .= $block;
 	}
+	return $html;
+}
+
+function miracle_get_product_cards(){
+	$html = '';
+	$file = get_template_directory().'/views_support/block/product-card/product-card.php';
+	$direction_file = get_template_directory().'/views_support/block/product-card/direction.php';
+	$active_product = array();
+	if( is_page_template( 'pagetemplates/main.php' ) ):
+		$products = get_field( 'miracle-main-page-price-list-product-posts' );
+		foreach ( $products as $product ):
+			$category = get_field( 'miracle-product-post-category', $product->ID );
+			if( !in_array( $category, $active_product) ):
+				array_push( $active_product, $category );
+			endif;
+		endforeach;
+
+		foreach( $active_product as $cat ):
+			$block = file_get_contents( $file );
+			$image = get_field( 'miracle-product-category-image', $cat );
+			$name  = $cat->name;
+			$direction = '';
+			$event = true;
+			foreach ( $products as $product ):
+				$category = get_field( 'miracle-product-post-category', $product->ID )->term_id;
+				if( $cat->term_id == $category ):
+					$direction_name = $product->post_title;
+					$direction_class = ( $event ) ? 'product-card__direction_bg-gray' : '';
+					$event = !$event;
+					$direction_block = file_get_contents( $direction_file );
+					$direction_block = str_replace( '<% class %>', $direction_class, $direction_block );
+					$direction_block = str_replace( '<% name %>', $direction_name, $direction_block );
+					$direction .= $direction_block;
+				endif;
+			endforeach;
+			$block = str_replace( '<% name %>', $name, $block );
+			$block = str_replace( '<% image %>', $image, $block );
+			$block = str_replace( '<% direction %>', $direction, $block );
+			$html .= $block;
+		endforeach;
+	endif;
 	return $html;
 }
