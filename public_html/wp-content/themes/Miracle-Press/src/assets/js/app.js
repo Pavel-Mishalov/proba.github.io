@@ -31,3 +31,4 @@ import './BEM/work/add-work-posts';
 import './BEM/map-address/yandex-map';
 import './BEM/mir-slider/slide';
 import './BEM/mir-slider/owl-video';
+import './BEM/mir-slider/carousel'

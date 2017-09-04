@@ -8,14 +8,14 @@ $color-gray:			#D6D6D6 !default;
 
 //nav
 
-$nav-color: 			$color-white !default;
-$nav-color-hover:		$color-white !default;
-$nav-font-size: 		14px !default;
+$nav-color: 			#999999 !default;
+$nav-color-hover:		#ffffff !default;
+$nav-font-size: 		1.7rem !default;
 $nav-rounded: 			3px !default;
-$nav-margin: 			5px !default;
-$nav-padding: 			4px 7px !default;
-$nav-background: 		$color-gray !default;
-$nav-background-hover:	$color-base !default;
+$nav-margin: 			0 !default;
+$nav-padding: 			1.1rem !default;
+$nav-background: 		#f6f6f6 !default;
+$nav-background-hover:	#2882ba !default;
 $nav-disabled-opacity: 	0.5 !default;
 
 //dots

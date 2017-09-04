@@ -56,7 +56,40 @@
 
 			<div class="slide__owl">
 				<h3 class="slide__owl-title">Фотографии работы</h3>
-				<div class="slide__owl-carousel"></div>
+				<div class="slide__owl-carousel" style="padding: 0 60px">
+					<div class="owl-carousel owl-theme slide__owl-carousel-slider">
+						<div class="item">
+							<img class="owl-lazy" data-src="https://i.ytimg.com/vi/QYQ0I1mvFDE/maxresdefault.jpg">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -107,7 +140,38 @@
 			<div class="slide__owl">
 				<h3 class="slide__owl-title">Фотографии работы</h3>
 				<div class="slide__owl-carousel">
-					
+					<div class="owl-carousel owl-theme slide__owl-carousel-slider">
+						<div class="item">
+							<img class="owl-lazy" data-src="https://i.ytimg.com/vi/QYQ0I1mvFDE/maxresdefault.jpg">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -159,7 +223,38 @@
 			<div class="slide__owl">
 				<h3 class="slide__owl-title">Фотографии работы</h3>
 				<div class="slide__owl-carousel">
-					
+					<div class="owl-carousel owl-theme slide__owl-carousel-slider">
+						<div class="item">
+							<img class="owl-lazy" data-src="https://i.ytimg.com/vi/QYQ0I1mvFDE/maxresdefault.jpg">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+						<div class="item">
+							<img class="owl-lazy" data-src="<?= $image ?>">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

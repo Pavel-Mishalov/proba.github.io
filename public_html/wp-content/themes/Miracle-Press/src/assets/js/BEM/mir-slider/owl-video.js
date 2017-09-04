@@ -16,10 +16,3 @@ $(document).ready(function(){
         $(item).find('.item-video').height(h);
     });
 });
-
-// $('.mir-slider .slide .feedback-carousel').each(function(index, item){
-//     $(item).on( 'refreshed.owl.carousel' ,function(event) {
-//         var h = $(item).parent().parent().find('.slide__content').height();
-//         $(item).find('.item-video').height(h);
-//     });
-// });

@@ -2,11 +2,23 @@
 .owl-theme {
 	// Styling Next and Prev buttons
 	.owl-nav {
-		margin-top: 10px;
 		text-align: center;
 		-webkit-tap-highlight-color: transparent;
+		.owl-prev{
+			left: -6rem;
+		}
+		.owl-next{
+			right: -6rem;
+		}
 
 		[class*='owl-'] {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			border-radius: 100%;
+			line-height: 0;
+			border: 1px solid #e6e6e6;
+
 			color: $nav-color;
 			font-size: $nav-font-size;
 			margin: $nav-margin;
@@ -14,10 +26,11 @@
 			background: $nav-background;
 			display: inline-block;
 			cursor: pointer;
-			border-radius: 3px;
+			transition: all 0.2s ease 0s;
 
 			&:hover {
 				background: $nav-background-hover;
+				border: 1px solid $nav-background-hover;
 				color:$nav-color-hover;
 				text-decoration: none;
 			}
