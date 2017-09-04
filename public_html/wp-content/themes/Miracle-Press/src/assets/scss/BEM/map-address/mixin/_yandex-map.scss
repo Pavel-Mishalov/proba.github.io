@@ -2,5 +2,32 @@
 	&__yandex-map{
 		height: 40rem;
 		background-color: $blue;
+
+		.ymaps-2-1-55-balloon__tail, .ymaps-2-1-55-copyrights-pane, .ymaps-2-1-55-controls__toolbar_right, .ymaps-2-1-55-controls__control_toolbar:not(.ymaps-2-1-55-user-selection-none), .ymaps-2-1-55-controls__bottom, .ymaps-2-1-55-zoom__scale{
+			display: none;
+		}
+		.ymaps-2-1-55-float-button{
+			border-radius: 100%;
+			background-color: white;
+		}
+		.ymaps-2-1-55-controls__toolbar{
+			top: 12.5rem;
+		}
+		.ymaps-2-1-55-zoom{
+			height: 1rem !important;
+		}
+		.ymaps-2-1-55-controls__control{
+			top: 17.5rem !important;
+		}
+		.ymaps-2-1-55-hint__text{
+			background-color: rgba( $white, 0.75 );
+			color: $black;
+			font-weight: 600;
+			font-family: "Helvetica Neue Cyr", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+			border-radius: 1rem;
+		}
+		.ymaps-2-1-55-hint{
+			border-radius: 1rem;
+		}
 	}
 }
