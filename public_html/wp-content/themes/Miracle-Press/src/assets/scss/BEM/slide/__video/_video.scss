@@ -1,0 +1,8 @@
+.slide .slide{
+	&__video{
+		background-color: $orange;
+		float: right;
+		width: calc( 50% - 1.5rem );
+		min-height: 20rem;
+	}
+}

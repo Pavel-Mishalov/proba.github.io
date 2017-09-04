@@ -1,0 +1,7 @@
+.feedback{
+	&__mir-slider{
+		max-width: calc( #{$global-width} - 17rem );
+		margin: 0 auto;
+		border: 0.75rem solid $light-gray;
+	}
+}

@@ -1,0 +1,19 @@
+.slide .slide{
+	&__owl{
+		width: 100%;
+		clear: both;
+		padding: 1rem 0;
+		&-title{
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $black;
+			font-size: 1.4rem;
+			text-align: center;
+			padding: 2.8rem 0;
+		}
+		&-carousel{
+			height: 15rem;
+			background-color: $blue;
+		}
+	}
+}

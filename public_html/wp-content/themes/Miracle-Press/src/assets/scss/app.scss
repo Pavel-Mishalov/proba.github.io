@@ -197,3 +197,21 @@
 
 @import 'BEM/call-requer/__close-button/close-button';
 @import 'BEM/call-requer/mixin/section-title';
+
+@import 'BEM/feedback/feedback';
+@import 'BEM/feedback/mixin/mir-slider';
+@import 'BEM/feedback/mixin/section-title';
+
+@import 'BEM/mir-slider/mixin/slider-nav';
+@import 'BEM/mir-slider/mixin/slide';
+@import 'BEM/mir-slider/mir-slider';
+
+@import 'BEM/slider-nav/slider-nav';
+@import 'BEM/slider-nav/__title/title';
+@import 'BEM/slider-nav/__button-prev/button-prev';
+@import 'BEM/slider-nav/__button-next/button-next';
+
+@import 'BEM/slide/slide';
+@import 'BEM/slide/__content/content';
+@import 'BEM/slide/__video/video';
+@import 'BEM/slide/__owl/owl';

@@ -47,5 +47,7 @@ Template Name: Страница "Главная страница"
 	$attachment = get_field( 'miracle-main-page-form-query-attachment' );
 
 	include( THEME . '/views_support/main/form-query.php' );
+
+	include( THEME . '/views_support/main/feedback.php' );
 	
 	get_footer();

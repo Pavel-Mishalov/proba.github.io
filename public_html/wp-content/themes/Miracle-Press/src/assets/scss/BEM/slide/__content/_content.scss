@@ -1,0 +1,43 @@
+.slide .slide{
+	&__content{
+		width: calc( 50% - 1.5rem );
+		margin-right: 3rem;
+		float: left;
+		&-title{
+			font-weight: 700;
+			font-size: 1.3rem;
+			color: $black;
+			margin-bottom: 1.5rem;
+		}
+		&-description{
+			font-weight: 500;
+			font-size: 1.2rem;
+			color: $dark-gray;
+			margin-bottom: 2.5rem;
+		}
+		&-attr{
+			width: calc( 100% - 2px );
+			border: 1px solid $light-gray;
+			border-top: none;
+			padding: 1rem 1rem 0.7rem;
+			span:nth-of-type(1){
+				font-weight: 700;
+				font-size: 1.2rem;
+				color: $black;
+				width: 40%;
+				float: left;
+			}
+			span:nth-of-type(2){
+				font-weight: 600;
+				font-size: 1.2rem;
+				color: $dark-gray;
+			}
+			&_first{
+				border-top: 1px solid $light-gray;
+			}
+			&_even{
+				background-color: #f9f9f9;
+			}
+		}
+	}
+}
