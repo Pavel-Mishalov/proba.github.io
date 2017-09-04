@@ -11,6 +11,8 @@ import Foundation from 'foundation-sites';
 
 $(document).foundation();
 
+import './owl.carousel';
+
 import './BEM/after-navigation/mixin';
 import './BEM/after-navigation/button';
 import './BEM/company-info/mixin';
@@ -28,3 +30,4 @@ import './BEM/cost-calculation/button';
 import './BEM/work/add-work-posts';
 import './BEM/map-address/yandex-map';
 import './BEM/mir-slider/slide';
+import './BEM/mir-slider/owl-video';

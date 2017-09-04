@@ -5,6 +5,8 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+@import 'OwlCarousel/owl.carousel';
+@import 'OwlCarousel/owl.theme.default';
 
 @include foundation-global-styles;
 // @include foundation-grid;

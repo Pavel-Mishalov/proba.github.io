@@ -47,19 +47,21 @@
 			</div>
 
 			<div class="slide__video">
-				
+				<div class="owl-carousel owl-theme feedback-carousel">
+					<div class="item-video">
+						<a class="owl-video" href="https://www.youtube.com/watch?v=Ee35nbtQ6TI"></a>
+					</div>
+				</div>
 			</div>
 
 			<div class="slide__owl">
 				<h3 class="slide__owl-title">Фотографии работы</h3>
-				<div class="slide__owl-carousel">
-					
-				</div>
+				<div class="slide__owl-carousel"></div>
 			</div>
 		</div>
 
 
-		<div class="mis-slider__slide slide" style="background-color: blue">
+		<div class="mis-slider__slide slide">
 			<p class="slide__title">Отзыв от Юлии Алексеевой2</p>
 			
 			<div class="slide__content">
@@ -95,7 +97,11 @@
 			</div>
 
 			<div class="slide__video">
-				
+				<div class="owl-carousel owl-theme feedback-carousel">
+					<div class="item-video">
+						<a class="owl-video" href="https://www.youtube.com/watch?v=9b5KjrbPFAE"></a>
+					</div>
+				</div>
 			</div>
 
 			<div class="slide__owl">
@@ -107,7 +113,7 @@
 		</div>
 
 
-		<div class="mis-slider__slide slide" style="background-color: red">
+		<div class="mis-slider__slide slide">
 			<p class="slide__title">Отзыв от Юлии Алексеевой3</p>
 			
 			<div class="slide__content">
@@ -143,7 +149,11 @@
 			</div>
 
 			<div class="slide__video">
-				
+				<div class="owl-carousel owl-theme feedback-carousel">
+					<div class="item-video">
+						<a class="owl-video" href="https://www.youtube.com/watch?v=ivgprZVO7JQ"></a>
+					</div>
+				</div>
 			</div>
 
 			<div class="slide__owl">
