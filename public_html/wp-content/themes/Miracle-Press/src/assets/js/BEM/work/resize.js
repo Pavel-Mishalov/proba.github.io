@@ -20,6 +20,16 @@ import $ from 'jquery';
 			$(element).find('.work-card__bg').css('height','100%');
 		});
 
+		if ($.browser.msie && $.browser.version <= 6 ){
+		
+		}else if( $.browser.msie && $.browser.version > 6 ){
+			$('.work-card').each(function(index,item){
+				var height = $(item).height();
+				var t = height - $(item).find('.work-card__title').outerHeight();
+				$(item).find('.work-card__bg').css('top', t);
+			});
+		}
+
 		return this;
 	}
 })(window, document);

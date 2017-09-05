@@ -1,6 +1,7 @@
 .textarea{
 	width: 100%;
-	display: inline-grid;
+	display: flex;
+	flex-direction: column;
 	&_margin-top{
 		margin-top: 1.4rem;
 	}

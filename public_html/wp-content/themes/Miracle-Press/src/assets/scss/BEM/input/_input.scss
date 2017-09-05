@@ -1,6 +1,7 @@
 .input{
 	width: calc( 100% / 3 - 2px );
-	display: inline-grid;
+	display: inline-flex;
+	flex-direction: column;
 	&_padding-right{
 		padding-right: 2.8rem;
 	}
@@ -23,13 +24,13 @@
 
 	&_submit-center{
 		margin: 0.9rem auto 0;
-		display: grid;
+		display: flex;
 		width: calc( 100% / 3 + 2rem );
 	}
 
 	&_submit-expanded{
 		margin: 0.9rem auto 0;
-		display: grid;
+		display: flex;
 		width: 80%;
 	}
 }

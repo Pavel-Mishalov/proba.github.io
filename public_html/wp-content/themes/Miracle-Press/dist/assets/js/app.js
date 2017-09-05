@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 60);
+/******/ 	return __webpack_require__(__webpack_require__.s = 61);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -2776,7 +2776,7 @@ if(!module.children)module.children=[];Object.defineProperty(module,"loaded",{en
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);var _whatInput=__webpack_require__(38);var _whatInput2=_interopRequireDefault(_whatInput);var _foundationSites=__webpack_require__(21);var _foundationSites2=_interopRequireDefault(_foundationSites);__webpack_require__(59);__webpack_require__(40);__webpack_require__(39);__webpack_require__(42);__webpack_require__(53);__webpack_require__(52);__webpack_require__(58);__webpack_require__(41);__webpack_require__(47);__webpack_require__(55);__webpack_require__(44);__webpack_require__(43);__webpack_require__(57);__webpack_require__(54);__webpack_require__(45);__webpack_require__(56);__webpack_require__(46);__webpack_require__(50);__webpack_require__(49);__webpack_require__(48);__webpack_require__(51);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}window.$=_jquery2.default;// If you want to pick and choose which modules to include, comment out the above and uncomment
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);var _whatInput=__webpack_require__(38);var _whatInput2=_interopRequireDefault(_whatInput);var _foundationSites=__webpack_require__(21);var _foundationSites2=_interopRequireDefault(_foundationSites);__webpack_require__(60);__webpack_require__(59);__webpack_require__(40);__webpack_require__(39);__webpack_require__(42);__webpack_require__(53);__webpack_require__(52);__webpack_require__(58);__webpack_require__(41);__webpack_require__(47);__webpack_require__(55);__webpack_require__(44);__webpack_require__(43);__webpack_require__(57);__webpack_require__(54);__webpack_require__(45);__webpack_require__(56);__webpack_require__(46);__webpack_require__(50);__webpack_require__(49);__webpack_require__(48);__webpack_require__(51);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}window.$=_jquery2.default;// If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
 (0,_jquery2.default)(document).foundation();
@@ -4986,7 +4986,7 @@ var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};};(function(window,document,undefined){_jquery2.default.fn.workResize=function(){var card=(0,_jquery2.default)('.work-card');var width=card.first().width();var max_height=width/1.2857;card.each(function(index,element){var height=(0,_jquery2.default)(element).find('.work-card__bg').css('height','auto').height();max_height=height>max_height?height:max_height;(0,_jquery2.default)(element).find('.work-card__bg').css('height','100%');});card.height(max_height);card.each(function(index,element){var height=(0,_jquery2.default)(element).find('.work-card__title').outerHeight()+(0,_jquery2.default)(element).find('.work-card__content').outerHeight()+(0,_jquery2.default)(element).find('.work-card__bottom-info').outerHeight();var m=(max_height-height)/2;(0,_jquery2.default)(element).find('.work-card__bg .work-card__content').css('margin-bottom',m).css('margin-top',m);(0,_jquery2.default)(element).find('.work-card__bg').css('height','100%');});return this;};})(window,document);(0,_jquery2.default)(document).ready(function(){(0,_jquery2.default)('.works').workResize();});(0,_jquery2.default)(window).on('resize',function(){(0,_jquery2.default)('.works').workResize();});
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};};(function(window,document,undefined){_jquery2.default.fn.workResize=function(){var card=(0,_jquery2.default)('.work-card');var width=card.first().width();var max_height=width/1.2857;card.each(function(index,element){var height=(0,_jquery2.default)(element).find('.work-card__bg').css('height','auto').height();max_height=height>max_height?height:max_height;(0,_jquery2.default)(element).find('.work-card__bg').css('height','100%');});card.height(max_height);card.each(function(index,element){var height=(0,_jquery2.default)(element).find('.work-card__title').outerHeight()+(0,_jquery2.default)(element).find('.work-card__content').outerHeight()+(0,_jquery2.default)(element).find('.work-card__bottom-info').outerHeight();var m=(max_height-height)/2;(0,_jquery2.default)(element).find('.work-card__bg .work-card__content').css('margin-bottom',m).css('margin-top',m);(0,_jquery2.default)(element).find('.work-card__bg').css('height','100%');});if(_jquery2.default.browser.msie&&_jquery2.default.browser.version<=6){}else if(_jquery2.default.browser.msie&&_jquery2.default.browser.version>6){(0,_jquery2.default)('.work-card').each(function(index,item){var height=(0,_jquery2.default)(item).height();var t=height-(0,_jquery2.default)(item).find('.work-card__title').outerHeight();(0,_jquery2.default)(item).find('.work-card__bg').css('top',t);});}return this;};})(window,document);(0,_jquery2.default)(document).ready(function(){(0,_jquery2.default)('.works').workResize();});(0,_jquery2.default)(window).on('resize',function(){(0,_jquery2.default)('.works').workResize();});
 
 /***/ }),
 /* 58 */
@@ -4997,6 +4997,34 @@ var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);
 
 /***/ }),
 /* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}(function(factory){if(true){// AMD. Register as an anonymous module.
+!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(0)], __WEBPACK_AMD_DEFINE_RESULT__ = function($){return factory($);}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));}else if((typeof module==='undefined'?'undefined':_typeof(module))==='object'&&_typeof(module.exports)==='object'){// Node-like environment
+module.exports=factory(require('jquery'));}else{// Browser globals
+factory(window.$);}})(function($){"use strict";function uaMatch(ua){// If an UA is not provided, default to the current browser UA.
+if(ua===undefined){ua=window.navigator.userAgent;}ua=ua.toLowerCase();var match=/(edge)\/([\w.]+)/.exec(ua)||/(opr)[\/]([\w.]+)/.exec(ua)||/(chrome)[ \/]([\w.]+)/.exec(ua)||/(version)(applewebkit)[ \/]([\w.]+).*(safari)[ \/]([\w.]+)/.exec(ua)||/(webkit)[ \/]([\w.]+).*(version)[ \/]([\w.]+).*(safari)[ \/]([\w.]+)/.exec(ua)||/(webkit)[ \/]([\w.]+)/.exec(ua)||/(opera)(?:.*version|)[ \/]([\w.]+)/.exec(ua)||/(msie) ([\w.]+)/.exec(ua)||ua.indexOf("trident")>=0&&/(rv)(?::| )([\w.]+)/.exec(ua)||ua.indexOf("compatible")<0&&/(mozilla)(?:.*? rv:([\w.]+)|)/.exec(ua)||[];var platform_match=/(ipad)/.exec(ua)||/(ipod)/.exec(ua)||/(iphone)/.exec(ua)||/(kindle)/.exec(ua)||/(silk)/.exec(ua)||/(android)/.exec(ua)||/(windows phone)/.exec(ua)||/(win)/.exec(ua)||/(mac)/.exec(ua)||/(linux)/.exec(ua)||/(cros)/.exec(ua)||/(playbook)/.exec(ua)||/(bb)/.exec(ua)||/(blackberry)/.exec(ua)||[];var browser={},matched={browser:match[5]||match[3]||match[1]||"",version:match[2]||match[4]||"0",versionNumber:match[4]||match[2]||"0",platform:platform_match[0]||""};if(matched.browser){browser[matched.browser]=true;browser.version=matched.version;browser.versionNumber=parseInt(matched.versionNumber,10);}if(matched.platform){browser[matched.platform]=true;}// These are all considered mobile platforms, meaning they run a mobile browser
+if(browser.android||browser.bb||browser.blackberry||browser.ipad||browser.iphone||browser.ipod||browser.kindle||browser.playbook||browser.silk||browser["windows phone"]){browser.mobile=true;}// These are all considered desktop platforms, meaning they run a desktop browser
+if(browser.cros||browser.mac||browser.linux||browser.win){browser.desktop=true;}// Chrome, Opera 15+ and Safari are webkit based browsers
+if(browser.chrome||browser.opr||browser.safari){browser.webkit=true;}// IE11 has a new token so we will assign it msie to avoid breaking changes
+// IE12 disguises itself as Chrome, but adds a new Edge token.
+if(browser.rv||browser.edge){var ie="msie";matched.browser=ie;browser[ie]=true;}// Blackberry browsers are marked as Safari on BlackBerry
+if(browser.safari&&browser.blackberry){var blackberry="blackberry";matched.browser=blackberry;browser[blackberry]=true;}// Playbook browsers are marked as Safari on Playbook
+if(browser.safari&&browser.playbook){var playbook="playbook";matched.browser=playbook;browser[playbook]=true;}// BB10 is a newer OS version of BlackBerry
+if(browser.bb){var bb="blackberry";matched.browser=bb;browser[bb]=true;}// Opera 15+ are identified as opr
+if(browser.opr){var opera="opera";matched.browser=opera;browser[opera]=true;}// Stock Android browsers are marked as Safari on Android.
+if(browser.safari&&browser.android){var android="android";matched.browser=android;browser[android]=true;}// Kindle browsers are marked as Safari on Kindle
+if(browser.safari&&browser.kindle){var kindle="kindle";matched.browser=kindle;browser[kindle]=true;}// Kindle Silk browsers are marked as Safari on Kindle
+if(browser.safari&&browser.silk){var silk="silk";matched.browser=silk;browser[silk]=true;}// Assign the name and platform variable
+browser.name=matched.browser;browser.platform=matched.platform;return browser;}// Run the matching process, also assign the function to the returned object
+// for manual, jQuery-free use if desired
+window.jQBrowser=uaMatch(window.navigator.userAgent);window.jQBrowser.uaMatch=uaMatch;// Only assign to jQuery.browser if jQuery is loaded
+if($){$.browser=window.jQBrowser;}return window.jQBrowser;});
+
+/***/ }),
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5742,7 +5770,7 @@ this.$element.on(this._handlers);// register event listener for hash navigation
  */;(function(window,document,undefined){var style=(0,_jquery2.default)('<support>').get(0).style,prefixes='Webkit Moz O ms'.split(' '),events={transition:{end:{WebkitTransition:'webkitTransitionEnd',MozTransition:'transitionend',OTransition:'oTransitionEnd',transition:'transitionend'}},animation:{end:{WebkitAnimation:'webkitAnimationEnd',MozAnimation:'animationend',OAnimation:'oAnimationEnd',animation:'animationend'}}},tests={csstransforms:function csstransforms(){return!!test('transform');},csstransforms3d:function csstransforms3d(){return!!test('perspective');},csstransitions:function csstransitions(){return!!test('transition');},cssanimations:function cssanimations(){return!!test('animation');}};function test(property,prefixed){var result=false,upper=property.charAt(0).toUpperCase()+property.slice(1);_jquery2.default.each((property+' '+prefixes.join(upper+' ')+upper).split(' '),function(i,property){if(style[property]!==undefined){result=prefixed?property:true;return false;}});return result;}function prefixed(property){return test(property,true);}if(tests.csstransitions()){/* jshint -W053 */_jquery2.default.support.transition=new String(prefixed('transition'));_jquery2.default.support.transition.end=events.transition.end[_jquery2.default.support.transition];}if(tests.cssanimations()){/* jshint -W053 */_jquery2.default.support.animation=new String(prefixed('animation'));_jquery2.default.support.animation.end=events.animation.end[_jquery2.default.support.animation];}if(tests.csstransforms()){/* jshint -W053 */_jquery2.default.support.transform=new String(prefixed('transform'));_jquery2.default.support.transform3d=tests.csstransforms3d();}})(window,document);
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(20);

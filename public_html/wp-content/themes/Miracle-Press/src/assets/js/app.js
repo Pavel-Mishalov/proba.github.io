@@ -13,6 +13,8 @@ $(document).foundation();
 
 import './owl.carousel';
 
+import './browser/browser';
+
 import './BEM/after-navigation/mixin';
 import './BEM/after-navigation/button';
 import './BEM/company-info/mixin';
