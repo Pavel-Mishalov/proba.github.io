@@ -1,0 +1,16 @@
+.mir-tab .mir-tab{
+	&__answer{
+		font-weight: 500;
+		font-style: italic;
+		color: $dark-gray;
+		font-size: 1.2rem;
+		padding: 1.75rem;
+		border: 1px solid $light-gray;
+		border-top: none;
+		display: none;
+		cursor: pointer;
+		&_active{
+			display: block;
+		}
+	}
+}

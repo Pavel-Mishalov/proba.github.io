@@ -1,0 +1,8 @@
+.mir-tab{
+	width: calc( 50% - 3rem );
+	display: inline-table;
+	margin-bottom: 2rem;
+	&_margin-right{
+		margin-right: 3rem;
+	}
+}

@@ -4,5 +4,21 @@
 		background-color: #f9f9f9;
 		border: 1px solid $light-gray;
 		border-left: none;
+		font-size: 1.6rem;
+		padding: 1.45rem 1.6rem;
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+	}
+}
+
+.mir-tab{
+	&:hover{
+		.mir-tab__icon{
+			cursor: pointer;
+			color: $white;
+			background-color: $blue;
+			border: 1px solid $blue;
+			border-left: none;
+		}
 	}
 }
