@@ -365,3 +365,74 @@ function miracle_get_product_cards(){
 	endif;
 	return $html;
 }
+
+function miracle_get_mir_slider_slides(){
+	$html = '';
+	$file = get_template_directory().'/views_support/block/mir-slider/slide.php';
+	$feedbacks = get_field( 'miracle-main-page-feedback-posts' );
+
+	foreach( $feedbacks as $feedback ):
+		$block   = file_get_contents( $file );
+		$autor   = get_field( 'miracle-post-feedback-autor', $feedback->ID );
+		$content = get_field( 'miracle-post-feedback-about', $feedback->ID );
+		$work    = miracle_get_mir_slider_work_info( $feedback->ID );
+		$video   = get_field( 'miracle-post-feedback-youtube-video', $feedback->ID );
+		$items   = miracle_get_mir_slider_carousel( $feedback->ID );
+
+		$block = str_replace( '<% autor %>', $autor, $block );
+		$block = str_replace( '<% content %>', $content, $block );
+		$block = str_replace( '<% work %>', $work, $block );
+		$block = str_replace( '<% video %>', $video, $block );
+		$block = str_replace( '<% items %>', $items, $block );
+
+		$html .= $block;
+	endforeach;
+
+	return $html;
+}
+
+function miracle_get_mir_slider_work_info( $id ){
+	$html  = '';
+	$file  = get_template_directory().'/views_support/block/mir-slider/work-info.php';
+	$infos = get_field( 'miracle-post-feedback-work-description', $id );
+
+	$bollean = false;
+	$first   = true;
+	foreach ( $infos as $info ):
+		$block   = file_get_contents( $file );
+		$class   = ( $first )   ? 'slide__content-attr_first ' : '';
+		$class   = ( $bollean ) ? $class . 'slide__content-attr_even' : $class;
+		$bollean = !$bollean;  $first = false;
+		$title   = $info['title'];
+		$content = $info['content'];
+
+		$block = str_replace( '<% title %>', $title, $block );
+		$block = str_replace( '<% content %>', $content, $block );
+		$block = str_replace( '<% class %>', $class, $block );
+
+		$html   .= $block;
+	endforeach;
+	
+	return $html;
+}
+
+function miracle_get_mir_slider_carousel( $id ){
+	$html   = '';
+	$file   = get_template_directory().'/views_support/block/mir-slider/carousel-item.php';
+	$images = get_field( 'miracle-post-feedback-work-photo', $id );
+
+	foreach ( $images as $image ):
+		$block   = file_get_contents( $file );
+		$src     = $image['url'];
+		$alt     = $image['alt'];
+		$title   = $image['caption'];
+
+		$block = str_replace( '<% src %>', $src, $block );
+		$block = str_replace( '<% title %>', $title, $block );
+		$block = str_replace( '<% alt %>', $alt, $block );
+
+		$html   .= $block;
+	endforeach;
+	
+	return $html;
+}

@@ -12,6 +12,8 @@ var init_mir_slider = function(){
 								'top'        : '0',
 								'transition' : 'transform 0.6s ease-in-out 0s'
 							});
+				var title = $(element).data('title');
+				$('.slider-nav__title').text(title);
 			}else{
 				var t = 'translateX(' + ( 100 * index ) + '% )';
 				$(element).css({

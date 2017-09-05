@@ -48,6 +48,8 @@ Template Name: Страница "Главная страница"
 
 	include( THEME . '/views_support/main/form-query.php' );
 
+	$title = get_field('miracle-main-page-feedback-title');
+
 	include( THEME . '/views_support/main/feedback.php' );
 	
 	get_footer();
