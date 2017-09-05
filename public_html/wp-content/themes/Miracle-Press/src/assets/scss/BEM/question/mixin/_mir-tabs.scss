@@ -2,5 +2,9 @@
 	&__mir-tabs{
 		max-width: $global-width;
 		margin: 0 auto 3rem;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: start;
 	}
 }

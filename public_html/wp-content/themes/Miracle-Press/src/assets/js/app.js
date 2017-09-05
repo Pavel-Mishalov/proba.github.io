@@ -35,3 +35,9 @@ import './BEM/mir-slider/slide';
 import './BEM/mir-slider/owl-video';
 import './BEM/mir-slider/carousel';
 import './BEM/mir-tab/click-tab';
+
+$(document).ready(function(){
+	if( $.browser.msie ){
+		$('#header, #cost-calculation, #ask-question').css('background-attachment', 'scroll');
+	}
+});

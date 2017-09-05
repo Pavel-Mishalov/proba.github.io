@@ -347,7 +347,10 @@ function miracle_get_product_cards(){
 
 		foreach( $active_product as $cat ):
 			$block = file_get_contents( $file );
-			$image = get_field( 'miracle-product-category-image', $cat );
+			$image_array = get_field( 'miracle-product-category-image', $cat );
+			$image = $image_array['url'];
+			$image_alt = $image_array['alt'];
+			$image_title = $image_array['title'];
 			$name  = $cat->name;
 			$direction = '';
 			$event = true;
@@ -365,6 +368,8 @@ function miracle_get_product_cards(){
 			endforeach;
 			$block = str_replace( '<% name %>', $name, $block );
 			$block = str_replace( '<% image %>', $image, $block );
+			$block = str_replace( '<% image-alt %>', $image_alt, $block );
+			$block = str_replace( '<% image-title %>', $image_title, $block );
 			$block = str_replace( '<% direction %>', $direction, $block );
 			$html .= $block;
 		endforeach;

@@ -10,7 +10,7 @@ var init_tab = function(){
 			var pv = ( h - ih - 2 ) / 2;
 			var ph = ( h - iw - 1 ) / 2;
 			$(item).find('.mir-tab__icon').css('padding', pv + 'px ' + ph + 'px' );
-			$(item).find('.mir-tab__question').css( 'width', 'calc( 100% - 2px - ' + h + 'px )' );
+			$(item).find('.mir-tab__question').css( 'width', 'calc( 100% - ' + h + 'px )' );
 		});
 	}
 }

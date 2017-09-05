@@ -1,4 +1,5 @@
 <div id="header" class="first-screen" style="background-image: url('<?= $image ?>'); background-attachment: <?= $atch ?>;">
+
 	<div class="first-screen__header-title header-title">
 		<h1 class="header-title__title"><?= $title ?></h1>
 		<h3 class="header-title__subtitle"><?= $subtitle ?></h3>

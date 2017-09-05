@@ -19,10 +19,8 @@ import $ from 'jquery';
 			$(element).find('.work-card__bg .work-card__content').css('margin-bottom',m).css('margin-top',m);
 			$(element).find('.work-card__bg').css('height','100%');
 		});
-
-		if ($.browser.msie && $.browser.version <= 6 ){
 		
-		}else if( $.browser.msie && $.browser.version > 6 ){
+		if( $.browser.msie ){
 			$('.work-card').each(function(index,item){
 				var height = $(item).height();
 				var t = height - $(item).find('.work-card__title').outerHeight();
