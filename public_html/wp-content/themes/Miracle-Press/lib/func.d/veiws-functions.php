@@ -71,6 +71,12 @@ function miracle_get_header_form(){
 	return $html;
 }
 
+function miracle_get_ask_question_form(){
+	$html = '';
+	$html .= file_get_contents( get_template_directory() . '/views_support/block/contact-form-7/ask-question-form.php' );
+	return $html;
+}
+
 function miracle_get_cost_calculation_form(){
 	$html = '';
 	$html .= file_get_contents( get_template_directory() . '/views_support/block/contact-form-7/cost-calculation-form.php' );

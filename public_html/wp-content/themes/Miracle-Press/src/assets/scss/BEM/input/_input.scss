@@ -4,8 +4,14 @@
 	&_padding-right{
 		padding-right: 2.8rem;
 	}
+	&_margin-right{
+		margin-right: 2.8rem;
+	}
 	&_width-medium{
 		width: calc( 100% / 3 - 1.2rem );
+	}
+	&_width-third{
+		width: calc( ( 100% - 6.2rem ) / 3 );
 	}
 	&_width-big{
 		width: calc( 100% / 3 + 1.5rem );

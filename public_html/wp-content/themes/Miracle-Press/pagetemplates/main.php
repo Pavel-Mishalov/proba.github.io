@@ -44,7 +44,7 @@ Template Name: Страница "Главная страница"
 	include( THEME . '/views_support/main/work.php' );
 
 	$image = get_field( 'miracle-main-page-form-query-image' );
-	$attachment = get_field( 'miracle-main-page-form-query-attachment' );
+	$attachment = ( get_field( 'miracle-main-page-form-query-attachment' ) ) ? 'fixed' : 'inherid';;
 
 	include( THEME . '/views_support/main/form-query.php' );
 
@@ -55,5 +55,10 @@ Template Name: Страница "Главная страница"
 	$title = get_field('miracle-main-page-question-title');
 
 	include( THEME . '/views_support/main/question.php' );
+
+	$image = get_field( 'miracle-main-page-ask-question-image' );
+	$attachment = ( get_field( 'miracle-main-page-ask-question-attachment' ) ) ? 'fixed' : 'inherid';
+
+	include( THEME . '/views_support/main/ask-question.php' );
 	
 	get_footer();
