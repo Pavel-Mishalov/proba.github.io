@@ -2,5 +2,10 @@
 	&__working-steps{
 		max-width: $global-width;
 		margin: 2rem auto 0;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		align-items: start;
+		flex-wrap: wrap;
 	}
 }

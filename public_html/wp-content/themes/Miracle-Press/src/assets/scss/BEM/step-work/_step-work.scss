@@ -1,4 +1,6 @@
 .step-work{
+	display: inline-flex;
+	flex-direction: column;
 	&_last-item{
 		.step-work__icon:after{
 			display: none;

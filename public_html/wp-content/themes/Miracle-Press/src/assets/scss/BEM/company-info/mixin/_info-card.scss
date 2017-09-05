@@ -1,6 +1,6 @@
 .company-info .company-info{
 	&__info-card{
-		display: inline-grid;
+
 	}
 }
 
@@ -9,6 +9,7 @@
 	.company-info .company-info{
 		&__info-card{
 			margin: 1rem 0;
+			width: calc( 100% / 3 ) !important;
 		}
 	}
 
@@ -18,7 +19,18 @@
 
 	.company-info .company-info{
 		&__info-card{
-			width: auto !important;
+			width: calc( 100% / 2 - 4rem) !important;
+			margin: 1rem 2rem;
+		}
+	}
+
+}
+
+@media only screen and (max-width: 350px){
+
+	.company-info .company-info{
+		&__info-card{
+			width: 100% !important;
 			margin: 1rem 2rem;
 		}
 	}

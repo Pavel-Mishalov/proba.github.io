@@ -1,12 +1,17 @@
 .price-list .price-list{
 	&__product-card{
-		display: inline-grid;
+		display: inline-flex;
+		flex-direction: column;
 		margin: 0 1.5rem 3rem;
 		width: calc( 100% / 4 - 3.5rem );
 	}
 	&__products{
 		max-width: rem-calc(1180);
 		margin: 0 auto 1.9rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between; 
+		flex-wrap: wrap;
 	}
 }
 
