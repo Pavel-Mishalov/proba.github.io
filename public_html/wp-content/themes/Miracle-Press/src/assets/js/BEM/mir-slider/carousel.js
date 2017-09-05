@@ -30,3 +30,12 @@ $(document).ready(function(){
 	});
 
 });
+
+var height_owl_item = function(){
+	$('.mir-slider .slide .slide__owl-carousel-slider').each(function(index, item){
+		var h = $(item).width() / 5 - 10;
+		$(item).find('.item').height(h);
+	});
+}
+
+$(window).on( 'resize', height_owl_item );
