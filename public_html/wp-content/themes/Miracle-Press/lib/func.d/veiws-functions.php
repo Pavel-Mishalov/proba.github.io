@@ -436,3 +436,26 @@ function miracle_get_mir_slider_carousel( $id ){
 	
 	return $html;
 }
+
+function miracle_get_question_tabs(){
+	$html = '';
+	$file = get_template_directory().'/views_support/block/question/tab.php';
+	$questions = get_field( 'miracle-main-page-question-blocks' );
+
+	$bollean = true;
+	foreach( $questions as $question ):
+		$block    = file_get_contents( $file );
+		$class    = ( $bollean ) ? 'mir-tab_margin-right' : '';
+		$bollean  = !$bollean;
+		$quest    = $question['question'];
+		$answer   = $question['answer'];
+
+		$block = str_replace( '<% class %>', $class, $block );
+		$block = str_replace( '<% question %>', $quest, $block );
+		$block = str_replace( '<% answer %>', $answer, $block );
+
+		$html   .= $block;
+	endforeach;
+
+	return $html;
+}

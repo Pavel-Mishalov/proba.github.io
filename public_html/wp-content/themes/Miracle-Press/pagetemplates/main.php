@@ -52,6 +52,8 @@ Template Name: Страница "Главная страница"
 
 	include( THEME . '/views_support/main/feedback.php' );
 
+	$title = get_field('miracle-main-page-question-title');
+
 	include( THEME . '/views_support/main/question.php' );
 	
 	get_footer();

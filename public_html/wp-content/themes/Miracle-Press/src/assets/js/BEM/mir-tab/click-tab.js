@@ -1,16 +1,18 @@
 import $ from 'jquery';
 
 var init_tab = function(){
-	$('.mir-tabs').find('.mir-tab').each(function(index,item){
-		$(item).data('active', false);
-		var h = $(item).find('.mir-tab__question').outerHeight();
-		var ih = $(item).find('.mir-tab__icon').height();
-		var iw = $(item).find('.mir-tab__icon').width();
-		var pv = ( h - ih - 2 ) / 2;
-		var ph = ( h - iw - 1 ) / 2;
-		$(item).find('.mir-tab__icon').css('padding', pv + 'px ' + ph + 'px' );
-		$(item).find('.mir-tab__question').css( 'width', 'calc( 100% - 2px - ' + h + 'px )' );
-	});
+	if( $('.mir-tabs').length > 0 ){
+		$('.mir-tabs').find('.mir-tab').each(function(index,item){
+			$(item).data('active', false);
+			var h = $(item).find('.mir-tab__question').outerHeight();
+			var ih = $(item).find('.mir-tab__icon').height();
+			var iw = $(item).find('.mir-tab__icon').width();
+			var pv = ( h - ih - 2 ) / 2;
+			var ph = ( h - iw - 1 ) / 2;
+			$(item).find('.mir-tab__icon').css('padding', pv + 'px ' + ph + 'px' );
+			$(item).find('.mir-tab__question').css( 'width', 'calc( 100% - 2px - ' + h + 'px )' );
+		});
+	}
 }
 
 $(document).ready( init_tab );
