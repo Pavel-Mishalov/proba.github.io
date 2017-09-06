@@ -12,11 +12,11 @@ $(document).ready(function(){
 			lazyLoad:true,
 			navText: ['<i class="miracle-icon-left-chevron"></i>','<i class="miracle-icon-right-chevron"></i>'],
 			responsive:{
-				0:{
+				500:{
 					items:1
 				},
 				800:{
-					items:2
+					items:3
 				},
 				1000:{
 					items:5

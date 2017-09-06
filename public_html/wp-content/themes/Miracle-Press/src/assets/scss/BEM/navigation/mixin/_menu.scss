@@ -3,5 +3,22 @@
 		max-width: $global-width;
 		padding: 0 1rem 0 0;
 		margin: 0 auto;
+		display: inline-flex;
+		flex-direction: row;
+		align-items: flex-start;
+		align-content: flex-end;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
 	}
+}
+
+
+@media only screen and (max-width: #{$global-width}){
+
+.navigation{
+	&__menu{
+		display: flex;
+	}
+}
+
 }

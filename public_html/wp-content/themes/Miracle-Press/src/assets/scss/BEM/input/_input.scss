@@ -1,7 +1,9 @@
 .input{
 	width: calc( 100% / 3 - 2px );
-	display: inline-flex;
+	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	flex-grow: 1;
 	&_padding-right{
 		padding-right: 2.8rem;
 	}
@@ -16,6 +18,7 @@
 	}
 	&_width-big{
 		width: calc( 100% / 3 + 1.5rem );
+		flex: none;
 	}
 	&_width-expanded{
 		width: 100%;

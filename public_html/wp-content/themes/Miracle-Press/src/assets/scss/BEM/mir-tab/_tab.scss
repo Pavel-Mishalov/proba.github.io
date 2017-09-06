@@ -4,8 +4,21 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-content: flex-start;
+	align-items: flex-start;
 	margin-bottom: 2rem;
 	&_margin-right{
 		margin-right: 3rem;
 	}
+}
+
+
+@media only screen and (max-width: 800px){
+
+	.mir-tab{
+		width: calc( 100% - 1.5rem );
+		&_margin-right{
+			margin-right: 1.5rem;
+		}
+	}
+
 }

@@ -6,3 +6,15 @@
 		min-height: 20rem;
 	}
 }
+
+
+@media only screen and (max-width: 600px){
+
+	.slide .slide{
+		&__video{
+			width: 100%;
+			margin-top: 1.5rem;
+		}
+	}
+
+}
