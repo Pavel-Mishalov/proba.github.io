@@ -1,12 +1,8 @@
 .work .work{
 	&__works{
-		max-width: calc( #{$global-width} - 3rem );
-		margin: 3rem auto;
-		padding: 0 2rem;
+		max-width: $global-width;
+		margin: 1.7rem auto 1.25rem;
 		position: relative;
-		display: grid;
-		grid-template-columns: repeat( 3, 1fr );
-		grid-gap: 2.6rem;
 		&_before-work-ajax{
 			&:after{
 				content: "";
@@ -19,22 +15,4 @@
 			}
 		}
 	}
-}
-
-
-@media only screen and (max-width: 900px){
-
-	.work .work__works{
-		grid-template-columns: repeat( 2, 1fr );
-	}
-
-}
-
-
-@media only screen and (max-width: 500px){
-
-	.work .work__works{
-		grid-template-columns: 1fr;
-	}
-
 }
