@@ -15,8 +15,11 @@ $(document).ready(function(){
 				500:{
 					items:1
 				},
-				800:{
+				700:{
 					items:3
+				},
+				900:{
+					items:4
 				},
 				1000:{
 					items:5
@@ -24,8 +27,19 @@ $(document).ready(function(){
 			}
 		});
 
-		var h = $(item).width() / 5 - 10;
-		$(item).find('.item').height(h);
+		if( $('body').width() > 900 ){
+			var h = $(item).width() / 5 - 10;
+			$(item).find('.item').height(h);
+		}else if($('body').width() < 900 && $('body').width() > 700 ){
+			var h = $(item).width() / 4 - 10;
+			$(item).find('.item').height(h);
+		}else if($('body').width() < 700 && $('body').width() > 500 ){
+			var h = $(item).width() / 3 - 10;
+			$(item).find('.item').height(h);
+		}else if($('body').width() < 500){
+			var h = $(item).width() / 1 - 10;
+			$(item).find('.item').height(h);
+		}
 
 		if( $.browser.msie ){
 			$(item).find('.item').each(function(i, elem){

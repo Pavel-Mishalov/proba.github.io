@@ -1,1 +1,1 @@
-<p class="product-card__direction <% class %>"><% name %></p>
+<p class="product-card__direction <% class %>" data-position="<% position %>"><% name %></p>

@@ -190,6 +190,7 @@
 @import 'BEM/modal/modal';
 @import 'BEM/modal/mixin/tech-requerement';
 @import 'BEM/modal/mixin/call-requer';
+@import 'BEM/modal/mixin/product-modal';
 
 @import 'BEM/tech-requerement/__close-button/close-button';
 @import 'BEM/tech-requerement/__section/section';
@@ -199,6 +200,13 @@
 
 @import 'BEM/call-requer/__close-button/close-button';
 @import 'BEM/call-requer/mixin/section-title';
+
+@import 'BEM/product-modal/product-modal';
+@import 'BEM/product-modal/__product-components/product-components';
+@import 'BEM/product-modal/__notes/notes';
+
+@import 'BEM/other-product/__title/title';
+@import 'BEM/other-product/__link/link';
 
 @import 'BEM/feedback/feedback';
 @import 'BEM/feedback/mixin/mir-slider';

@@ -19,6 +19,7 @@ import './BEM/after-navigation/mixin';
 import './BEM/after-navigation/button';
 import './BEM/company-info/mixin';
 import './BEM/product-card/__images/images';
+import './BEM/product-card/__product-modal/modal';
 import './BEM/navigation/navigation-scroll';
 import './BEM/working-steps/mixin';
 import './BEM/canvas-menu/mobile-menu';

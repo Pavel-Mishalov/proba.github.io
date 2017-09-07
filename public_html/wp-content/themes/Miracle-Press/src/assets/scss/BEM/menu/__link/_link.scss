@@ -25,6 +25,7 @@
 			}
 		}
 		&_active{
+			cursor: default;
 			color: $black;
 			&:after{
 				width: 100%;

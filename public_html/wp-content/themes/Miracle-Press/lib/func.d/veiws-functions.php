@@ -257,7 +257,7 @@ function miracle_get_work_cards( $count_card = 6, $cat = 'all', $page_id = 0, $o
 	return $html;
 }
 
-function miracle_get_modal( $views = '' ){
+function miracle_get_modal( $views = '', $option = array() ){
 	$html = '';
 	$file = get_template_directory() . '/views_support/block/modal/' . $views . '/' . $views . '.php';
 
@@ -280,12 +280,166 @@ function miracle_get_modal( $views = '' ){
 				$html   .= $block;
 				break;
 
+			case 'product-modal':
+				$block      = file_get_contents( $file );
+				$title      = $option['cat-name'];
+				$cat_id     = $option['category']->term_id;
+				$other_cat  = miracle_get_product_modal_other_category( $option['other-category'] );
+				$navigation = miracle_get_product_modal_product_navigation( $option['products'] );
+				$slides     = miracle_get_product_modal_product_slide( $option['products'] );
+
+				$block   = str_replace( '<% title %>', $title, $block );
+				$block   = str_replace( '<% id %>', $cat_id, $block );
+				$block   = str_replace( '<% other-category %>', $other_cat, $block );
+				$block   = str_replace( '<% navigation %>', $navigation, $block );
+				$block   = str_replace( '<% product-slides %>', $slides, $block );
+				 
+				$html   .= $block;
+				break;
+
 			default:
 				break;
 		}
 
 	endif;
 
+	return $html;
+}
+
+function miracle_get_product_modal_other_category( $cat = array() ){
+	$html .= '';
+	$file = get_template_directory() . '/views_support/block/modal/product-modal/other-category.php';
+
+	foreach( $cat as $category ):
+		$block = file_get_contents( $file );
+		$name  = $category->name;
+		$id    = $category->term_id;
+		$block = str_replace( '<% name %>', $name, $block );
+		$block = str_replace( '<% category %>', $id, $block );
+		$html .= $block;
+	endforeach;
+
+	return $html;
+}
+
+function miracle_get_product_modal_product_navigation( $products = array() ){
+	$html .= '';
+	$file  = get_template_directory() . '/views_support/block/modal/product-modal/product-navigation.php';
+	$id    = 0;
+
+	foreach( $products as $product ):
+		$block = file_get_contents( $file );
+		$name  = $product->post_title;
+		$block = str_replace( '<% name %>', $name, $block );
+		$block = str_replace( '<% id %>', $id, $block );
+		$html .= $block;
+
+		$id++;
+	endforeach;
+
+	return $html;
+}
+
+function miracle_get_product_modal_product_slide( $products = array() ){
+	$html .= '';
+	$file = get_template_directory() . '/views_support/block/modal/product-modal/product-slide.php';
+
+	foreach( $products as $product ):
+		$block         = file_get_contents( $file );
+		$subtitle      = get_field( 'miracle-product-post-subtitle', $product->ID );
+		$table_title_1 = get_field( 'miracle-product-post-order-list-title-1', $product->ID );
+		$table_title_2 = get_field( 'miracle-product-post-order-list-title-2', $product->ID );
+		$price_info    = get_field( 'miracle-product-post-order-list', $product->ID );
+		$price_pos     = miracle_get_product_modal_product_slide_veiw_price_list_position( $price_info );
+		$notes         = get_field( 'miracle-product-post-notes', $product->ID );
+		$notes         = miracle_get_product_modal_product_slide_veiw_notes( $notes );
+
+		$block = str_replace( '<% subtitle %>', $subtitle, $block );
+		$block = str_replace( '<% table-title-1 %>', $table_title_1, $block );
+		$block = str_replace( '<% table-title-2 %>', $table_title_2, $block );
+		$block = str_replace( '<% price-list-position %>', $price_pos, $block );
+		$block = str_replace( '<% notes %>', $notes, $block );
+		$html .= $block;
+	endforeach;
+
+	return $html;
+}
+
+function miracle_get_product_modal_product_slide_veiw_price_list_position( $data = array() ){
+	$html .= '';
+	$file = get_template_directory() . '/views_support/block/modal/product-modal/product-price-list.php';
+
+	foreach( $data as $value ):
+		$block = file_get_contents( $file );
+		$name  = $value['name'];
+		$price  = $value['price'];
+
+		$block = str_replace( '<% name %>', $name, $block );
+		$block = str_replace( '<% price %>', $price, $block );
+		$html .= $block;
+	endforeach;
+
+	return $html;
+}
+
+function miracle_get_product_modal_product_slide_veiw_notes( $data = array() ){
+	$html .= '';
+	$file = get_template_directory() . '/views_support/block/modal/product-modal/product-notes.php';
+
+	$star = '*';
+	foreach( $data as $value ):
+		$block = file_get_contents( $file );
+		$note  = $value['note'];
+
+		$block = str_replace( '<% note %>', $note, $block );
+		$block = str_replace( '<% star %>', $star, $block );
+		$html .= $block;
+
+		$star .= '*';
+	endforeach;
+
+	return $html;
+}
+
+function miracle_get_product_modals(){
+	$html = '';
+	$active_product = array();
+	if( is_page_template( 'pagetemplates/main.php' ) ):
+		$products = get_field( 'miracle-main-page-price-list-product-posts' );
+		foreach ( $products as $product ):
+			$category = get_field( 'miracle-product-post-category', $product->ID );
+			if( !in_array( $category, $active_product) ):
+				array_push( $active_product, $category );
+			endif;
+		endforeach;
+
+		foreach( $active_product as $key=>$cat ):
+
+			$category_name = $cat->name;
+			$other_category = $active_product;
+			unset( $other_category[ $key ] );
+			$tovari = array();
+
+			foreach ( $products as $product ):
+				$category = get_field( 'miracle-product-post-category', $product->ID )->term_id;
+				if( $cat->term_id == $category ):
+					array_push( $tovari, $product );
+				endif;
+			endforeach;
+
+			$option = array(
+					'category' => $cat,
+					'cat-name' => $category_name,
+					'other-category' => $other_category,
+					'products' => $tovari
+					);
+
+
+			$block = miracle_get_modal( 'product-modal', $option );
+			$html .= $block;
+
+		endforeach;
+	endif;
 	return $html;
 }
 
@@ -346,14 +500,16 @@ function miracle_get_product_cards(){
 		endforeach;
 
 		foreach( $active_product as $cat ):
-			$block = file_get_contents( $file );
+			$block       = file_get_contents( $file );
+			$id          = $cat->term_id;
 			$image_array = get_field( 'miracle-product-category-image', $cat );
-			$image = $image_array['url'];
-			$image_alt = $image_array['alt'];
+			$image       = $image_array['url'];
+			$image_alt   = $image_array['alt'];
 			$image_title = $image_array['title'];
-			$name  = $cat->name;
-			$direction = '';
+			$name        = $cat->name;
+			$direction   = '';
 			$event = true;
+			$position = 0;
 			foreach ( $products as $product ):
 				$category = get_field( 'miracle-product-post-category', $product->ID )->term_id;
 				if( $cat->term_id == $category ):
@@ -363,9 +519,13 @@ function miracle_get_product_cards(){
 					$direction_block = file_get_contents( $direction_file );
 					$direction_block = str_replace( '<% class %>', $direction_class, $direction_block );
 					$direction_block = str_replace( '<% name %>', $direction_name, $direction_block );
+					$direction_block = str_replace( '<% position %>', $position, $direction_block );
 					$direction .= $direction_block;
+
+					$position++;
 				endif;
 			endforeach;
+			$block = str_replace( '<% id %>', $id, $block );
 			$block = str_replace( '<% name %>', $name, $block );
 			$block = str_replace( '<% image %>', $image, $block );
 			$block = str_replace( '<% image-alt %>', $image_alt, $block );

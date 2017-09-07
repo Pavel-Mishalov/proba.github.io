@@ -1,0 +1,244 @@
+{
+    "key": "group_59b05ee2a9e5a",
+    "title": "\u0410\u0442\u0440\u0438\u0431\u0443\u0442\u044b \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u0430",
+    "fields": [
+        {
+            "key": "field_59b0616b96b95",
+            "label": "\u041f\u043e\u0434\u0437\u0430\u0433\u043e\u043b\u043e\u0432\u043e\u043a",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59b05f2903d2e",
+            "label": "\u041a\u0430\u043a\u043e\u0439-\u0442\u043e \u043f\u043e\u0434\u0437\u0430\u0433\u043e\u043b\u043e\u0432\u043e\u043a",
+            "name": "miracle-product-post-subtitle",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "\u0428\u0438\u0440\u043e\u043a\u043e\u0444\u043e\u0440\u043c\u0430\u0442\u043d\u044b\u0439 \u043f\u0440\u0438\u043d\u0442\u0435\u0440 PRO SK",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59b0618596b96",
+            "label": "\u041f\u0440\u0430\u0439\u0441 \u043b\u0438\u0441\u0442",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59b05f7003d2f",
+            "label": "\u041f\u0440\u0430\u0439\u0441 \u043b\u0438\u0441\u0442 \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u0430",
+            "name": "miracle-product-post-order-list",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": "",
+            "max": "",
+            "layout": "table",
+            "button_label": "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c",
+            "sub_fields": [
+                {
+                    "key": "field_59b05fc403d30",
+                    "label": "\u041d\u0430\u0438\u043c\u0435\u043d\u043e\u0432\u0430\u043d\u0438\u0435",
+                    "name": "name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "\u0411\u0430\u043d\u043d\u0435\u0440 440 \u0433. \u043b\u0438\u0442\u043e\u0439",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59b0601203d31",
+                    "label": "\u0421\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u044c",
+                    "name": "price",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "330 \u0440\u0443\u0431.",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_59b0605a03d32",
+            "label": "\u0417\u0430\u0433\u043e\u043b\u043e\u0432\u043a\u0438 \u043f\u0440\u0430\u0439\u0441 \u043b\u0438\u0441\u0442\u0430",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59b0608803d33",
+            "label": "\u041f\u0435\u0440\u0432\u044b\u0439 \u0441\u0442\u043e\u043b\u0431\u0435\u0446",
+            "name": "miracle-product-post-order-list-title-1",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "\u041c\u0430\u0442\u0435\u0440\u0438\u0430\u043b",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59b060c403d34",
+            "label": "\u0412\u0442\u043e\u0440\u043e\u0439 \u0441\u0442\u043e\u043b\u0431\u0435\u0446",
+            "name": "miracle-product-post-order-list-title-2",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "\u0426\u0435\u043d\u0430 \u0432 \u0440\u0443\u0431\u043b\u044f\u0445 \u0437\u0430 \u043c2 (\u0441 \u043d\u0434\u0441)",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59b08612a2b9e",
+            "label": "\u041f\u0440\u0438\u043c\u0435\u0447\u0430\u043d\u0438\u044f",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59b08633a2b9f",
+            "label": "\u041f\u0440\u0438\u043c\u0435\u0447\u0430\u043d\u0438\u044f",
+            "name": "miracle-product-post-notes",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": "",
+            "max": "",
+            "layout": "table",
+            "button_label": "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c",
+            "sub_fields": [
+                {
+                    "key": "field_59b0866fa2ba0",
+                    "label": "\u041f\u0440\u0438\u043c\u0435\u0447\u0430\u043d\u0438\u0435",
+                    "name": "note",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1504740988
+}
