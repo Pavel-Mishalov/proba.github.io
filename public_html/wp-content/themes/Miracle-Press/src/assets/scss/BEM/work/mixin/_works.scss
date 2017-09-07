@@ -2,6 +2,7 @@
 	&__works{
 		max-width: calc( #{$global-width} - 3rem );
 		margin: 3rem auto;
+		padding: 0 2rem;
 		position: relative;
 		display: grid;
 		grid-template-columns: repeat( 3, 1fr );
