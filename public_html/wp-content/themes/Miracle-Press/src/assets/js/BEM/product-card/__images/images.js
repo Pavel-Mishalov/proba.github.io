@@ -14,7 +14,9 @@ var resize_image = function(){
 				$(element).css( 'background-image', 'url(' + image + ')' ).attr('title', title);
 			}else{
 				$image = $(element).find('img').attr('data-src');
-				$(element).css( 'background-image', 'url(' + image + ')' ).attr('title', title);
+				if( image != undefined ){
+					$(element).css( 'background-image', 'url(' + image + ')' ).attr('title', title);
+				}
 			}
 			$(element).find('img').remove();
 		}
