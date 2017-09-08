@@ -667,3 +667,32 @@ function miracle_get_question_tabs(){
 
 	return $html;
 }
+
+function miracle_get_category_tabs_item(){
+	$html = '';
+	$file = get_template_directory().'/views_support/block/nav-tab/category.php';
+	$file_post_tab = get_template_directory().'/views_support/block/nav-tab/post.php';
+
+	$categories = get_categories();
+	foreach( $categories as $category ):
+		$block = file_get_contents( $file );
+		$name  = $category->name;
+		$post_link = '';
+		$posts = get_posts( array( 'category_name' => $category->slug ) );
+		foreach( $posts as $post_v ):
+			$post_link_block = file_get_contents( $file_post_tab );
+			$link  = get_permalink( $post_v->ID );
+			$title = $post_v->post_title;
+
+			$post_link_block = str_replace( '<% link %>', $link, $post_link_block );
+			$post_link_block = str_replace( '<% title %>', $title, $post_link_block );
+			$post_link .= $post_link_block;
+		endforeach;
+
+		$block = str_replace( '<% name %>', $name, $block );
+		$block = str_replace( '<% posts-link %>', $post_link, $block);
+		$html .= $block;
+	endforeach;
+
+	return $html;
+}
