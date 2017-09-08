@@ -23,6 +23,7 @@ function my_custom_menu_page(){
 	<p>В данном разделе настраиваются общие данные организации, такие как:<p>
 	<ul>
 		<li><a href="?page=miracle-option-logo">Логотип</a>,</li>
+		<li><a href="?page=miracle-option-menu">Меню</a>,</li>
 		<li><a href="?page=miracle-option-phone-number">Номер телефона</a>,</li>
 		<li><a href="?page=miracle-option-email-address">Электронная почта</a>,</li>
 		<li><a href="?page=miracle-option-work">График работы</a>,</li>
@@ -39,6 +40,13 @@ if( function_exists('acf_add_options_page') ) {
 		'page_title' 	=> 'Логотип сайта',
 		'menu_title'	=> 'Логотип сайта',
 		'menu_slug'  	=> 'miracle-option-logo',
+		'parent_slug'	=> 'miracle-company-settings',
+	));
+
+	acf_add_options_page(array(
+		'page_title' 	=> 'Меню',
+		'menu_title'	=> 'Меню',
+		'menu_slug'  	=> 'miracle-option-menu',
 		'parent_slug'	=> 'miracle-company-settings',
 	));
 

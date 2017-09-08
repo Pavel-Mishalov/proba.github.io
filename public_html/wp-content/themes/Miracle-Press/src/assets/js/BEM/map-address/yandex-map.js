@@ -1,7 +1,9 @@
 import $ from 'jquery';
 
 $(document).ready(function(){
-    ymaps.ready( yandex_init );
+    if( $('#yandex-map-address').length > 0 ){
+        ymaps.ready( yandex_init );
+    }
 });
 
 var yandex_init = function(){
