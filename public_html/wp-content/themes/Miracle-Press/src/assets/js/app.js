@@ -36,6 +36,7 @@ import './BEM/mir-slider/slide';
 import './BEM/mir-slider/owl-video';
 import './BEM/mir-slider/carousel';
 import './BEM/mir-tab/click-tab';
+import './BEM/nav-tab/nav-tab';
 
 $(document).ready(function(){
 	if( $.browser.msie ){

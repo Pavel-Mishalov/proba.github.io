@@ -1,0 +1,40 @@
+.nav-tab .nav-tab{
+	&__link{
+		position: relative;
+		padding: 1.5rem 3rem 1.5rem 1.5rem;
+		line-height: 1;
+		font-size: 1rem;
+		font-weight: 600;
+		background-color: $white;
+		color: $dark-gray;
+		border-bottom: 1px solid $light-gray;
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+		&:hover{
+			background-color: $blue;
+			border-bottom: 1px solid $blue;
+			color: $white;
+			.nav-tab__icon{
+				color: $white;
+			}
+		}
+		&_active{
+			background-color: $blue;
+			border-bottom: 1px solid $blue;
+			color: $white;
+			.nav-tab__icon{
+				color: $white;
+			}
+		}
+	}
+	&__icon{
+		position: absolute;
+		font-size: 1.2rem;
+		font-weight: bold;
+		color: $dark-gray;
+		right: 1.5rem;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: all 0.3s ease 0s;
+	}
+}

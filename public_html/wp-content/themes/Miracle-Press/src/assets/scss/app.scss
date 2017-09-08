@@ -20,7 +20,7 @@
 @include foundation-accordion;
 @include foundation-accordion-menu;
 @include foundation-badge;
-@include foundation-breadcrumbs;
+//@include foundation-breadcrumbs;
 @include foundation-button-group;
 @include foundation-callout;
 @include foundation-card;
@@ -236,3 +236,18 @@
 
 @import 'BEM/ask-question/ask-question';
 @import 'BEM/ask-question/mixin/wrap-form';
+
+@import 'BEM/miracle-page/miracle-page';
+@import 'BEM/miracle-page/__sidebar/sidebar';
+@import 'BEM/miracle-page/__breadcrumbs/breadcrumbs';
+@import 'BEM/miracle-page/__page-content/page-content';
+
+@import 'BEM/category-nav/category-nav';
+@import 'BEM/category-nav/__title/title';
+
+@import 'BEM/nav-tab/nav-tab';
+@import 'BEM/nav-tab/__posts/posts';
+@import 'BEM/nav-tab/__category/category';
+@import 'BEM/nav-tab/__link/link';
+@import 'BEM/nav-tab/__post-item/post-item';
+@import 'BEM/nav-tab/__post-link/post-link';

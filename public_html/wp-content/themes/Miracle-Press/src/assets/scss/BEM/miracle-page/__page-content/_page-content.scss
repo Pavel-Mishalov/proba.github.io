@@ -1,0 +1,14 @@
+.miracle-page .miracle-page{
+	&__page-content{
+		grid-column-start: 2;
+		grid-column-end: 5;
+		grid-row-start: 2;
+		grid-row-end: 3;
+		padding: 0 2rem 0 1rem;
+
+		/*======== EI =========*/
+
+		-ms-grid-column: 2;
+		-ms-grid-row: 2;
+	}
+}

@@ -1,0 +1,17 @@
+.nav-tab .nav-tab{
+	&__post-link{
+		padding: 0.8rem 1.5rem;
+		width: 100%;
+		line-height: 1;
+		font-size: 1rem;
+		font-weight: 600;
+		color: $dark-gray;
+		text-decoration: underline;
+		text-decoration-color: $dark-gray;
+		transition: all 0.3s ease 0s;
+		&:hover{
+			color: $blue;
+			text-decoration-color: rgba( $white, 0 );
+		}
+	}
+}

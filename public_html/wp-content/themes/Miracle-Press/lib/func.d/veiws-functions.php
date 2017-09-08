@@ -120,6 +120,12 @@ function miracle_get_modal_form(){
 	return $html;
 }
 
+function miracle_get_subs_form(){
+	$html = '';
+	$html .= file_get_contents( get_template_directory() . '/views_support/block/contact-form-7/subs-form.php' );
+	return $html;
+}
+
 function miracle_get_company_working_steps(){
 	$html = '';
 	if( is_page_template( 'pagetemplates/main.php' ) ):

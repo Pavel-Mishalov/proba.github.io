@@ -23,5 +23,9 @@
 				background-color: map-get($foundation-palette, orange);
 			}
 		}
+		&_no-padding{
+			padding-right: 0;
+			padding-left: 0;
+		}
 	}
 }

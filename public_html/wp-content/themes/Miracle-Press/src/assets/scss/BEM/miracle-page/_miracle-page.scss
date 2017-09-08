@@ -1,0 +1,17 @@
+.miracle-page{
+	max-width: $global-width;
+	margin: 0 auto;
+	display: grid;
+	grid-template: auto 1fr / 1fr 3fr;
+
+	/*======== EI =========*/
+	display: -ms-grid;
+	-ms-grid-columns: 1fr 3fr;
+	-ms-grid-rows: auto 1fr;
+}
+
+.page-bg{
+	width: 100%;
+	background-color: $light-gray;
+	padding-top: 3rem;
+}

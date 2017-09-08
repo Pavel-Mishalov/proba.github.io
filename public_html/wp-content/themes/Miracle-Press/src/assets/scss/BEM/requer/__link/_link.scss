@@ -6,9 +6,10 @@
 		text-decoration-color: $dark-gray;
 		text-align: left;
 		color: $dark-gray;
+		transition: all 0.3s ease 0s;
 		&:hover{
 			color: initial;
-			text-decoration: none;
+			text-decoration-color: rgba( $white, 0 );
 		}
 	}
 }
