@@ -24,7 +24,10 @@
   display: -ms-grid;
   display: grid;
   grid-gap: 1rem 3rem;
-  grid-template: auto 1fr / 1fr 3fr; }
+  grid-template: auto 1fr / 1fr 3fr;
+  -ms-grid-columns: 1fr 3fr;
+  -ms-grid-rows: auto 1fr;
+}
 
 .sidebar {
   -ms-grid-column: 1;
