@@ -1,0 +1,9 @@
+.post-card .post-card{
+	&__description{
+		padding: 0 1.5rem 1.4rem;
+		line-height: 1.5;
+		font-size: 1.2rem;
+		color: $black;
+		border-bottom: 1px solid $light-gray;
+	}
+}

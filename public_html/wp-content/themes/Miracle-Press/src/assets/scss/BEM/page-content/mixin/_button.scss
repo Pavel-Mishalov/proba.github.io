@@ -1,0 +1,20 @@
+.page-content{
+	&__button{
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: $white;
+		border: 1px solid $medium-gray;
+		color: $dark-gray;
+		text-transform: none;
+		padding: 1.5rem 5rem 1.1rem;
+		margin-bottom: 4rem;
+		&:hover{
+			background-color: $blue;
+		}
+		&:focus{
+			background-color: $white;
+			color: $dark-gray;
+		}
+	}
+}

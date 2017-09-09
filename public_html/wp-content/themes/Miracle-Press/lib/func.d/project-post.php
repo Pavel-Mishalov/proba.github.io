@@ -27,7 +27,7 @@ function miracle_project_post_init(){
 
 		  ),
         'description'        => 'Здесь хранятся все проекты',
-		'public'             => true,
+		'public'             => false,
 		'publicly_queryable' => true,
 		'show_ui'            => true,
 		'show_in_menu'       => true,
@@ -46,4 +46,4 @@ function miracle_project_post_init(){
 	) );
 }
 
-add_theme_support( 'post-thumbnails', array( 'project' ) );
+add_theme_support( 'post-thumbnails', array( 'project', 'post' ) );

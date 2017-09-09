@@ -668,7 +668,7 @@ function miracle_get_question_tabs(){
 	return $html;
 }
 
-function miracle_get_category_tabs_item(){
+function miracle_get_category_tabs_item( $cat = '' ){
 	$html = '';
 	$file = get_template_directory().'/views_support/block/nav-tab/category.php';
 	$file_post_tab = get_template_directory().'/views_support/block/nav-tab/post.php';
@@ -678,6 +678,9 @@ function miracle_get_category_tabs_item(){
 		$block = file_get_contents( $file );
 		$name  = $category->name;
 		$post_link = '';
+		$nav_tab_class = ( $cat != $category->slug ) ? '' : 'nav-tab__link_active';
+		$post_class = ( $cat != $category->slug ) ? '' : 'nav-tab__posts_active';
+		$icon_class = ( $cat != $category->slug ) ? 'miracle-icon-chevron-down' : 'miracle-icon-up-chevron';
 		$posts = get_posts( array( 'category_name' => $category->slug ) );
 		foreach( $posts as $post_v ):
 			$post_link_block = file_get_contents( $file_post_tab );
@@ -691,6 +694,115 @@ function miracle_get_category_tabs_item(){
 
 		$block = str_replace( '<% name %>', $name, $block );
 		$block = str_replace( '<% posts-link %>', $post_link, $block);
+		$block = str_replace( '<% link-class %>', $nav_tab_class, $block);
+		$block = str_replace( '<% posts-class %>', $post_class, $block);
+		$block = str_replace( '<% icon-class %>', $icon_class, $block);
+		$html .= $block;
+	endforeach;
+
+	return $html;
+}
+
+function miracle_get_breadcrumbs( $tpage = '' ){
+	$html = '';
+	$file = get_template_directory().'/views_support/block/breadcrumbs/breadcrumbs.php';
+
+	$default = array(
+					array( 'name' => 'Главная', 'link' => '/' ),
+					array( 'name' => 'Блог', 'link' => get_post_type_archive_link('post') ) 
+				);
+
+	if( $tpage != '' ):
+		$pages = array( 'name'=>$tpage );
+		$pages = array_merge( $default, $pages );
+	else:
+		$pages = $default;
+		$tpage = 'Блог';
+	endif;
+
+	foreach( $pages as $page ):
+		if( next($pages) ):
+			$block = file_get_contents( $file );
+			$name  = $page['name'];
+			$link  = $page['link'];
+
+			$block = str_replace( '<% name %>', $name, $block );
+			$block = str_replace( '<% link %>', $link, $block );
+		else:
+			$block = '<span>' . $tpage . '</span>';
+		endif;
+		$html .= $block;
+	endforeach;
+
+	return $html;
+}
+
+function miracle_get_post_breadcrumbs( $cat_name = '', $cat_link = '', $post_title = '' ){
+	$html = '';
+	$file = get_template_directory().'/views_support/block/breadcrumbs/breadcrumbs.php';
+
+	$pages = array(
+					array( 'name' => 'Главная', 'link' => '/' ),
+					array( 'name' => 'Блог', 'link' => get_post_type_archive_link('post') ) 
+				);
+
+	$pages[] = array( 'name' => $cat_name, 'link' => $cat_link );
+
+	foreach( $pages as $page ):
+		$block = file_get_contents( $file );
+		$name  = $page['name'];
+		$link  = $page['link'];
+
+		$block = str_replace( '<% name %>', $name, $block );
+		$block = str_replace( '<% link %>', $link, $block );
+		
+		$html .= $block;
+	endforeach;
+
+	$html .= '<span>' . $post_title . '</span>';
+	return $html;
+}
+
+function miracle_get_post_cards( $count = 6, $offset = 0, $cat = false, $tag = false, $search = false ){
+	$html = '';
+	$file = get_template_directory().'/views_support/block/posts/post-card.php';
+
+	$args = array(
+				'post_type'      => 'post',
+				'orderby'        => 'date',
+				'order'          => 'DESC',
+				'posts_per_page' => $count,
+				'offset'         => $offset
+			);
+	if( $cat ):
+		$args['category_name'] = $cat;
+	endif;
+	if( $tag ):
+		$args['tag'] = $tag;
+	endif;
+	if( $search ){
+		$args['s'] = $search;
+	}
+
+	$query = new WP_Query($args);
+	$posts = $query->posts;
+
+	foreach( $posts as $post ):
+		$block = file_get_contents( $file );
+		$post_thumbnail_id = get_post_thumbnail_id( $post->ID );
+		$image_title       = get_post( $post_thumbnail_id )->post_title;
+		$image = wp_get_attachment_image( $post_thumbnail_id, 'full', false, array( 'title'=>$image_title ) );
+		$title = $post->post_title;
+		$description = $post->post_excerpt;
+		$date  = get_the_date( 'd.m.Y', $post->ID );
+		$link  = get_permalink( $post->ID );
+
+		$block = str_replace( '<% image %>', $image, $block );
+		$block = str_replace( '<% title %>', $title, $block );
+		$block = str_replace( '<% description %>', $description, $block );
+		$block = str_replace( '<% date %>', $date, $block );
+		$block = str_replace( '<% link %>', $link, $block );
+
 		$html .= $block;
 	endforeach;
 

@@ -1,0 +1,14 @@
+.post-card .post-card{
+	&__date{
+		font-size: 1.1rem;
+		margin-top: -0.2rem;
+		color: $dark-gray;
+		&-icon{
+			color: $light-gray;
+			font-size: 1.6rem;
+			margin-right: 1rem;
+			top: 0.3rem;
+			position: relative;
+		}
+	}
+}

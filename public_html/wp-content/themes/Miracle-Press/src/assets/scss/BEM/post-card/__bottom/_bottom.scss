@@ -1,0 +1,9 @@
+.post-card .post-card{
+	&__bottom{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1.8rem 1.5rem;
+	}
+}

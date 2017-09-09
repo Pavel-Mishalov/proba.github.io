@@ -27,7 +27,7 @@ function miracle_product_post_init(){
 
 		  ),
         'description'        => 'Здесь хранятся все продукты',
-		'public'             => true,
+		'public'             => false,
 		'publicly_queryable' => true,
 		'show_ui'            => true,
 		'show_in_menu'       => true,

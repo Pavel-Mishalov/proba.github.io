@@ -77,3 +77,31 @@ function miracle_yandex_map_init() {
 	echo json_encode($answer);
 	wp_die();
 }
+
+//////////////
+//Page blog //
+//////////////
+
+add_action('wp_ajax_miracle_add_new_post_cart_in_blog', 'miracle_add_new_post_cart_in_blog');
+add_action('wp_ajax_nopriv_miracle_add_new_post_cart_in_blog', 'miracle_add_new_post_cart_in_blog');
+
+function miracle_add_new_post_cart_in_blog() {
+
+	wp_reset_postdata();
+	$nonce = $_POST['nonce'];
+
+	if( ! wp_verify_nonce( $nonce, 'Miracle-Press' ) )
+		die('Ошибка доступа');
+	
+	if( isset( $_POST['search'] ) ){
+		$html = miracle_get_post_cards( 3, $_POST['offset'], false, false, $_POST['search'] );
+	}elseif( isset( $_POST['tag'] ) ){
+		$html = miracle_get_post_cards( 3, $_POST['offset'], false, $_POST['tag'] );
+	}elseif( isset( $_POST['category'] ) ){
+		$html = miracle_get_post_cards( 3, $_POST['offset'], $_POST['category'] );
+	}else{
+		$html = miracle_get_post_cards( 3, $_POST['offset'] );
+	}
+	echo $html;
+	wp_die();
+}

@@ -1,8 +1,8 @@
 <li class="nav-tab__category">
-	<p class="nav-tab__link">
-		<% name %><i class="miracle-icon-chevron-down nav-tab__icon"></i>
+	<p class="nav-tab__link <% link-class %>">
+		<% name %><i class="<% icon-class %> nav-tab__icon"></i>
 	</p>
-	<ul class="nav-tab__posts">
+	<ul class="nav-tab__posts <% posts-class %>">
 		<% posts-link %>
 	</ul>
 </li>

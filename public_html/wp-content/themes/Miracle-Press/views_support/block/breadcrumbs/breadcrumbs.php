@@ -1,0 +1,1 @@
+<a href="<% link %>"><% name %></a><i class="miracle-icon-arrow-right"></i>

@@ -37,6 +37,8 @@ import './BEM/mir-slider/owl-video';
 import './BEM/mir-slider/carousel';
 import './BEM/mir-tab/click-tab';
 import './BEM/nav-tab/nav-tab';
+import './BEM/post-card/image';
+import './BEM/post-card/add-post-blog-page';
 
 $(document).ready(function(){
 	if( $.browser.msie ){
