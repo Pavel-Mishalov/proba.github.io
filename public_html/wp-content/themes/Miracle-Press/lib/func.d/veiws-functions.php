@@ -707,17 +707,13 @@ function miracle_get_breadcrumbs( $tpage = '' ){
 	$html = '';
 	$file = get_template_directory().'/views_support/block/breadcrumbs/breadcrumbs.php';
 
-	$default = array(
+	$pages = array(
 					array( 'name' => 'Главная', 'link' => '/' ),
 					array( 'name' => 'Блог', 'link' => get_post_type_archive_link('post') ) 
 				);
 
 	if( $tpage != '' ):
-		$pages = array( 'name'=>$tpage );
-		$pages = array_merge( $default, $pages );
-	else:
-		$pages = $default;
-		$tpage = 'Блог';
+		$pages[] = array( 'name' => $tpage, 'link' => '' );
 	endif;
 
 	foreach( $pages as $page ):
@@ -729,7 +725,7 @@ function miracle_get_breadcrumbs( $tpage = '' ){
 			$block = str_replace( '<% name %>', $name, $block );
 			$block = str_replace( '<% link %>', $link, $block );
 		else:
-			$block = '<span>' . $tpage . '</span>';
+			$block = '<span>' . $page['name'] . '</span>';
 		endif;
 		$html .= $block;
 	endforeach;
