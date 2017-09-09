@@ -716,8 +716,8 @@ function miracle_get_breadcrumbs( $tpage = '' ){
 		$pages[] = array( 'name' => $tpage, 'link' => '' );
 	endif;
 
-	foreach( $pages as $page ):
-		if( next($pages) ):
+	foreach( $pages as $key=>$page ):
+		if( count( $pages ) != ($key+1) ):
 			$block = file_get_contents( $file );
 			$name  = $page['name'];
 			$link  = $page['link'];
