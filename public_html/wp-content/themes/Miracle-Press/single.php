@@ -36,7 +36,14 @@
 							<i class="post-card__date-icon miracle-icon-calendar"></i>
 							<?= $data ?>
 						</p>
-						<div class="social-icons">Поделиться: Место под иконки</div>
+						<div class="social-icons">
+							Поделиться: 
+								<?php
+									if ( function_exists('dynamic_sidebar') ){
+										dynamic_sidebar('social-icon');
+									}
+								?>
+              			</div>
 					</div>
 				</div>
 			</div>
