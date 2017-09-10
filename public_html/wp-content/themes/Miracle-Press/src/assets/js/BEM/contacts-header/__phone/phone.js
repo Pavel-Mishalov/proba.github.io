@@ -26,5 +26,5 @@ var phone_click = function(event){
 }
 
 if( !isMobile.any() ){
-	$('.contacts-header .contacts-header__phone').bind( 'click', phone_click );
+	$('a[href^="tel"]').bind( 'click', phone_click );
 }

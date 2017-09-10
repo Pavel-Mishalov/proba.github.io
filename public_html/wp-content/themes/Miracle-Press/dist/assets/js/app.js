@@ -4886,14 +4886,14 @@ var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var e='mailto:'+(0,_jquery2.default)('.menu .menu__email').text();(0,_jquery2.default)('.menu .menu__email').attr('href',e);
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var e='mailto:'+(0,_jquery2.default)('.menu .menu__email').text();(0,_jquery2.default)('.menu .menu__email').attr('href',e);var e2='mailto:'+(0,_jquery2.default)('.footer__email').text();(0,_jquery2.default)('.footer__email').attr('href',e2);
 
 /***/ }),
 /* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var isMobile={Android:function Android(){return navigator.userAgent.match(/Android/i);},BlackBerry:function BlackBerry(){return navigator.userAgent.match(/BlackBerry/i);},iOS:function iOS(){return navigator.userAgent.match(/iPhone|iPad|iPod/i);},Opera:function Opera(){return navigator.userAgent.match(/Opera Mini/i);},Windows:function Windows(){return navigator.userAgent.match(/IEMobile/i);},any:function any(){return isMobile.Android()||isMobile.BlackBerry()||isMobile.iOS()||isMobile.Opera()||isMobile.Windows();}};var phone_click=function phone_click(event){event.preventDefault();};if(!isMobile.any()){(0,_jquery2.default)('.contacts-header .contacts-header__phone').bind('click',phone_click);}
+var _jquery=__webpack_require__(0);var _jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var isMobile={Android:function Android(){return navigator.userAgent.match(/Android/i);},BlackBerry:function BlackBerry(){return navigator.userAgent.match(/BlackBerry/i);},iOS:function iOS(){return navigator.userAgent.match(/iPhone|iPad|iPod/i);},Opera:function Opera(){return navigator.userAgent.match(/Opera Mini/i);},Windows:function Windows(){return navigator.userAgent.match(/IEMobile/i);},any:function any(){return isMobile.Android()||isMobile.BlackBerry()||isMobile.iOS()||isMobile.Opera()||isMobile.Windows();}};var phone_click=function phone_click(event){event.preventDefault();};if(!isMobile.any()){(0,_jquery2.default)('a[href^="tel"]').bind('click',phone_click);}
 
 /***/ }),
 /* 45 */

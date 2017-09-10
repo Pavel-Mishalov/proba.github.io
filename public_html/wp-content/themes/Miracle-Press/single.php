@@ -50,7 +50,7 @@
 			<a href="<?= $blog_link ?>" class="page-content__button button" data-page="post">
 				Вернуться к списку статей
 			</a>
-			<div class="category-nav">
+			<!-- <div class="category-nav">
 				<h4 class="category-nav__title">Наши услуги</h4>
 				<ul>
 					<li>Услуга 1</li>
@@ -62,7 +62,7 @@
 					<li>Услуга 7</li>
 					<li>Услуга 8</li>
 				</ul>
-			</div>
+			</div> -->
 		</div>
 	</section>
 	<?php

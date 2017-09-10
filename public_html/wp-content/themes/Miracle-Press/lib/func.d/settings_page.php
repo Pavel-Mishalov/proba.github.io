@@ -28,6 +28,7 @@ function my_custom_menu_page(){
 		<li><a href="?page=miracle-option-email-address">Электронная почта</a>,</li>
 		<li><a href="?page=miracle-option-work">График работы</a>,</li>
 		<li><a href="?page=miracle-option-address">Адрес организации</a>,</li>
+		<li><a href="?page=miracle-option-footer">Футер</a>,</li>
 		<li><a href="?page=miracle-option-social-site">Соц.сети организации</a></li>
 	</ul>
 	<?php
@@ -75,6 +76,13 @@ if( function_exists('acf_add_options_page') ) {
 		'page_title' 	=> 'Адрес организации',
 		'menu_title'	=> 'Адрес организации',
 		'menu_slug'  	=> 'miracle-option-address',
+		'parent_slug'	=> 'miracle-company-settings',
+	));
+
+	acf_add_options_page(array(
+		'page_title' 	=> 'Футер',
+		'menu_title'	=> 'Футер',
+		'menu_slug'  	=> 'miracle-option-footer',
 		'parent_slug'	=> 'miracle-company-settings',
 	));
 

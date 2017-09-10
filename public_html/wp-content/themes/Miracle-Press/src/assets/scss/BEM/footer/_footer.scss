@@ -1,0 +1,10 @@
+.footer{
+	background-color: $black-2;
+	padding: 2rem;
+	display: inline-flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: flex-start;
+}
