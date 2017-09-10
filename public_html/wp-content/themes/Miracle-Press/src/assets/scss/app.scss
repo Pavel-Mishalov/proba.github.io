@@ -244,6 +244,9 @@
 
 @import 'BEM/category-nav/category-nav';
 @import 'BEM/category-nav/__title/title';
+@import 'BEM/category-nav/__simple-posts/simple-posts';
+@import 'BEM/category-nav/__simple-posts-item/simple-posts-item';
+@import 'BEM/category-nav/__simple-posts-link/simple-posts-link';
 
 @import 'BEM/nav-tab/nav-tab';
 @import 'BEM/nav-tab/__posts/posts';
@@ -279,3 +282,7 @@
 @import 'BEM/comment/__body/body';
 @import 'BEM/comment/__date/date';
 @import 'BEM/comment/__head/head';
+
+@import 'BEM/tags/tags';
+@import 'BEM/tags/__title/title';
+@import 'BEM/tags/__link/link';

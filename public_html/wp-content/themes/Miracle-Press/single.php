@@ -68,6 +68,52 @@
 	<?php comments_template(''); ?>
 
 </div>
+
+
+<?php
+	$posttags = get_the_tags( $wp_query->post->ID );
+	$other_posts = get_posts( array( 'orderby'=>'rand', 'numberposts'=>12 ) );
+?>
+<div>
+	<?php if( count( $posttags ) > 0 ): ?>
+	<div class="tags">
+		<h3 class="tags__title">Теги:</h3>
+		<?php
+			$iterator = 1;
+			foreach( $posttags as $tag ):
+				$after_tag = ( $iterator == count($posttags) ) ? '.':',';
+				$iterator++;
+		?>
+			<a href="<?= get_tag_link( $tag->term_id ) ?>" class="tags__link"><?= $tag->name ?></a><?= $after_tag ?> 
+		<?php
+			endforeach;
+		?>
+	</div>
+	<?php endif; ?>
+
+	<div class="simple-posts" style="max-width: 117rem; margin: 0 auto;">
+		<div class="simple-posts__category-nav category-nav">
+			<h4 class="category-nav__title">Похожие статьи</h4>
+			<ul class="category-nav__simple-posts">
+
+				<?php
+					foreach( $other_posts as $other_post ):
+				?>
+				<li class="category-nav__simple-posts-item">
+					<a href="<?= get_post_permalink( $other_post->ID ) ?>" class="category-nav__simple-posts-link">
+						<i class="miracle-icon-arrow-right"></i><?= $other_post->post_title ?>
+					</a>
+				</li>
+				<?php
+					endforeach;
+				?>
+
+			</ul>
+		</div>
+	</div>
+
+</div>
+
 <?php
 	get_footer();
 ?>

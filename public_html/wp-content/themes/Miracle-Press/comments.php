@@ -46,11 +46,6 @@
 		</div>
 	</div>
 
-
-
-
-
-
 <?php
 	$post = get_post(get_queried_object_id());
 	$comments_count = $post->comment_count;
@@ -63,7 +58,6 @@
 			$date_time = get_comment_date( 'G:i', $comment->comment_ID );
 			$comment   = $comment->comment_content;
 ?>
-
 <div class="comment">
 	<div class="comment__head">
 		<p class="comment__author"><?= $autor ?></p>
@@ -82,9 +76,4 @@
 		endforeach;
 	endif;
 ?>
-
-
-
-
-
 </div>
