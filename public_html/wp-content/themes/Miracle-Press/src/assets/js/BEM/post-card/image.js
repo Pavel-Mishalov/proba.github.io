@@ -9,7 +9,7 @@ import $ from 'jquery';
 		var height = width / 1.4344;
 		this.find('.post-card__image').each(function(index, element){
 			$(element).css('height',height);
-			if( $.browser.msie ){
+			if( $.browser.msie && $(element).find('img').attr('src') != undefined ){
 				var src = $(element).find('img').attr('src');
 				$(element).find('img').remove();
 				$(element).css( 'background-image', 'url('+src+')' );

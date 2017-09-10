@@ -64,6 +64,9 @@
 
 		include( get_template_directory() . '/views_support/main/form-query.php' );
 	?>
+
+	<?php comments_template(''); ?>
+
 </div>
 <?php
 	get_footer();

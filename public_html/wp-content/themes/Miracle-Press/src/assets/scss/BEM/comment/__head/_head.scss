@@ -1,0 +1,9 @@
+.comment .comment{
+	&__head{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid $light-gray;
+	}
+}

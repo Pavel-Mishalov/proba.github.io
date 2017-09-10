@@ -32,6 +32,14 @@ $('.page-content__button').on( 'click', add_post_blog_page );
 var add_post_blog_page_success = function(data){
 	var html = $( data );
 	$('.archive-post').append( html );
+
+	if( $.browser.msie ){
+		$('.archive-post').find('.archive-post__post-card').each(function(index,item){
+			var row = ( index - index % 3 ) / 3 + 1;
+			$(item).attr( 'style', '-ms-grid-row: ' + row );
+		});
+	}
+
 	$('.archive-post').productCardImageResize();
 	if( html.length != 3 ){
 		$('.page-content__button').removeAttr('disabled');

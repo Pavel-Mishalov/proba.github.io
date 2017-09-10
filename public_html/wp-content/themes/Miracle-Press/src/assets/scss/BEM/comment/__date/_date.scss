@@ -1,0 +1,19 @@
+.comment .comment{
+	&__date{
+		margin-left: auto;
+		font-weight: 600;
+		font-size: 1.2rem;
+		color: $dark-gray;
+		i{
+			font-weight: normal;
+			margin-right: 1rem;
+			font-size: 1.5rem;
+			position: relative;
+			top: 0.1rem;
+			color: $light-gray;
+		}
+		span{
+			margin-left: 0.5rem;
+		}
+	}
+}

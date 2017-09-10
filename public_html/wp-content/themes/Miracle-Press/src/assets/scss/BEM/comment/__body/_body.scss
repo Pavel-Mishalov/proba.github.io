@@ -1,0 +1,11 @@
+.comment .comment{
+	&__body{
+		margin-top: 1.6rem;
+		p{
+			font-size: 1.2rem;
+			font-weight: 500;
+			line-height: 1.5;
+			color: $dark-gray;
+		}
+	}
+}
