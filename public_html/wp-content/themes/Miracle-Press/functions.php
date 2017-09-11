@@ -1,7 +1,7 @@
 <?php
 
 include('lib/init.php');
-include('lib/ajax.php');
+// include('lib/ajax.php');
 
 
 register_nav_menu( 'main', 'Главное меню' );
