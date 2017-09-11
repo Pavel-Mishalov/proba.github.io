@@ -424,16 +424,18 @@ function miracle_get_product_modal_product_slide_veiw_notes( $data = array() ){
 	$file = get_template_directory() . '/views_support/block/modal/product-modal/product-notes.php';
 
 	$star = '*';
-	foreach( $data as $value ):
-		$block = file_get_contents( $file );
-		$note  = $value['note'];
+	if( !empty( $data ) ):
+		foreach( $data as $value ):
+			$block = file_get_contents( $file );
+			$note  = $value['note'];
 
-		$block = str_replace( '<% note %>', $note, $block );
-		$block = str_replace( '<% star %>', $star, $block );
-		$html .= $block;
+			$block = str_replace( '<% note %>', $note, $block );
+			$block = str_replace( '<% star %>', $star, $block );
+			$html .= $block;
 
-		$star .= '*';
-	endforeach;
+			$star .= '*';
+		endforeach;
+	endif;
 
 	return $html;
 }
