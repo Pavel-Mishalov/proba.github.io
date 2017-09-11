@@ -1,5 +1,5 @@
 /* Init AddToAny when an AddToAny WordPress Widget is selectively refreshed for customizer preview. */
-jQuery( function() {
+$( function() {
 	// Short-circuit selective refresh events if not in customizer preview or pre-4.5.
 	if ( 'undefined' === typeof wp || ! wp.customize || ! wp.customize.selectiveRefresh ) {
 		return;
