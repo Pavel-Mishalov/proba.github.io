@@ -97,33 +97,33 @@ function miracle_get_company_info(){
 }
 
 function miracle_get_header_form(){
-	$html = '';
-	$html .= file_get_contents( get_template_directory() . '/views_support/block/contact-form-7/header-form.php' );
-	return $html;
+	//$html = '';
+	include( get_template_directory() . '/views_support/block/contact-form-7/header-form.php' );
+	//return $html;
 }
 
 function miracle_get_ask_question_form(){
-	$html = '';
-	$html .= file_get_contents( get_template_directory() . '/views_support/block/contact-form-7/ask-question-form.php' );
-	return $html;
+	// $html = '';
+	include( get_template_directory() . '/views_support/block/contact-form-7/ask-question-form.php' );
+	// return $html;
 }
 
 function miracle_get_cost_calculation_form(){
-	$html = '';
-	$html .= file_get_contents( get_template_directory() . '/views_support/block/contact-form-7/cost-calculation-form.php' );
-	return $html;
+	// $html = '';
+	include( get_template_directory() . '/views_support/block/contact-form-7/cost-calculation-form.php' );
+	// return $html;
 }
 
 function miracle_get_modal_form(){
-	$html = '';
-	$html .= file_get_contents( get_template_directory() . '/views_support/block/contact-form-7/modal-form.php' );
-	return $html;
+	// $html = '';
+	include( get_template_directory() . '/views_support/block/contact-form-7/modal-form.php' );
+	// return $html;
 }
 
 function miracle_get_subs_form(){
-	$html = '';
-	$html .= file_get_contents( get_template_directory() . '/views_support/block/contact-form-7/subs-form.php' );
-	return $html;
+	// $html = '';
+	include( get_template_directory() . '/views_support/block/contact-form-7/subs-form.php' );
+	// return $html;
 }
 
 function miracle_get_company_working_steps(){
