@@ -26,5 +26,6 @@ var onfocus_call_requer_modal = function(event){
 }
 
 $('.after-navigation__button').on( 'click', open_call_requer_modal );
+$('.step-work__content a:not([href^="tel"])').on( 'click', open_call_requer_modal );
 $('.call-requer__close-button').on( 'click', close_call_requer_modal );
 $('.modal').bind('click', onfocus_call_requer_modal);

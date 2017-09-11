@@ -17,7 +17,7 @@
 		<div class="input input_width-big">
 			<label for="bbb3" class="input__label"></label>
 			<input id="bbb3" class="input__submit input__submit_yellow" type="submit" value="Хочу получить расчет стоимости">
-			<p class="input__text-help">Когда вы заполняете телефон и другие данные, Вы автоматически соглашаетесь с <a href="#" class="input__text-help_link">правилами обработки персональных данных</a></p>
+			<p class="input__text-help">Когда вы заполняете телефон и другие данные, Вы автоматически соглашаетесь с <a href="javascript:void(0)" class="input__text-help_link">правилами обработки персональных данных</a></p>
 		</div>
 
 	</div>
@@ -75,7 +75,8 @@
 
 		<div class="edition__input input">
 			<label for="bbb12" class="input__label">Прикрепите файлы: фото или проект:</label>
-			<input id="bbb12" class="input__text-input" type="text" placeholder="Файл">
+			<input id="bbb12" class="input__file-input" type="file" placeholder="Файл">
+			<button class="input__file-input">Файл не выбран</button>
 		</div>
 
 		<div class="edition__textarea edition__textarea_small-margin textarea">
@@ -86,7 +87,7 @@
 		<div class="input input_submit-center">
 			<label for="bbb14" class="input__label"></label>
 			<input id="bbb14" class="input__submit" type="submit" value="Хочу получить расчет стоимости">
-			<p class="input__text-help">Когда вы заполняете телефон и другие данные, Вы автоматически соглашаетесь с <a href="#" class="input__text-help_link">правилами обработки персональных данных</a></p>
+			<p class="input__text-help">Когда вы заполняете телефон и другие данные, Вы автоматически соглашаетесь с <a href="javascript:void(0)" class="input__text-help_link">правилами обработки персональных данных</a></p>
 		</div>
 	
 	</div>

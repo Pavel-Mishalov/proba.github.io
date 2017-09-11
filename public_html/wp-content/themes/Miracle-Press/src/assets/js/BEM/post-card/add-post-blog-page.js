@@ -34,10 +34,27 @@ var add_post_blog_page_success = function(data){
 	$('.archive-post').append( html );
 
 	if( $.browser.msie ){
-		$('.archive-post').find('.archive-post__post-card').each(function(index,item){
-			var row = ( index - index % 3 ) / 3 + 1;
-			$(item).attr( 'style', '-ms-grid-row: ' + row );
-		});
+		if( ( $('body').width() < 1100 && $('body').width() > 900 ) || ( $('body').width() < 700 ) ){
+		
+			$('.archive-post').find('.archive-post__post-card').each(function(index,item){
+				var row = ( index - index % 2 ) / 2 + 1;
+				$(item).attr( 'style', '-ms-grid-row: ' + row );
+			});
+		
+		}else if( $('body').width() < 400 ){
+		
+			$('.archive-post').find('.archive-post__post-card').each(function(index,item){
+				$(item).attr( 'style', '-ms-grid-row: ' + index );
+			});
+		
+		}else{
+		
+			$('.archive-post').find('.archive-post__post-card').each(function(index,item){
+				var row = ( index - index % 3 ) / 3 + 1;
+				$(item).attr( 'style', '-ms-grid-row: ' + row );
+			});
+		
+		}
 	}
 
 	$('.archive-post').productCardImageResize();

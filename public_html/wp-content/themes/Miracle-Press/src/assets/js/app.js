@@ -39,6 +39,7 @@ import './BEM/mir-tab/click-tab';
 import './BEM/nav-tab/nav-tab';
 import './BEM/post-card/image';
 import './BEM/post-card/add-post-blog-page';
+import './BEM/input/file-input';
 
 $(document).ready(function(){
 	if( $.browser.msie ){

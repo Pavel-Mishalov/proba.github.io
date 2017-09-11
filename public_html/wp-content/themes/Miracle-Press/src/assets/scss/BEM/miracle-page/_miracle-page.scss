@@ -15,3 +15,16 @@
 	background-color: $light-gray;
 	padding-top: 3rem;
 }
+
+@media only screen and (max-width: 900px){
+
+.miracle-page{
+	grid-template: auto auto 1fr / 1fr;
+
+	/*======== EI =========*/
+	display: -ms-grid;
+	-ms-grid-columns: 1fr;
+	-ms-grid-rows: auto auto 1fr;
+}
+
+}

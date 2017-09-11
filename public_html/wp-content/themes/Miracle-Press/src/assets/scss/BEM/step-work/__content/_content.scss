@@ -7,7 +7,7 @@
 		margin-top: 0.8rem;
 		a{
 			font-weight: 700;
-			&[href^="callto"]{
+			&[href^="tel"]{
 				color: $dark-gray;
 			}
 		}

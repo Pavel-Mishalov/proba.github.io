@@ -137,7 +137,7 @@ function miracle_get_company_working_steps(){
 			$content = $item['content'];
 			$content = str_replace( '<modal>', '<a href="#">', $content );
 			$content = str_replace( '</modal>', '</a>', $content );
-			$content = str_replace( '<telephone>', '<a href="callto:+74955644445">+7 (495) 564 44 45</a>', $content );
+			$content = str_replace( '<telephone>', '<a href="tel:+74955644445">+7 (495) 564 44 45</a>', $content );
 
 			$block = file_get_contents( get_template_directory() . '/views_support/block/company-steps/step-card.php' );
 			$block = str_replace( '<% icon %>', $icon, $block );
