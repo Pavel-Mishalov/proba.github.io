@@ -1,2 +1,2 @@
 #!/bin/bash
-ssh dnovikov32@77.222.40.193 "cd ~/print.hardnig.ga && git $@"
+ssh 7l8@217.107.219.152 "cd ~/domains/plakatof.ru_old && git $@"

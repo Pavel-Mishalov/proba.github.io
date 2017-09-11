@@ -346,8 +346,8 @@ function getConfig()
             "DB_PASSWORD" => DB_PASSWORD,
             "DUMP_DIR" => dirname(__FILE__)."/mysqldump",
             "remote" => array(
-                "sshhost" => "dnovikov32@77.222.40.193",
-                "folder" => "/home/d/dnovikov32/print.hardnig.ga"
+                "sshhost" => "7l8@217.107.219.152",
+                "folder" => "/home/users/7/7l8/domains/plakatof.ru_old"
             )
         );
         //$conf = array_replace($conf, require(dirname(__FILE__)."/mysqltool.conf.php"));
