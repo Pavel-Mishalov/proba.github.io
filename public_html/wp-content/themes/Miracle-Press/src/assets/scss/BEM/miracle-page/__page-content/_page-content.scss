@@ -12,3 +12,22 @@
 		-ms-grid-row: 2;
 	}
 }
+
+@media only screen and (max-width: 900px){
+
+.miracle-page .miracle-page{
+	&__page-content{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 3;
+		grid-row-end: 4;
+		padding: 1rem;
+
+		/*======== EI =========*/
+
+		-ms-grid-column: 1;
+		-ms-grid-row: 3;
+	}
+}
+
+}

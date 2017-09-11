@@ -1,0 +1,41 @@
+.input .input{
+	&__file-input:not([type="file"]){
+		font-weight: 500;
+		font-size: 1.2rem;
+		padding: 1.1rem 1.8rem;
+		border-radius: 3.2rem;
+		height: auto;
+		margin-bottom: 0;
+		line-height: 1.5;
+		min-height: 4rem;
+		text-align: left;
+		width: 100%;
+		position: relative;
+		box-sizing: border-box;
+		border: 1px solid #999999;
+		background-color: #ffffff;
+		box-shadow: inset 0 1px 2px rgba(46, 46, 46, 0.1);
+		cursor: pointer;
+		&:after{
+			content: "\e903";
+			font-family: 'icomoon' !important;
+			speak: none;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+			position: absolute;
+			right: 0.3rem;
+			top: 0.3rem;
+			background-color: $blue;
+			border-radius: 100%;
+			color: $white;
+			font-size: 1.6rem;
+			padding: 0.9rem;
+		}
+	}
+	&__file-input[type="file"]{
+		display: none;
+	}
+}

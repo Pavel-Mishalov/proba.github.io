@@ -27,7 +27,7 @@
 		<div class="input input_submit-center">
 			<label for="bbуb14" class="input__label"></label>
 			<input id="bbуb14" class="input__submit" type="submit" value="Задать свой вопрос">
-			<p class="input__text-help">Когда вы заполняете телефон и другие данные, Вы автоматически соглашаетесь с <a href="#" class="input__text-help_link">правилами обработки персональных данных</a></p>
+			<p class="input__text-help">Когда вы заполняете телефон и другие данные, Вы автоматически соглашаетесь с <a href="javascript:void(0)" class="input__text-help_link">правилами обработки персональных данных</a></p>
 		</div>
 
 </form>

@@ -35,7 +35,7 @@
 						<input class="input__submit" type="submit" value="Опубликовать">
 						<p class="input__text-help">
 							Когда вы заполняете телефон и другие данные, Вы автоматически соглашаетесь с 
-							<a href="#" class="input__text-help_link">правилами обработки персональных данных</a>
+							<a href="javascript:void(0)" class="input__text-help_link">правилами обработки персональных данных</a>
 						</p>
 					</div>
 				</div>
