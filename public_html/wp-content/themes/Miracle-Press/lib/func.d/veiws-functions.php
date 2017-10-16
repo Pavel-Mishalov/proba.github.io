@@ -630,12 +630,15 @@ function miracle_get_mir_slider_carousel( $id ){
 	$images = get_field( 'miracle-post-feedback-work-photo', $id );
 
 	foreach ( $images as $image ):
-		$block   = file_get_contents( $file );
-		$src     = $image['url'];
-		$alt     = $image['alt'];
-		$title   = $image['caption'];
+		$block   	= file_get_contents( $file );
+		$src     	= $image['url'];
+		$src_thumb 	= $image['sizes']['thumbnail'];
+		$alt     	= $image['alt'];
+		$title   	= $image['caption'];
 
+		$block = str_replace( '<% id %>', $id, $block );
 		$block = str_replace( '<% src %>', $src, $block );
+		$block = str_replace( '<% src_thumb %>', $src_thumb, $block);
 		$block = str_replace( '<% title %>', $title, $block );
 		$block = str_replace( '<% alt %>', $alt, $block );
 

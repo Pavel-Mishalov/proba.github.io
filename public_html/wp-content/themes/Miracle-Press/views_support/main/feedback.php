@@ -11,7 +11,7 @@
 		</div>
 
 		<?= miracle_get_mir_slider_slides() ?>
-	
+
 	</div>
 
 </div>

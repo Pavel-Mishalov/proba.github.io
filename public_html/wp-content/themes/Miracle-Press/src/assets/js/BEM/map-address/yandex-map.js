@@ -3,14 +3,15 @@ import $ from 'jquery';
 $(document).ready(function(){
 	if( $('#yandex-map-address').length > 0 ){
 		ymaps.ready( yandex_init );
+		
+		$('#yandex-map-address').css( 'pointer-events', 'none' );
+		$('#map-address').click(function(){
+			$('#yandex-map-address').css( 'pointer-events', 'auto' )
+		});
+		$('#map-address').mouseleave(function(){
+			$('#yandex-map-address').css( 'pointer-events', 'none' )
+		});
 	}
-	$('#yandex-map-address').css( 'pointer-events', 'none' );
-	$('#map-address').click(function(){
-		$('#yandex-map-address').css( 'pointer-events', 'auto' )
-	});
-	$('#map-address').mouseleave(function(){
-		$('#yandex-map-address').css( 'pointer-events', 'none' )
-	});
 });
 
 var yandex_init = function(){

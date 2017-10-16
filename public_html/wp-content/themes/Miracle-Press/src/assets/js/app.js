@@ -12,6 +12,7 @@ import Foundation from 'foundation-sites';
 $(document).foundation();
 
 import './owl.carousel';
+import './jquery.fancybox';
 
 import './browser/browser';
 
