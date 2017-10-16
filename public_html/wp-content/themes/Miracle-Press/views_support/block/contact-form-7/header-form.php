@@ -1,3 +1,5 @@
+<?php
+$form = <<<EOT
 <form action="javascript:void(0)">
 	
 	<div class="form__display">
@@ -23,3 +25,6 @@
 	</div>
 	
 </form>
+EOT;
+
+return $form;
